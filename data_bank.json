@@ -1,0 +1,3532 @@
+{
+    "k1": [
+        {
+            "question": "Cemu sluze adrese u zaglavljima poruka?",
+            "right_answers": [
+                "Za ostvarivanje komunikacije sa istim slojem na udaljenom uredjaju."
+            ],
+            "false_answers": [
+                "Za ostvarivanje komunikacije sa susednim visem slojem na istom uredjaju.",
+                "Za ostvarivanje komunikacije sa susednim nizim slojem na istom uredjaju.",
+                "Za ostvarivanje komunikacije sa susednim visim slojem na udaljenom uredjaju.",
+                "Za ostvarivanje komunikacije sa susednim nizim slojem na udaljenom uredjaju.",
+                "Da se poruke prenesu na odgovarajudu mreznu karticu, ako uredjaj ima vise mreznih kartica."
+            ]
+        },
+        {
+            "question": "Cemu sluzi backoff algoritam?",
+            "right_answers": [
+                "Da smanji verovatnodu ponovnog nastanka kolizije."
+            ],
+            "false_answers": [
+                "Da detektuje koliziju.",
+                "Da izbegne koliziju.",
+                "Da generise JAM signal prilikom nastanka kolizije.",
+                "Da obavesti visi sloj da je nastala kolizija."
+            ]
+        },
+        {
+            "question": "Cemu sluzi FCS polje u Ethernet okviru?",
+            "right_answers": [
+                "Za proveru greske."
+            ],
+            "false_answers": [
+                "Za ispravljanje greske.",
+                "Za oznacavanje protokola viseg nivou.",
+                "Za komunikaciju sa susednim nivoima.",
+                "Da oznaci da li slede pratedi okviri u komunikaciji.",
+                "Za oznacavanje da li je doslo do kolizije."
+            ]
+        },
+        {
+            "question": "Da li Ethernet okvir moze da se prenosi izmedju segmenata realizovanih koaksijalnim kablom i UTP kablom?",
+            "right_answers": [
+                "Da, ako su domeni povezani odgovarajudim uredjajem."
+            ],
+            "false_answers": [
+                "Da, ali se zaglavlje okvira mora promeniti.",
+                "Ne, jer rade na razlicitim brzinama.",
+                "Ne, jer se radi o razlicitim fizickim prenosnim medijima.",
+                "Mogu samo na half-duplex point-to-point vezama."
+            ]
+        },
+        {
+            "question": "Da li kod koaksijalnog 10BASE5 Etherneta u full-duplex modu moze dodi do kolizije?",
+            "right_answers": [
+                "Ne postoji 10BASE5 Etherneta u full-duplex modu."
+            ],
+            "false_answers": [
+                "Da, zato sto se radi o prenosu po koaksijalnom kablu.",
+                "Ne, zato sto se radi o full-dupleks modu.",
+                "Kolizija u ovom slucaju de da zavisi od najvede ukupne duzine u mrezi."
+            ]
+        },
+        {
+            "question": "Da li na full-duplex point-to-point vezama moze dodi do kolizije?",
+            "right_answers": [
+                "Ne, zato sto su paketi razdvojeni po razlicitim paricama."
+            ],
+            "false_answers": [
+                "Da, zato sto ove veze predstavljaju jedan kolizioni domen.",
+                "Samo ako se ne koristi Colision Avoidance mehanizam.",
+                "Full-duplex nije mogud na point-to-point."
+            ]
+        },
+        {
+            "question": "Kada se sprovodi enkapsulacije podataka?",
+            "right_answers": [
+                "Kada se podaci prenose sa viseg na nizi sloj referentnog modela."
+            ],
+            "false_answers": [
+                "Kada se podaci prenose sa nizeg na visi sloj referentnog modela.",
+                "Kada se poruke razmenjuju izmedju stih slojeva referentnog modela na razlicitim racunarima.",
+                "Kada se poruke prenose sa jednog kolizionog domena na drugi.",
+                "Kada se poruke prenose preko ripitera (haba).",
+                "Kada se poruke prenose preko bridza (svica)."
+            ]
+        },
+        {
+            "question": "Kako se naziva deo sloja veze podataka (Data Link Layer) koji sluzi za komunikaciju sa visim slojem?",
+            "right_answers": [
+                "Logical Link Control (LLC)."
+            ],
+            "false_answers": [
+                "Media Access Control (MAC).",
+                "Link Control Protocol (LCP).",
+                "Network Control Protoco (NCP).",
+                "Data Link Sublayer (DLS).",
+                "Carrier Sense Multiple Access with Collision Detection (CSMA/CD).",
+                "Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA)."
+            ]
+        },
+        {
+            "question": "Kako se naziva port na svicu koji na nivou segmenta oglasava BPDU pakete sa najmanjom vrednosti Path Cost?",
+            "right_answers": [
+                "Designated port."
+            ],
+            "false_answers": [
+                "Root port.",
+                "Blocked port.",
+                "Listening port.",
+                "Learning port.",
+                "Fast port."
+            ]
+        },
+        {
+            "question": "Kako se naziva port na svicu koji prima najmanju vrednost Path Cost atributa u BPDU porukama?",
+            "right_answers": [
+                "Root port."
+            ],
+            "false_answers": [
+                "Designated port.",
+                "Blocked port.",
+                "Listening port.",
+                "Fast port."
+            ]
+        },
+        {
+            "question": "Kako se zove najbrza tehnika prosledjivanja okvira sa ulaznog na izlazni port svica?,",
+            "right_answers": [
+                "Cut-Through."
+            ],
+            "false_answers": [
+                "Store and Forward.",
+                "Fragment-Free.",
+                "Express forwarding.",
+                "Full-Duplex.",
+                "Half-Duplex."
+            ]
+        },
+        {
+            "question": "Kako se zove najsporija tehnika prosledjivanja okvira sa ulaznog na izlazni port svica?",
+            "right_answers": [
+                "Store and Forward."
+            ],
+            "false_answers": [
+                "Cut-Through.",
+                "Fragment-Free.",
+                "Express forwarding.",
+                "Full-Duplex.",
+                "Half-Duplex."
+            ]
+        },
+        {
+            "question": "Koja je osnovna uloga Spanning Tree protokola?",
+            "right_answers": [
+                "Onemogucavanje nastanka petlji."
+            ],
+            "false_answers": [
+                "Sprecavanje gubitka paketa.",
+                "Sprecavanje kolizije.",
+                "Omogudavanje VLAN-ova.",
+                "Povezivanje vise kolizionih domena.",
+                "Povezivanje vise sviceva.",
+                "Povezivanje vise habova."
+            ]
+        },
+        {
+            "question": "Koje se od navedenih veza realizuju neukrstenim Ethernet kablovima?",
+            "right_answers": [
+                "hab-racunar",
+                "svic-stampac",
+                "svic-ruter"
+            ],
+            "false_answers": [
+                "svic-hab",
+                "svic-svic",
+                "racunar-racunar"
+            ]
+        },
+        {
+            "question": "Koje se od navedenih veza realizuju ukrstenim Ethernet kablovima?",
+            "right_answers": [
+                "svic-hab",
+                "svic-svic",
+                "racunar-racunar"
+            ],
+            "false_answers": [
+                "hab-racunar",
+                "svic-stampac",
+                "svic-ruter"
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvir ciju odredisnu adresu nema u svojoj tabeli?",
+            "right_answers": [
+                "Flooding"
+            ],
+            "false_answers": [
+                "Learning",
+                "Forwarding",
+                "Filtering",
+                "Aging",
+                "Blocking",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvira cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju istu oznaku porta?",
+            "right_answers": [
+                "Filtering"
+            ],
+            "false_answers": [
+                "Learning",
+                "Forwarding",
+                "Flooding",
+                "Aging",
+                "Blocking",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvira cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju razlicitu oznaku porta?",
+            "right_answers": [
+                "Forwarding"
+            ],
+            "false_answers": [
+                "Flooding",
+                "Learning",
+                "Filtering",
+                "Aging",
+                "Blocking",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvira ciju izvorisnu adresu nema u svojoj tabeli?",
+            "right_answers": [
+                "Learning"
+            ],
+            "false_answers": [
+                "Forwarding",
+                "Flooding",
+                "Filtering",
+                "Aging",
+                "Blocking",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "Koji se uslov mora obezbediti da bi se u mrezi uvek mogla detektovati kolizija?",
+            "right_answers": [
+                "Da slot time odgovara dvostrukom vremenu prenosa okvira izmedju dve najudaljenije tacke u mrezi.",
+                "Da slot time odgovara velicini Jam signala."
+            ],
+            "false_answers": [
+                "Da bit time odgovara dvostrukom vremenu prenosa okvira izmedju dve najudaljenije tacke u mrezi.",
+                "Da slot time odgovara vremenu prenosa okvira izmedju dve najudaljenije tacke u mrezi.",
+                "Da bit time odgovara vremenu prenosa okvira izmedju dve najudaljenije tacke u mrezi.",
+                "Da bit time odgovara velicini Jam signala.",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "Koji uslovi moraju biti ispunjeni da bi se obezbedio roming izmedju vise Access Point (AP) uredjaja?",
+            "right_answers": [
+                "SSID mora da bude isti na svim AP.",
+                "AP cije se delije preklapaju moraju da imaju razlicite frekvencije."
+            ],
+            "false_answers": [
+                "Svi AP moraju da imaju iste frekvencijske kanale.",
+                "Svi AP uredjaji moraju da podrzavaju VLAN-ove.",
+                "Svi AP uredjaji moraju da imaju razlicite frekvencije.",
+                "Svaki mobilni uredjaj mora da ima svoju nezavisnu fekvenciju."
+            ]
+        },
+        {
+            "question": "Kojom tehnikom se moze povecati brzina prenosa na vezi izmedju dva svica koji imaju sve portove iste brzine?",
+            "right_answers": [
+                "EtherChannel."
+            ],
+            "false_answers": [
+                "Fast-Forward.",
+                "VLAN.",
+                "Rapid Spanning Tree.",
+                "PortFast.",
+                "Multilink."
+            ]
+        },
+        {
+            "question": "Mogudnost prilagodjavanja brzine prenosa (10/100/1000 Mbps) po point-to-point vezi na svicevima zove se",
+            "right_answers": [
+                "Auto-Negotiation"
+            ],
+            "false_answers": [
+                "Asymmetry Link Control",
+                "Back-off.",
+                "To nije omogudeno, jer bi se time narusili uslovi detekcije kolizije.",
+                "Half-Duplex.",
+                "Full-Duplex."
+            ]
+        },
+        {
+            "question": "sta bi se desilo kada bi se habovi u mrezi povezu u petlju?",
+            "right_answers": [
+                "Svi okviri bi neograniceno dugo kruzili u petlji."
+            ],
+            "false_answers": [
+                "Samo broadcast okviri bi neograniceno dugo kruzili u petlji.",
+                "Mreza bi ispravno funkcionisala, jer bi STP protokol ukinuo petlju.",
+                "Svi okviri bi kruzili u petlji tacni odredjeni broj ciklusa (Time To Live) nakon cega bi se odbacili."
+            ]
+        },
+        {
+            "question": "sta je od slededeg tacno pri prenosu podataka sa nizeg na visi sloj OSI ili TCP/IP referentnog modela na jednom uredjaju?",
+            "right_answers": [
+                "Odbacuje se zaglavlje nizeg sloja."
+            ],
+            "false_answers": [
+                "Dodaje se zaglavlje nizeg sloja.",
+                "Odbacuje se zaglavlje viseg sloja.",
+                "Dodaje se zaglavlje viseg sloja.",
+                "Sva zaglavlja se zadrzavaju radi provere da li je doslo do greske."
+            ]
+        },
+        {
+            "question": "sta je od slededeg tacno za VLAN-ove?",
+            "right_answers": [
+                "Uredjaji iz istog VLAN-a mogu da komuniciraju na L2 nivou, cak iako su povezani preko vise sviceva.",
+                "Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju samo preko rutera."
+            ],
+            "false_answers": [
+                "Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju na L2 nivou, ako su povezani preko vise sviceva.",
+                "Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju na L2 nivou samo ako su povezani preko istog svica.",
+                "Za komunikaciju izmedju dva uredjaja na istom VLAN-u, mora se koristiti ruter.",
+                "Jedan VLAN se moze postaviti samo na jednom svicu."
+            ]
+        },
+        {
+            "question": "sta je odlika habova?",
+            "right_answers": [
+                "Pristigle okvire prosledjuju na sve ostale portove.",
+                "Ne gledaju sadrzaj okvira."
+            ],
+            "false_answers": [
+                "Gledaju samo zaglavlje okvira.",
+                "Prepoznaju okvire koji su primljeni sa bar jednim pogresnim bitom.",
+                "Detektuju koliziju."
+            ]
+        },
+        {
+            "question": "sta je tacno od slededeg?",
+            "right_answers": [
+                "Jam signal emituje svaki uredjaj koji detektuje koliziju tokom slanja okvira."
+            ],
+            "false_answers": [
+                "Jam se prenosi samo do uredjaja ciji su paketi ucestvovali u koliziji.",
+                "Jam signal emituje samo uredjaj koji je prvi detektovao koliziju.",
+                "Jam signal emituju samo habovi kada prepozna koliziju.",
+                "Jam signal je rezultujudi signal koji predstavlja interferenciju dva ili vise okvira kada dodje do kolizije.",
+                "Jam signal se salje nakon sprovodjenja back-off algoritma."
+            ]
+        },
+        {
+            "question": "Zbog cega se ogranicava maksimalno rastojanje izmedju dva krajnja uredjaja (ukupan broj segmenata u nizu), u jednom Ethernet kolizionom domenu?",
+            "right_answers": [
+                "Zbog detekcije kolizije."
+            ],
+            "false_answers": [
+                "Zbog izbegavanja kolizije.",
+                "Zbog slabljenja signala.",
+                "Zbog smanjenja opteredenja mreze usled kolizije.",
+                "Zbog podrske brodkast saobradaja.",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "Zasto se uvodi minimalna velicina Ethernet okvira?",
+            "right_answers": [
+                "Da se obezbedi dovoljno vremena da se uvek detektuje kolizija."
+            ],
+            "false_answers": [
+                "Da bi se uvek izbegla kolizija.",
+                "Da bi imali dovoljno podataka za generisanje FCS polja i sprovodjenje kontrole greske.",
+                "Da bi podrzali brodcast prenos okvira.",
+                "Zbog smanjenja mogudnosti nastanka kolizije.",
+                "Zbog velicine zaglavlja paketa na visim nivoima."
+            ]
+        },
+        {
+            "question": "Zasto se kaze da svicevi rade u \"transparentnom\" modu?",
+            "right_answers": [
+                "Zato sto ostali uredjaji ne znaju za postojanje sviceva."
+            ],
+            "false_answers": [
+                "Zato sto svicevi ne znaju za postojanje ostalih uredjaja.",
+                "Zato sto se medjusobno mogu povezati svicevi razlicitih proizvodjaca.",
+                "Zato sto rade na 2. nivou.",
+                "Zato sto podrzavaju Spaning Tree protokol koji je transparentan u odnosu na druge uredjaje."
+            ]
+        },
+        {
+            "question": "U kojim de slucajevima Ethernet mrezna kartica da prihvati okvir i prosledi ga visem sloju?",
+            "right_answers": [
+                "Kada pristigne okvir u cijem zaglavlju odredisna adresa (destination address) odgovara MAC adresi mrezne kartice.",
+                "Kada pristigne okvir u cijem zaglavlju odredisna adresa (destination address) ima sve jedinice."
+            ],
+            "false_answers": [
+                "Kada pristigne okvir u cijem zaglavlju odredisna adresa (destination address) ima sve nule.",
+                "Kada se prepozna Ethernet identifikator u polju protocol type u zaglavlju okvira.",
+                "Kada je mrezna kartica povezana direktno na hab.",
+                "Kada je mrezna kartica povezana direktno na svic."
+            ]
+        },
+        {
+            "question": "sta u slededim slucajevima predstavlja jedan kolizioni domen?",
+            "right_answers": [
+                "Jedan ili vise koaksijalnih Ethernet segmenata medjusobno povezanih ripiterima.",
+                "Jedan ili vise medjusobno povezanih Ethernet habova, sa svim povezanim uredjajima.",
+                "Half-duplex veza izmedju racunara i svica."
+            ],
+            "false_answers": [
+                "Jedan ili vise koaksijalnih Ethernet segmenata medjusobno povezanih bridzevima.",
+                "Jedan ili vise medjusobno povezanih Ethernet sviceva, sa svim povezanim uredjajima.",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "sta se sprovodi pri prenosu podataka sa viseg na nizi sloj?",
+            "right_answers": [
+                "Enkapsulacija podataka viseg sloja u poruku nizeg sloja",
+                "Multipleksiranje vedeg broja protokola viseg sloja u poruke nizeg sloja"
+            ],
+            "false_answers": [
+                "Provera greske u poruci dobijenoj od viseg sloja.",
+                "Demultipleksiranje pristiglih poruka na vise protokola nizeg nivoa.",
+                "Gleda se polje Protocol type na osnovu koga se odlucuje kom protokolu nizeg sloja da se predaju podaci.",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "sta se radi kada se na osnovu FCS polja prepozna greska u Ethernet okviru?",
+            "right_answers": [
+                "Nista od ponudjenog."
+            ],
+            "false_answers": [
+                "Ostedeni paket se odbacuje, a na osnovu izvorisne adrese iz okvira prepoznaje se ko je poslao okvir i od njega se zahteva slanje novog paketa.",
+                "Ako je greska samo na jednom bitu, paket se rekonstruise na osnovu FCS polja iz okvira.",
+                "Paket se prosledjuje visim slojevima koji de pokusati prepoznaju i iskoriste sto vise informacija.",
+                "Izvorisnom uredjaju se salje poruka o gresci, sto je znak da okvir treba da se ponovo posalje.",
+                "Izvorisnom uredjaju se ne salje potvrda prijema, sto je znak da okvir treba da se ponovo posalje.",
+                "Generise se Jam signal."
+            ]
+        },
+        {
+            "question": "sta se desava u slucaju da se greska u Ethernet paketu javi u polju za detekciju greske?",
+            "right_answers": [
+                "Greska se prepoznaje, a paket se ceo odbacuje."
+            ],
+            "false_answers": [
+                "Greska se ne moze prepoznati, a paket se prosledjuje visim slojevima koji de podatke odbaciti.",
+                "Greska se ne moze prepoznati, a paket se prosledjuje visim slojevima koji de podatke prihvatiti jer u njima nema greske.",
+                "Greska se prepoznaje, ali se paket ipak prosledjuje visim slojevima, jer podaci visih slojeva nisu ostedeni.",
+                "Greska se ne moze sa sigurnosdu detektovati, ali se paket ipak preventivno odbacuje."
+            ]
+        },
+        {
+            "question": "sta se desava pri prenosu podataka sa nizeg na visi sloj?",
+            "right_answers": [
+                "Nizi sloj zna kom protokolu viseg sloja da prosledi podatke na osnovu informacija iz zaglavlja poruke."
+            ],
+            "false_answers": [
+                "Nizi sloj zna kom protokolu viseg sloja da prosledi podatke na osnovu konfiguracije sistema.",
+                "Nizi sloj menja pojedina polja u zaglavlju viseg sloja, pre nego sto podatke prosledi visem sloju.",
+                "Nizi sloj menja pojedina polja u svom zaglavlju, pre nego sto podatke prosledi visem sloju.",
+                "Nizi sloj ne mora da zna kom protokolu viseg sloja da prosledi podatke, jer je to zadatak viseg sloja.",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "sta se desava kada se na portu svica ukljuci opcija PortFast?",
+            "right_answers": [
+                "Port ne ucestvuje u STP konvergenciji."
+            ],
+            "false_answers": [
+                "Uspostavlja se najveda moguda brzina koju podrzavaju obe strane.",
+                "Sprovodi se tehnika prosledjivanja paketa sa najmanjim kasnjenjem.",
+                "Na portu se uspostavlja Full-Duplex rezim rada.",
+                "Na portu se uspostavlja Trunk veza."
+            ]
+        },
+        {
+            "question": "sta se desava ako dva okvira istovremeno pristignu na razlicite ulazne portove svica i treba da se proslede na razlicite izlazne portove?",
+            "right_answers": [
+                "Okviri se nezavisno prosledjuju."
+            ],
+            "false_answers": [
+                "Okviri se nezavisno prosledjuju, samo ako se koristi Store-And-Forward tehnika..",
+                "Okviri se nezavisno prosledjuju, ali ne sme da se koristi Cut-Through tehnika.",
+                "Jedan okvir mora da saceka da se drugi okvir prenese u celini.",
+                "Oba okvira se odbacuje i dolazi do retransmisije."
+            ]
+        },
+        {
+            "question": "sta radi svic kada primi okvir za koji nema podatak o odredisnoj adresi u svojoj tabeli?",
+            "right_answers": [
+                "Prosledjuje isti okvir na ostale portove."
+            ],
+            "false_answers": [
+                "Odbacuje okvir i izvorisnom uredjaju vrada poruku o gresci.",
+                "salje novi okvir sa broadkast adresom i ceka odgovor od uredjaja cija se adresa zahteva.",
+                "Odbacuje poruku bez obavestavanja izvorisnog uredjaja o nastaloj gresci.",
+                "Pokrede proces kovergencije u Spaning Tree protokolu."
+            ]
+        },
+        {
+            "question": "sta rade svicevi prilikom prosledjivanja Ethernet okvira?",
+            "right_answers": [
+                "Ne menjaju Ethernet okvir."
+            ],
+            "false_answers": [
+                "U izvorisnu adresu postavljaju MAC adresu porta svica na koji je okvir stigao.",
+                "U izvorisnu adresu postavljaju MAC adresu porta svica na koji se okvir prosledjuje.",
+                "U odredisnu adresu postavljaju MAC adresu porta slededeg svica ili krajnji uredjaj na koji se okvir salje.",
+                "Menjaju polje za kontrolu greske.",
+                "Smanjuju polje TTL za jedan."
+            ]
+        },
+        {
+            "question": "sta po pravilu rade slojevi ISO OSI ili TCP/IP referentnog modela kada primaju poruke od viseg sloja?",
+            "right_answers": [
+                "Ne gledaju ni zaglavlje ni podatke dobijene poruke od viseg sloja.",
+                "Na dobijenu poruku dodaju svoje zaglavlje."
+            ],
+            "false_answers": [
+                "Gledaju zaglavlje dobijene poruke od viseg sloja kako bi znali da postave polje koje oznacava tip protokola viseg nivoa.",
+                "Na poruku dodaju svoje zaglavlje u zavisnosti od podataka iz zaglavlja viseg nivoa.",
+                "Gledaju zaglavlje viseg sloja i na osnovu toga odlucuju kojem nizem sloju predaju poruku.",
+                "Gledaju zaglavlje na nizem nivou."
+            ]
+        },
+        {
+            "question": "sta od ponudjenog rade slojevi ISO OSI i TCP/IP referentnog modela kada prime poruku od nizeg sloja?",
+            "right_answers": [
+                "Gledaju zaglavlja poruke na svom nivou.",
+                "Odbacuju zaglavlje poruke na svom nivou i prosledjuju poruke visem nivou"
+            ],
+            "false_answers": [
+                "Gledaju zaglavlje na nizem nivou.",
+                "Gledaju zaglavlje na visem nivou i tom nivou prosledjuju poruku.",
+                "Odbacuju zaglavlje na nizem nivou, a prosledjuju poruku visem nivou.",
+                "Odbacuju zaglavlje na visem nivou.",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "sta je zajednicko i za habove i za sviceve?",
+            "right_answers": [
+                "Nista od ponudjenog."
+            ],
+            "false_answers": [
+                "Dele mrezu na razlicite kolizione domene.",
+                "Rade najvise na 1. nivou.",
+                "Rade na 2. nivou.",
+                "Podrzavaju Spaning Tree protokola."
+            ]
+        },
+        {
+            "question": "sta je tacno za STP root portove (RP)?",
+            "right_answers": [
+                "Paketi koji iz svica izlaze na RP priblizavaju se root svicu.",
+                "Root svic nema RP portove.",
+                "Linkovi sa RP uvek pripadaju STP stablu."
+            ],
+            "false_answers": [
+                "Paketi koji iz svica izlaze na RP udaljavaju se od root svica.",
+                "RP su portovi na root svicu.",
+                "Jedan svic moze da ima vise RP portova u jednom STP stablu.",
+                "RP portovi primaju samo BPDU pakete.",
+                "RP portovi salju samo BPDU pakete."
+            ]
+        },
+        {
+            "question": "sta je tacno za STP designated portove (DP)?",
+            "right_answers": [
+                "Paketi koji iz svica izlaze na DP portove se udaljavaju od root svica.",
+                "Svi portovi root svica su DP."
+            ],
+            "false_answers": [
+                "Paketi koji iz svica izlaze na DP se priblizavaju root svicu.",
+                "Predstavljaju portove koji salju samo BPDU pakete.",
+                "Predstavljaju portove koji primaju samo BPDU pakete.",
+                "Linkovi sa DP uvek pripadaju STP stablu.",
+                "Svic moze da ima samo jedan DB port."
+            ]
+        },
+        {
+            "question": "sta je tacno za STP bokirane portove (BP)?",
+            "right_answers": [
+                "BP portovi blokiraju sav dolazni saobradaj, osim BPDU poruka.",
+                "BP portovi blokiraju sav odlazni saobradaj."
+            ],
+            "false_answers": [
+                "Kroz BP portove normalno se prihvata sav dolazni saobradaj, ali se nista ne salju.",
+                "BP portovi blokiraju celokupni dolazni i odlazni saobradaj.",
+                "BP portovi blokiraju sav dolazni saobradaj.",
+                "salju se samo BPDU poruke."
+            ]
+        },
+        {
+            "question": "sta je tacno za NCP (Network Control Protocol) podsloj PPP protokola.",
+            "right_answers": [
+                "Za svaki protokol viseg nivoa postoji posebna NCP instanca"
+            ],
+            "false_answers": [
+                "Sluzi za logicku realizaciju PPP protokola",
+                "Sluzi za ostvarivanje opcionih funkcija PPP protokola",
+                "Sluzi za uspostavljanje PPP veze",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "sta je tacno za medjusobno povezivanje segmenata u Ethernet mrezi?",
+            "right_answers": [
+                "Broj povezanih segmenata je neogranicen ako se povezuje preko sviceva.",
+                "Broj povezanih segmenata je ogranicen ako se povezuje preko habova."
+            ],
+            "false_answers": [
+                "Broj povezanih segmenata je ogranicen ako se povezuje preko sviceva.",
+                "Broj povezanih segmenata je neogranicen ako se povezuje preko habova.",
+                "Tom prilikom nije mogud broadcast saobradaj.",
+                "Habovima se ne mogu povezivati segmnti razlicitih fizickih medijuma."
+            ]
+        },
+        {
+            "question": "sta je tacno za brodkast MAC adresu?",
+            "right_answers": [
+                "Okvire sa odredisnom brodkast adresom svicevi prosledjuju na sve izlazne portove",
+                "Svi biti brodkast adrese su jedinice"
+            ],
+            "false_answers": [
+                "Okvire sa odredisnom brodkast adresom svicevi prosledjuju na sve izlazne portove i tom prilikom je menjaju u pojedinacne unikast adrese",
+                "Okvire sa izvorisnom brodkast adresom svicevi prosledjuju na sve izlazne portove",
+                "Brodkast adresa je fizicki upisana u mrezne kartice uredjaja (burned-in)",
+                "Okviri sa brodkast adresama se ne mogu koristi u mrezi sa habovima zbog kolizije",
+                "Brodkast adresa se ne koristi u Ethernet okviru",
+                "Osnovna namena brodkast adrese je oglasavanje greske"
+            ]
+        },
+        {
+            "question": "sta je tacno od slededih tvrdnji vezano za koliziju",
+            "right_answers": [
+                "Kolizija ne sme da se javi kada je okvir napustio Ethernet karticu.",
+                "Tokom slanja okvira, Ethernet kartica prati da li su na mrezi trenutno prisutni i drugi okviri na mrezi ili Jam signal."
+            ],
+            "false_answers": [
+                "Kolizija moze da se detektuje i kada je okvir napustio Ethernet karticu.",
+                "Ethernet kartica prati da li su trenutno prisutni samo Jam signali na mrezi.",
+                "Ethernet kartica sprovodi back-off algoritam pre slanja svakog okvira.",
+                "Kolizija moze da nastane samo prilikom izlaska zaglavlja okvira na mrezu."
+            ]
+        },
+        {
+            "question": "sta je tacno od slededih iskaza vezana za slojeve referentnog modela kakav je OSI ili TCP/IP?",
+            "right_answers": [
+                "Slojevi komuniciraju sa susednim nizim i susednim visim slojem na istom uredjaju.",
+                "Slojevi komuniciraju sa istim slojem na udaljenom uredjaju."
+            ],
+            "false_answers": [
+                "Slojevi komuniciraju sa susednim nizim i susednim visim slojem na udaljenom uredjaju.",
+                "Svi slojevi se koriste za sve vrste komunikacija izmedju uredjaja.",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "sta po pravilu rade slojevi ISO OSI ili TCP/IP referentnog modela kada primaju poruke od nizeg sloja?",
+            "right_answers": [
+                "Gledaju zaglavlje poruke samo na svom nivou."
+            ],
+            "false_answers": [
+                "Gledaju zaglavlje na nizen nivou.",
+                "Gledaju zaglavlja na svom nivou i podatke viseg nivoa.",
+                "Gledaju zaglavlje na visem nivou.",
+                "Ne gledaju zaglavlja na svom nivou, jer su podaci vec pristigli i za tim nema potrebe."
+            ]
+        },
+        {
+            "question": "Habovi omogucavaju full-duplex prenos okvira, ako imaju podrzanu auto-negotiation funkciju.",
+            "right_answers": [
+                "Netacno"
+            ],
+            "false_answers": [
+                "Tacno"
+            ]
+        },
+        {
+            "question": "sta je od sledeceg tacno pri prenosu podataka sa viseg na nizi sloj OSI ili TCP/IP referentnog modela na jednom uredjaju?",
+            "right_answers": [
+                "Ukupna kolicina podataka se povecava."
+            ],
+            "false_answers": [
+                "Ukupna kolicina se ne menja.",
+                "Ukupna kolicina podataka se smanjuje."
+            ]
+        },
+        {
+            "question": "sta je tacno od sledecih iskaza vezana za slojeve referentnog modela kakav je OSI ili TCP/IP?",
+            "right_answers": [
+                "Slojevi komuniciraju sa susednim nizim i susednim visim slojem na istom uredjaju.",
+                "Slojevi komuniciraju sa istim slojem na udaljenom uredjaju."
+            ],
+            "false_answers": [
+                "Slojevi medjusobno ne komuniciraju.",
+                "Slojevi komuniciraju samo sa istim slojevima na istom racunaru, ali na kojima se sprovode razliciti protokoli.",
+                "Slojevi komuniciraju iskljucivo direktnim pristupom mreznoj kartici."
+            ]
+        },
+        {
+            "question": "U kojim slucajevima se prenose informacija o pripadnosti VLAN-u u Ethernet okviru?",
+            "right_answers": [
+                "Kada se okvir prenosi po trank linku."
+            ],
+            "false_answers": [
+                "Prenosi se u posebnim kontrolnim okvirima.",
+                "Prenosi se i na access linku i na trank linku.",
+                "Kada se okvir prenosi po access linku.",
+                "Ne prenosi se u okviru vec se konfigurise na svicu."
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvira cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju istu oznaku porta?",
+            "right_answers": [
+                "Filtering"
+            ],
+            "false_answers": [
+                "Learning",
+                "Flooding",
+                "Blocking",
+                "Nista od ponudjenog.",
+                "Forwarding",
+                "Aging"
+            ]
+        },
+        {
+            "question": "Kako se zove tehnika prosledjivanja okvira sa ulaznog na izlazni port svica, koja omogucava proveru greske?",
+            "right_answers": [
+                "Store and Forward."
+            ],
+            "false_answers": [
+                "Cut-Through.",
+                "Full-Duplex.",
+                "Half-Duplex.",
+                "Fragment-Free."
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvira cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju razlicitu oznaku porta?",
+            "right_answers": [
+                "Forwarding"
+            ],
+            "false_answers": [
+                "Flooding",
+                "Filtering",
+                "Nista od ponudjenog.",
+                "Learning",
+                "Blocking",
+                "Aging"
+            ]
+        },
+        {
+            "question": "Koja tehnika se moze koristiti za poboljsanje veze servera i vecieg broja korisnika preko svica koji ima portove iste brzine?",
+            "right_answers": [
+                "EtherChannel."
+            ],
+            "false_answers": [
+                "PortFast.",
+                "VLAN.",
+                "Rapid Spanning Tree.",
+                "Fast-Forward."
+            ]
+        },
+        {
+            "question": "Kako se naziva port na svicu koji prima najmanju vrednost Path Cost atributa u BPDU porukama?",
+            "right_answers": [
+                "Root port."
+            ],
+            "false_answers": [
+                "Blocked port.",
+                "Designated port.",
+                "Listening port."
+            ]
+        },
+        {
+            "question": "Koji je osnovni nedostatak Spanning Tree protokola?",
+            "right_answers": [
+                "Spora konvergencija."
+            ],
+            "false_answers": [
+                "Nema podrske za VLAN-ove.",
+                "Mogucnost pojave petlji.",
+                "Ne znam.",
+                "Mogucnost pojave kolizije."
+            ]
+        },
+        {
+            "question": "Da bi se racunar povezao na fast-Ethernet svic, mora se konfigurisati MAC adresa porta svica na koji je uredaj povezan.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Habovi dele mrezu na razlicite kolizione domene.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvir cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju razlicitu oznaku porta?",
+            "right_answers": [
+                "Forwarding"
+            ],
+            "false_answers": [
+                "Aging",
+                "Flooding",
+                "Filtering",
+                "Nista od ponudenog.",
+                "Blocking",
+                "Learning"
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvir ciju odredisnu adresu nema u svojoj tabeli?",
+            "right_answers": [
+                "Flooding"
+            ],
+            "false_answers": [
+                "Blocking",
+                "Aging",
+                "Filtering",
+                "Learning",
+                "Forwarding",
+                "Nista od ponudenog."
+            ]
+        },
+        {
+            "question": "sta je tacno od sledecih tvrdnji vezanih za CSMA/CD algoritam?",
+            "right_answers": [
+                "Uredaji ciji su okviri prouzrokovali koliziju, cekaju slucajno izabrani vremenski interval i reemituju okvire.",
+                "Algoritam dozvoljava koliziju, ali definise kako se ona prepoznaje i razresava."
+            ],
+            "false_answers": [
+                "Algoritam radi samo za dva direktno povezana uredaja.",
+                "Algoritam sprecava da dode do kolizije.",
+                "Algoritam prepoznaje koliziju i uspeva da rekonstruise okvire koji ucestvuju u koliziji.",
+                "Uredaji ce neograniceno pokusavati da salju isti okvir ukoliko dolazi do ucestale kolizije."
+            ]
+        },
+        {
+            "question": "Na jednom habu se moze definisanti vise VLAN-a koji ce nezavisno da rade.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvira ciju izvorisnu adresu nema u svojoj tabeli?",
+            "right_answers": [
+                "Learning"
+            ],
+            "false_answers": [
+                "Nista od ponudenog.",
+                "Aging",
+                "Flooding",
+                "Forwarding",
+                "Filtering",
+                "Blocking"
+            ]
+        },
+        {
+            "question": "Okvir koji je emitovan na Ethernet koaksijalni segment (10BASE2, 10BASE5), pomocu odgovarajucih uredaja moze neizmenjen da se prosledi na opticki fast-Ethernet segment (100BASE-FX).",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Habovi podrzavaju (sprovode) Spanning Tree protokol.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Cemu sluzi poslednje polje u Ethernet okviru?",
+            "right_answers": [
+                "Za detekciju greske."
+            ],
+            "false_answers": [
+                "Za detekciju i ispravljanje greske.",
+                "Za sinhronizaciju izmedu svih uredaja u jednom kolizionom domenu.",
+                "Za oznacavanje protokola viseg nivou."
+            ]
+        },
+        {
+            "question": "Cemu sluze adrese u zaglavljima poruka?",
+            "right_answers": [
+                "Da se poruke prenesu uparenom sloju na udaljenom uredaju."
+            ],
+            "false_answers": [
+                "Da se poruke prenesu susednom visem sloju na istom uredaju.",
+                "Da se poruke prenesu na odgovarajucu mreznu karticu, ako uredaj ima vise mreznih kartica.",
+                "Da se poruke prenesu susednom nizem sloju na istom uredaju."
+            ]
+        },
+        {
+            "question": "Kako se zove funkcionalnost koja omogucuje povezivanje dva Ethernet uredaja na najvecoj zajednickoj brzini?",
+            "right_answers": [
+                "Auto-Negotiation"
+            ],
+            "false_answers": [
+                "Half-Duplex.",
+                "Asymmetry Link Control",
+                "To nije omoguceno, jer bi se time narusili uslovi detekcije kolizije.",
+                "Back-off."
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvir ciju izvorisnu adresu nema u svojoj tabeli?",
+            "right_answers": [
+                "Learning"
+            ],
+            "false_answers": [
+                "Aging",
+                "Filtering",
+                "Flooding",
+                "Nista od ponudenog.",
+                "Forwarding",
+                "Blocking"
+            ]
+        },
+        {
+            "question": "sta se mora obezbediti prilikom slanja Ethernet okvira da bi se omogucila detekcija kolizije?",
+            "right_answers": [
+                "Da okvir izlazi na mrezu za vreme koje je odgovara dvostrukom vremenu prenosa okvira izmedu dve najudaljenije tacke u mrezi."
+            ],
+            "false_answers": [
+                "Da okvir izlazi na mrezu za vreme koje je odgovara vremenu prenosa okvira izmedu dve najudaljenije tacke u mrezi.",
+                "Da okvir izlazi na mrezu za vreme koje je odgovara velicini Jam signala.",
+                "Da veza radi u Full-Duplex rezimu",
+                "Da se okvir podeli na manje delove, kako bi imali vremena za detekciju Jam signala."
+            ]
+        },
+        {
+            "question": "sta omogucava Trank Link?",
+            "right_answers": [
+                "Prenos okvira za vise VLAN-ova preko jedne fizicke veze."
+            ],
+            "false_answers": [
+                "Veza koja je uspostavljena preko Auto-Negotioation opcije.",
+                "Vise paralelnih fizickih veza koje se tretiraju kao jedna logicka veza.",
+                "Veza koja je realizovana ukrstenim kablovima.",
+                "Povezivanje servera na svic na vecoj brzini od brzine ostalih portova (asimtericno)."
+            ]
+        },
+        {
+            "question": "sta vazi za VLAN-ove?",
+            "right_answers": [
+                "Za komunikaciju izmedu dva uredaja na razlicitim VLAN-ovima, mora se koristiti ruter.",
+                "Moguca je komunikacija izmedu dva uredaja na istom VLAN-u, a koji su povezani preko dva svica."
+            ],
+            "false_answers": [
+                "Moguca je komunikacija izmedu uredaja na razlicitim VLAN-ovima, a koji su povezani preko istog svica.",
+                "Za komunikaciju izmedu dva uredaja na istom VLAN-u, mora se koristiti ruter.",
+                "Jedan VLAN se moze postaviti samo na jednom svicu.",
+                "U VLAN-ovima nema kolizije."
+            ]
+        },
+        {
+            "question": "Koji uredaj je potrebno obezbediti na strani korisnika kada se koristi digitalna serijska veza?",
+            "right_answers": [
+                "CSU/DSU uredaj"
+            ],
+            "false_answers": [
+                "Voice-band modem",
+                "DSL modem",
+                "Ne znam.",
+                "Digitalni modem",
+                "Kablovski modem"
+            ]
+        },
+        {
+            "question": "Sta je tacno za STP bokirane portove (BP)?",
+            "right_answers": [
+                "BP portovi blokiraju sav dolazni saobracaj, osim BPDU poruka.",
+                "BP portovi blokiraju sav odlazni saobracaj.",
+                "False"
+            ],
+            "false_answers": [
+                "salju se samo BPDU poruke.",
+                "BP portovi blokiraju celokupni dolazni i odlazni saobracaj.",
+                "BP portovi blokiraju sav dolazni saobracaj.",
+                "BP portova prihvataju sav dolazni saobracaj, ali nista ne salju.",
+                "",
+                "Na jednom habu se moze definisanti vise VLAN-a koji ce nezavisno da rade.",
+                "True"
+            ]
+        },
+        {
+            "question": "Sta je tacno za STP root portove (RP)?",
+            "right_answers": [
+                "RP prenose saobracaj u oba smera.",
+                "Paketi koji iz svica izlaze na RP priblizavaju se root svicu."
+            ],
+            "false_answers": [
+                "RP su portovi samo na root svicu.",
+                "Paketi koji iz svica izlaze na RP udaljavaju se od root svica.",
+                "RP portovi primaju samo BPDU pakete.",
+                "Nista od ponudenog."
+            ]
+        },
+        {
+            "question": "Kada svic nema podatak o odredisnoj adresi u svojoj tabeli, poslace se novi okvir sa broadkast adresom i cekace se odgovor od uredaja cija se adresa zahteva.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Sta omogucava PortFast tehnika kod sviceva?",
+            "right_answers": [
+                "Da se preskoci Listening i Learning STP stanje na portu i ubrza konvergencija."
+            ],
+            "false_answers": [
+                "Da se poveze uredaj na vecoj brzini (asimetricno).",
+                "Da se omoguci brzo prosledivanje okvira cim se ocita odredisna adresa.",
+                "Da se veza uspostavi na u Full-Duplex rezimu rada."
+            ]
+        },
+        {
+            "question": "Sta vazi za VLAN-ove?",
+            "right_answers": [
+                "Moguca je komunikacija izmedu dva uredaja naistom VLAN-u, a koji su povezani preko dva svica.",
+                "Za komunikaciju izmedu dva uredaja na razlicitim VLAN-ovima, mora se koristiti ruter."
+            ],
+            "false_answers": [
+                "Za komunikaciju izmedu dva uredaja na istom VLAN-u, mora se koristiti ruter.",
+                "U VLAN-ovima nema kolizije.",
+                "Jedan VLAN se moze postaviti samo na jednom svicu.",
+                "Moguca je komunikacija izmedu uredaja na razlicitim VLAN-ovima, a koji su povezani preko istog svica."
+            ]
+        },
+        {
+            "question": "Sta vazi za Ethernet okvire koji se sa Access Linka prosleduje na Trank Link?",
+            "right_answers": [
+                "Povecava im se velicina, jer se okviru dodaju nova polja."
+            ],
+            "false_answers": [
+                "Smanjuje im se velicina. c. Iste su velicine, ali su izmenjeni.",
+                "Enkapsuliraju se u nove okvire (tunneling)",
+                "Nista od ponudenog.",
+                "Iste su velicine i nisu izmenjeni."
+            ]
+        },
+        {
+            "question": "Kako se naziva port nasvicu koji na nivou segmenta oglasava BPDU pakete sa najmanjom vrednosti Path Cost?",
+            "right_answers": [
+                "Designated port"
+            ],
+            "false_answers": [
+                "Root port",
+                "Blocked port",
+                "Listening port",
+                "Learning port"
+            ]
+        },
+        {
+            "question": "Kada se detektuje greska u FCS polju okvira desava se sledece?",
+            "right_answers": [
+                "Detektuje se greska ali ne i u kom delu okvira je nastupila tacno pa se okvir odbacuje."
+            ],
+            "false_answers": [
+                "Ne moze da se dogodi greska u ovom polju jer seokvir ne bi prosledio.",
+                "Okvir se prosledjuje dalje (dve verzije, ne secam se tacno kako su glasili ali u obe se okvir slao dalje)."
+            ]
+        },
+        {
+            "question": "Kada svic primi okvir onradi sledece?",
+            "right_answers": [
+                "Ne menja ih."
+            ],
+            "false_answers": [
+                "U polje source okvira upisuje adresu destinacije.",
+                "U polje source okvira upisuje svoju adresu.",
+                "Menja polje FCS.",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "Adresa sluzi za adresiranje?",
+            "right_answers": [
+                "Istog sloja na udaljenom racunaru"
+            ],
+            "false_answers": [
+                "Viseg/nizeg sloja na istom/udaljenom racunaru"
+            ]
+        },
+        {
+            "question": "Sta radi sloj kada primi okvir od nizeg nivoa?",
+            "right_answers": [
+                "Gleda svoje zaglavlje"
+            ],
+            "false_answers": [
+                "Gleda zaglavlje viseg/nizeg nivoa",
+                "Ne gleda zaglavlje, jer je vec primio okvir pa za tim nema potrebe."
+            ]
+        },
+        {
+            "question": "Hab podrzava postojanje vise vlan-ova",
+            "right_answers": [
+                "false"
+            ],
+            "false_answers": [
+                "true"
+            ]
+        },
+        {
+            "question": "Kako frgment zna kom IP-u pripada:",
+            "right_answers": [
+                "ista od navedenog jer imas polje Identificaton koji je za fragment isti kao i ID originalnog paketa."
+            ],
+            "false_answers": [
+                "preko polja offset",
+                "preko polja more fragments",
+                "preko polja offset i more fragments"
+            ]
+        },
+        {
+            "question": "Kome su namenjeni podaci u zaglavlju poruke na nekom ISO OSI sloju?",
+            "right_answers": [
+                "Sloju istog nivoa na udaljenom uredjaju."
+            ],
+            "false_answers": [
+                "Sloju viseg nivoa na udaljenom uredjaju.",
+                "Sloju nizeg nivoa na udaljenom uredjaju.",
+                "Sloju nizeg nivoa na istom uredjaju.",
+                "Sloju viseg nivoa na istom uredjaju."
+            ]
+        },
+        {
+            "question": "1. sloj (najnizi)Choose...",
+            "right_answers": [
+                "Fizicki sloj (Physical Layer)"
+            ],
+            "false_answers": [
+                "Prezentacioni sloj (Presentation Layer)",
+                "Aplikacioni sloj (Application Layer)",
+                "Transportni sloj (Transport Layer)",
+                "Mrezni sloj (Network Layer)",
+                "Sloj veze podataka (Data Link Layer)",
+                "Sloj sesije (Session Layer)"
+            ]
+        },
+        {
+            "question": "2. sloj (odozdo) Chose...",
+            "right_answers": [
+                "Sloj veze podataka (Data Link Layer)"
+            ],
+            "false_answers": [
+                "Prezentacioni sloj (Presentation Layer)",
+                "Aplikacioni sloj (Application Layer)",
+                "Transportni sloj (Transport Layer)",
+                "Mrezni sloj (Network Layer)",
+                "Fizicki sloj (Physical Layer)",
+                "Sloj sesije (Session Layer)"
+            ]
+        },
+        {
+            "question": "3. sloj (odozdo) Choose...",
+            "right_answers": [
+                "Mrezni sloj (Network Layer)"
+            ],
+            "false_answers": [
+                "Prezentacioni sloj (Presentation Layer)",
+                "Aplikacioni sloj (Application Layer)",
+                "Transportni sloj (Transport Layer)",
+                "Fizicki sloj (Physical Layer)",
+                "Sloj veze podataka (Data Link Layer)",
+                "Sloj sesije (Session Layer)"
+            ]
+        },
+        {
+            "question": "4. sloj Choose ...",
+            "right_answers": [
+                "Transportni sloj (Transport Layer)"
+            ],
+            "false_answers": [
+                "Prezentacioni sloj (Presentation Layer)",
+                "Aplikacioni sloj (Application Layer)",
+                "Mrezni sloj (Network Layer)",
+                "Fizicki sloj (Physical Layer)",
+                "Sloj veze podataka (Data Link Layer)",
+                "Sloj sesije (Session Layer)"
+            ]
+        },
+        {
+            "question": "5. sloj Choose...",
+            "right_answers": [
+                "Sloj sesije (Session Layer)"
+            ],
+            "false_answers": [
+                "Prezentacioni sloj (Presentation Layer)",
+                "Aplikacioni sloj (Application Layer)",
+                "Transportni sloj (Transport Layer)",
+                "Mrezni sloj (Network Layer)",
+                "Fizicki sloj (Physical Layer)",
+                "Sloj veze podataka (Data Link Layer)"
+            ]
+        },
+        {
+            "question": "6. sloj Choose...",
+            "right_answers": [
+                "Prezentacioni sloj (Presentation Layer)"
+            ],
+            "false_answers": [
+                "Aplikacioni sloj (Application Layer)",
+                "Transportni sloj (Transport Layer)",
+                "Mrezni sloj (Network Layer)",
+                "Fizicki sloj (Physical Layer)",
+                "Sloj veze podataka (Data Link Layer)",
+                "Sloj sesije (Session Layer)"
+            ]
+        },
+        {
+            "question": "7. sloj Choose...",
+            "right_answers": [
+                "Aplikacioni sloj (Application Layer)"
+            ],
+            "false_answers": [
+                "Prezentacioni sloj (Presentation Layer)",
+                "Transportni sloj (Transport Layer)",
+                "Mrezni sloj (Network Layer)",
+                "Fizicki sloj (Physical Layer)",
+                "Sloj veze podataka (Data Link Layer)",
+                "Sloj sesije (Session Layer)"
+            ]
+        },
+        {
+            "question": "Kada paket dodje sa viseg na nizi sloj, tekuci sloj dodaje svoje zaglavlje i prosledjuje dalje :",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Kada se ide na dole po ISO slojevima velicina podatka za slanje se:",
+            "right_answers": [
+                "povecava"
+            ],
+            "false_answers": [
+                "smanjuje",
+                "ostaje ista"
+            ]
+        },
+        {
+            "question": "Kada paket dodje sa nizeg na visi sloj, tekuci sloj odbacuje zaglavlje nizeg sloja:",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Sta se odnosi na prenos sa viseg na nizi nivo referentnog modela:",
+            "right_answers": [
+                "enkapsulacija",
+                "multipleksiranje"
+            ],
+            "false_answers": [
+                "dekapsulacija",
+                "demultipleksiranje",
+                "nesto bezveze"
+            ]
+        },
+        {
+            "question": "Kome su namenjeni podaci u zaglavlju poruke na nekom ISO OSI sloju?",
+            "right_answers": [
+                "Sloju istog nivoa na udaljenom uredjaju."
+            ],
+            "false_answers": [
+                "Sloju viseg nivoa na istom uredjaju.",
+                "Sloju nizeg nivoa na istom uredjaju.",
+                "Sloju nizeg nivoa na udaljenom uredjaju.",
+                "Sloju viseg nivoa na udaljenom uredjaju."
+            ]
+        },
+        {
+            "question": "Sta je tacno od sledecih tvrdnji vezanih za CSMA/CD algoritam?",
+            "right_answers": [
+                "Uredaji ciji su okviri prouzrokovali koliziju, cekaju slucajno izabrani vremenski interval i reemituju okvire.",
+                "Algoritam dozvoljava koliziju, ali definise kako se ona prepoznaje i razresava."
+            ],
+            "false_answers": [
+                "Algoritam radi samo za dva direktno povezana uredaja.",
+                "Algoritam sprecava da dode do kolizije.",
+                "Algoritam prepoznaje koliziju i uspeva da rekonstruise okvire koji ucestvuju u koliziji.",
+                "Uredaji ce neograniceno pokusavati da salju isti okvir ukoliko dolazi do ucestale kolizije.",
+                "Ne znam."
+            ]
+        },
+        {
+            "question": "Sta se mora obezbediti prilikom slanja Ethernet okvira da bi se omogucila detekcija kolizije?",
+            "right_answers": [
+                "Da okvir izlazi na mrezu za vreme koje je odgovara dvostrukom vremenu prenosa okvira izmedu dve najudaljenije tacke u mrezi."
+            ],
+            "false_answers": [
+                "Da okvir izlazi na mrezu za vreme koje je odgovara vremenu prenosa okvira izmedu dve najudaljenije tacke u mrezi.",
+                "Da okvir izlazi na mrezu za vreme koje je odgovara velicini Jam signala.",
+                "Da veza radi u Full-Duplex rezimu.",
+                "Da se okvir podeli na manje delove, kako bi imali vremena za detekciju Jam signala."
+            ]
+        },
+        {
+            "question": "Da bi se detektovala kolizija:",
+            "right_answers": [
+                "slot time je dvostruko vreme prenos aokvira izmedu dve najudaljenije tacke u mrezi."
+            ],
+            "false_answers": [
+                "bit time je dvostruko vreme prenosa okvira izmedu dve najudaljenije tacke u mrezi.",
+                "isto kao vreme prenosaokvira izmedu dve najudaljenije tacke u mrezi."
+            ]
+        },
+        {
+            "question": "Jam signal emituju:",
+            "right_answers": [
+                "Sve stanice ciji su okviri doveli do kolizije."
+            ],
+            "false_answers": [
+                "Sve stanice koje salju okvire.",
+                "Stanica koja prima okvir.",
+                "Stanica koja prva detektuje koliziju."
+            ]
+        },
+        {
+            "question": "Sta je backoff algoritam?",
+            "right_answers": [
+                "Algoritam koji se koristi pri reemitovanju okvira koji su bili u koliziji."
+            ],
+            "false_answers": [
+                "Algoritam kontrole greske na nivou bita, ciji se rezultatstavlja na kraj okvira.",
+                "Algoritam generisanja JAM signala.",
+                "Algoritam obavestavanja viseg sloja da je doslo do kolizije, cime se signalizira da se smanji brzinu emitovanja paketa.",
+                "Algoritam kojim se detektuje kolizija."
+            ]
+        },
+        {
+            "question": "Cemu sluze adrese u zaglavljima poruka?",
+            "right_answers": [
+                "Da se poruke prenesu uparenom sloju na udaljenom uredjaju."
+            ],
+            "false_answers": [
+                "Da se poruke prenesu susednom visem sloju na istom uredaju.",
+                "Da se poruke prenesu na odgovarajucu mreznu karticu, ako uredaj ima vise mreznih kartica.",
+                "Da se poruke prenesu susednom nizem sloju na istom uredaju."
+            ]
+        },
+        {
+            "question": "Cemu sluzi poslednje polje u Ethernet okviru?",
+            "right_answers": [
+                "Za detekciju greske."
+            ],
+            "false_answers": [
+                "Za detekciju i ispravljanje greske.",
+                "Za sinhronizaciju izmedu svih uredaja u jednom kolizionom domenu.",
+                "Za oznacavanje protokola viseg nivou."
+            ]
+        },
+        {
+            "question": "Sta se desava kada dodje do greske u prenosu okvira?",
+            "right_answers": [
+                "Okvir se odbacuje.(ne znam da li je bilo ponudjeno)"
+            ],
+            "false_answers": [
+                "Gleda se ko je posiljalac.",
+                "Ne salje se potvrda o prijemu okvira.<-a ovo?",
+                "jos nesto"
+            ]
+        },
+        {
+            "question": "Kada se detektuje greska u FCS polju okvira desava se sledece?",
+            "right_answers": [
+                "Detektuje se greska ali ne i u kom delu okvira je nastupila tacno pa se okvir odbacuje."
+            ],
+            "false_answers": [
+                "Ne moze da se dogodi greska u ovom polju jer se okvir ne bi prosledio.",
+                "Okvir se prosledjuje dalje (dve verzije, ne secam se tacno kako su glasili ali u obe se okvir slao dalje)."
+            ]
+        },
+        {
+            "question": "Kako se zove funkcionalnost koja omogucuje povezivanje dva Ethernet uredaja na najvecoj zajednickoj brzini?",
+            "right_answers": [
+                "Auto-Negotiation"
+            ],
+            "false_answers": [
+                "Half-Duplex.",
+                "Asymmetry Link Control",
+                "To nije omoguceno, jer bi se time narusili uslovi detekcije kolizije.",
+                "Back-off."
+            ]
+        },
+        {
+            "question": "Kako se naziva deo sloja veze podataka (Data Link Layer) koji sluzi za komunikaciju sa nizim slojem?",
+            "right_answers": [
+                "Media Access Control (MAC)."
+            ],
+            "false_answers": [
+                "Carrier Sense Multiple Access with Collision Detection (CSMA/CD).",
+                "Link Control Protocol (LCP).",
+                "Data Encapsulation Control (DEC).",
+                "Logical Link Control (LLC).",
+                "Network Control Protocol (NCP)."
+            ]
+        },
+        {
+            "question": "Koju od sledecih vrsta adresa Ethernet uredaj moze da se koristi za komunikaciju sa vise od jednog uredaja istovremeno?",
+            "right_answers": [
+                "Brodkast.",
+                "Multikast."
+            ],
+            "false_answers": [
+                "Adresa na mreznoj kartici (burned-in).",
+                "Unikast.",
+                "Ne znam.",
+                "Softverska adresa."
+            ]
+        },
+        {
+            "question": "Na half-duplex vezi moze doci do kolizije.",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Da li na half-duplex point-to-point vezi moze da dodje do kolizije?",
+            "right_answers": [
+                "Ne postoji point-to-point sa half-duplex."
+            ],
+            "false_answers": [
+                "Da, zato sto je isti kolizioni domen.",
+                "Ne, zato sto ima Collision Avoidance.",
+                "jos nesto netacno"
+            ]
+        },
+        {
+            "question": "Okvir koji je emitovan na Ethernet koaksijalni segment (10BASE2, 10BASE5), pomocu odgovarajucih uredaja moze neizmenjen da se prosledi na opticki fast-Ethernet segment (100BASE-FX).",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Kada svic primi okvir on radi sledece?",
+            "right_answers": [
+                "Ne menja ih."
+            ],
+            "false_answers": [
+                "U polje source okvira upisuje adresu destinacije.",
+                "U polje source okvira upisuje svoju adresu.",
+                "Menja polje FCS.",
+                "Nista od ponudjenog."
+            ]
+        },
+        {
+            "question": "Svi portovi haba moraju da budu iste brzine.",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Svaki port svica, tj.segment koji on cini, je poseban kolizioni domen.",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Sta radi svic kada primi brodkast okvir?",
+            "right_answers": [
+                "Forwarding",
+                "Learning"
+            ],
+            "false_answers": [
+                "Filtering",
+                "Flooding",
+                "Odbacuje okvir"
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvir cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju razlicitu oznaku porta?",
+            "right_answers": [
+                "Forwarding"
+            ],
+            "false_answers": [
+                "Aging",
+                "Flooding",
+                "Filtering",
+                "Nista od ponudenog",
+                "Blocking",
+                "Learning"
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvir ciju odredisnu adresu nema u svojoj tabeli?",
+            "right_answers": [
+                "Flooding"
+            ],
+            "false_answers": [
+                "Blocking",
+                "Aging",
+                "Filtering",
+                "Learning",
+                "Forwarding",
+                "Nista od ponudenog."
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvira ciju izvorisnu adresu nema u svojoj tabeli?",
+            "right_answers": [
+                "Learning"
+            ],
+            "false_answers": [
+                "Nista od ponudenog.",
+                "Aging",
+                "Flooding",
+                "Forwarding",
+                "Filtering",
+                "Blocking"
+            ]
+        },
+        {
+            "question": "Koji karakteristican proces sprovodi svic kada primi okvira ciju izvorisnu adresu ima u bridz tabeli, a ista je oznaka portasa kog je okvir pristigao kao ioznaka porta na koji se salje?",
+            "right_answers": [
+                "Filtering"
+            ],
+            "false_answers": [
+                "Nista od ponudenog.",
+                "Aging",
+                "Flooding",
+                "Forwarding",
+                "Blocking",
+                "Learning"
+            ]
+        },
+        {
+            "question": "Kada svic nema podatak o odredisnoj adresi u svojoj tabeli, poslace se novi okvir sa broadkast adresom i cekace se odgovor od uredaja cija se adresa zahteva.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Najbrzi nacin prosledjivanja preko svica je:",
+            "right_answers": [
+                "Cut-Through",
+                "FastForward(drugi naziv za cut-through)"
+            ],
+            "false_answers": [
+                "Store and Forward",
+                "Fragment-Free",
+                "Jos tri ponudjene gluposti"
+            ]
+        },
+        {
+            "question": "Prenos preko svica koji ima portove istih brzina moze da se ubrza sa:",
+            "right_answers": [
+                "EtherChannel."
+            ],
+            "false_answers": [
+                "Fast-Forward.",
+                "Rapid Spanning Tree.",
+                "PortFast.",
+                "VLAN."
+            ]
+        },
+        {
+            "question": "Sta je tacno za STP root portove (RP)?",
+            "right_answers": [
+                "RP prenose saobracaj u oba smera.",
+                "Paketi koji iz svica izlaze na RP priblizavaju se root svicu."
+            ],
+            "false_answers": [
+                "RP su portovi samo na root svicu.",
+                "Paketi koji iz svica izlaze na RP udaljavaju se od root svica.",
+                "RP portovi primaju samo BPDU pakete.",
+                "Nista od ponudenog."
+            ]
+        },
+        {
+            "question": "Sta je tacno za STP bokirane portove (BP)?",
+            "right_answers": [
+                "BP portovi blokiraju sav odlazni saobracaj.",
+                "BP portova prihvataju sav dolazni saobracaj, ali nista ne salju. (primaju dolazni i odbacuju sem BPDU koje osluskuju)"
+            ],
+            "false_answers": [
+                "BP portovi blokiraju sav dolazni saobracaj, osim BPDU poruka.",
+                "Salju se samo BPDU poruke.",
+                "BP portovi blokiraju celokupni dolazni i odlazni saobracaj.",
+                "BP portovi blokiraju sav dolazni saobracaj."
+            ]
+        },
+        {
+            "question": "Port na svicu koji je na nivou segmenta blizi root bridzu je:",
+            "right_answers": [
+                "Designated port"
+            ],
+            "false_answers": [
+                "RP",
+                "BP",
+                "Sta god"
+            ]
+        },
+        {
+            "question": "Kako se naziva port na svicu koji na nivou segmenta oglasava BPDU pakete sa najmanjom vrednosti Path Cost?",
+            "right_answers": [
+                "Designated port."
+            ],
+            "false_answers": [
+                "Root port.",
+                "Blocked port.",
+                "Listening port.",
+                "Learning port."
+            ]
+        },
+        {
+            "question": "Sta omogucava PortFast tehnika kod sviceva?",
+            "right_answers": [
+                "Da se preskoci Listening i Learning STP stanje na portu i ubrza konvergencija."
+            ],
+            "false_answers": [
+                "Da se poveze uredaj na vecoj brzini (asimetricno).",
+                "Da se omoguci brzo prosledivanje okvira cim se ocita odredisna adresa.",
+                "Da se veza uspostavi na u Full-Duplex rezimu rada."
+            ]
+        },
+        {
+            "question": "Koja je osnovna uloga Spanning Tree protokola?",
+            "right_answers": [
+                "Sprecavanje pojave petlji."
+            ],
+            "false_answers": [
+                "Podrske za VLAN-ove.",
+                "Sprecavanje kolizije.",
+                "Ne znam.",
+                "neka glupost"
+            ]
+        },
+        {
+            "question": "Koji uredaj je potrebno obezbediti na strani korisnika kada se koristi digitalna serijska veza?",
+            "right_answers": [
+                "CSU/DSU uredaj"
+            ],
+            "false_answers": [
+                "Voice-band modem",
+                "DSL modem",
+                "Ne znam.",
+                "Digitalni modem",
+                "Kablovski modem"
+            ]
+        },
+        {
+            "question": "Sta mora da vazi da bi postojao roming?",
+            "right_answers": [
+                "Susedne celije koriste razlicite frekvencijske kanale."
+            ],
+            "false_answers": [
+                "Susedne celije koriste iste frekvencijske kanale."
+            ]
+        },
+        {
+            "question": "PPP protokol sprovodi detekciju greske na nivou svakog okvira.",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Multilink opcija podrazumeva povezivanje dva uredjaja sa dve nezavisne PPP veze, po jedna u svakom smeru.",
+            "right_answers": [
+                "Netacno"
+            ],
+            "false_answers": [
+                "Tacno"
+            ]
+        },
+        {
+            "question": "Koji uredjaji ili protokoli podrzavaju full-duplex rezim prenosa podataka?",
+            "right_answers": [
+                "Svicevi",
+                "PPP"
+            ],
+            "false_answers": [
+                "Habovi",
+                "Habovi, ali samo po optickim vlaknima.",
+                "WLAN"
+            ]
+        },
+        {
+            "question": "PPP sesija se prekida ako se ugasi IPCP sesija na NCP protokolu.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "HDLC ne podrzava autentifikaciju podataka kao opcionu funkciju.",
+            "right_answers": [
+                "Netacno"
+            ],
+            "false_answers": [
+                "Tacno"
+            ]
+        },
+        {
+            "question": "HDLC enkapsulira IP?",
+            "right_answers": [
+                "true"
+            ],
+            "false_answers": [
+                "false"
+            ]
+        },
+        {
+            "question": "HDLC podrzava kompresiju podataka.",
+            "right_answers": [
+                "False."
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "HDLC protokol sprovodi detekciju greske na nivou svakog okvira.",
+            "right_answers": [
+                "Tacno"
+            ],
+            "false_answers": [
+                "Netacno"
+            ]
+        },
+        {
+            "question": "Sta se desava kada se na udaljenoj strani pri prijemu HDLC okvira u podacima pojavi sekvenca koja odgovara polju FLAG?",
+            "right_answers": [
+                "Ne moze da se pojavi sekvenca koja odgovara polju FLAG."
+            ],
+            "false_answers": [
+                "Nista od ponudjenog.",
+                "Nakon sekvence se umece bit \u201c0\u201d.",
+                "Okvir se deli na dva nova okvira (segmentacija).",
+                "Nakon sekvence se umece bit \u201c1\u201d.",
+                "Okvir se spaja sa narednim okvirom."
+            ]
+        },
+        {
+            "question": "sta je tacno od slededeg vezano za HDLC?",
+            "right_answers": [
+                "HDLC je protokol prenosa podataka na drugom nivou."
+            ],
+            "false_answers": [
+                "HDLC je protokol prenosa podataka na tredem nivou.",
+                "HDLC se enakapsulira u IP pakete.",
+                "HDLC se enakapsulira u Ethernet pakete."
+            ]
+        },
+        {
+            "question": "sta je Trunk Link?",
+            "right_answers": [
+                "Veza izmedju sviceva po kojoj se prenose okviri iz razlicitih VLAN-ova."
+            ],
+            "false_answers": [
+                "Veza izmedju sviceva po kojoj se prenose okviri iz istog VLAN-na.",
+                "Veza izmedju sviceva po kojoj se prenose okviri na brzini vedoj od ostalih veza.",
+                "Veza koja je uspostavljena preko Auto-Negotiation opcije.",
+                "Veza izmedju sviceva koja pripada jednom VLAN-u.",
+                "Vise paralelnih fizickih veza izmedju sviceva koje se tretiraju kao jedna logicka veza."
+            ]
+        },
+        {
+            "question": "sta je od slededeg tacno za VLAN-ove?",
+            "right_answers": [
+                "Uredjaji iz istog VLAN-a mogu da komuniciraju na L2 nivou, cak iako su povezani preko vise sviceva.",
+                "Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju samo preko rutera."
+            ],
+            "false_answers": [
+                "Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju na L2 nivou, ako su povezani preko vise sviceva.",
+                "Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju na L2 nivou samo ako su povezani preko istog svica.",
+                "Za komunikaciju izmedju dva uredjaja na istom VLAN-u, mora se koristiti ruter.",
+                "Jedan VLAN se moze postaviti samo na jednom svicu."
+            ]
+        },
+        {
+            "question": "Na jednom habu se moze definisanti vise VLAN-a koji ce nezavisno da rade.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "sta omogucava Trank Link?",
+            "right_answers": [
+                "Prenos okvira za vise VLAN-ova preko jedne fizicke veze."
+            ],
+            "false_answers": [
+                "Povezivanje servera na svic na vecoj brzini od brzine ostalih portova (asimtericno).",
+                "Veza koja je realizovana ukrstenim kablovima.",
+                "Vise paralelnih fizickih veza koje se tretiraju kao jedna logicka veza.",
+                "Veza koja je uspostavljena preko Auto-Negotioation opcije."
+            ]
+        },
+        {
+            "question": "Na koji nacin se vise klijenata moze povezati na jedan server?",
+            "right_answers": [
+                "VLAN"
+            ],
+            "false_answers": [
+                "EtherChannel",
+                "PortFast",
+                "Neka glupost"
+            ]
+        },
+        {
+            "question": "Sta je tacno za WLAN mreze.",
+            "right_answers": [
+                "U WLAN mrezi moze da dode do kolizije."
+            ],
+            "false_answers": [
+                "U WLAN mrezi moze da dode do kolizije, ali se primljeni paketi mogu uspesno rekonstruisati koriscenjem CSMA/CA algoritma.",
+                "U WLAN mrezi ne moze da dode do kolizije, jer se koristi algoritam izbegavanja kolizije (Colission Avoidance).",
+                "U WLAN mrezi moze da dode do kolizije, samo ako se ne koristi full-duplex rezim rada.",
+                "U WLAN mrezi ne moze da dode do kolizije, jer se koriste rezlicite frekvencije za savki uredaj."
+            ]
+        },
+        {
+            "question": "Kako se detektuje kolizija u WLAN mrezi?",
+            "right_answers": [
+                "Izostankom poruke koja potvrdjuje prijem okvira."
+            ],
+            "false_answers": [
+                "Emituje se posebna poruka po drugom (kontrolnom) kanalu.",
+                "Access Point uredaj salje JAM signal.",
+                "U WLAN mrezi nemoze da se detektuje kolizija, jer se koristi metoda izbegavanja kolizije (CSMA/CA)",
+                "U WLAN mrezi ne moze da dodje do kolizije."
+            ]
+        },
+        {
+            "question": "Sta je tacno za WLAN mreze?",
+            "right_answers": [
+                "Uredjaji povezani na Access Point u jednoj WLAN mrezi koriste istu frekvenciju."
+            ],
+            "false_answers": [
+                "Uredjaji u jednoj WLAN mrezi koriste jednu frekvenciju za slanje, a drugu za prijem podataka.",
+                "Uredjaji u jednoj WLAN mrezi koriste razlicite frekvencije da bi mogli medjusobno da komuniciraju."
+            ]
+        },
+        {
+            "question": "Koja je uloga Access Point uredaja u WLAN mrezi?",
+            "right_answers": [
+                "Access Point uredaj prenosi sve okvire u WLAN mrezi."
+            ],
+            "false_answers": [
+                "Access Point uredaj sluzi samo za prenos potvrda prijema u WLAN mrezi.",
+                "Access Point uredaj sluzi samo za kontrolne funkcije u mrezi, kao sto je uclanjivanje i raskidanje veze.",
+                "Access Point uredaj prenosi samo okvire koje izlaze iz WLAN mreze."
+            ]
+        },
+        {
+            "question": "Jedna WLAN mreza moze da se podeli na vise udaljenih Access Point uredaja.",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Jedan Access Point moze da opsluzuje vise nezavisnih WLAN mreza.",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Kako se obavlja komunikacija izmedju uredjaja A i B u WLAN mrezi u infrastrukturnom modu rada?",
+            "right_answers": [
+                "Svi paketi izmedju A i B se prenose poreko Access Point uredjaja."
+            ],
+            "false_answers": [
+                "Uredjaji A i B se najpre registruju na mrezu preko Access Point uredjaja, a zatim direktno razmenjuju pakete.",
+                "Svi paketi izmedju A i B se prenose preko Access Point uredjaja osim JAM paketa koji se prenosi direktno do svih uredjaja ako nastane kolizija.",
+                "Samo broadkast paketi izmedju A i B se prenose poreko Access Point uredjaja."
+            ]
+        },
+        {
+            "question": "sta predstavlja SSID u WLAN mrezi?",
+            "right_answers": [
+                "Tekstualni naziv WLAN mreze."
+            ],
+            "false_answers": [
+                "Tekstualni kljuc za pristup WLAN mrezi.",
+                "Binarni kljuc za pristup WLAN mrezi.",
+                "Password koji se dodeljuje svakom uredjaju u WLAN mrezi.",
+                "Tekstualni naziv Access Point uredjaja.",
+                "Identifikacija protokola koji se koristi u mrezi i sluzi zbog provere kompatibilnosti."
+            ]
+        },
+        {
+            "question": "sta je tacno od slededeg vezano za bezicne LAN mreze (WLAN)?",
+            "right_answers": [
+                "Format WLAN okvira je razlicit od formata Ethernet okvira.",
+                "U WLAN mrezi moze dodi do kolizije."
+            ],
+            "false_answers": [
+                "Format WLAN okvira je isti kao format Ethernet okvira.",
+                "Format WLAN okvira je isti kao format Ethernet okvira, ali se menja samo izvorisna MAC adresa kada okvire prelazi sa jedne mreze na drugu.",
+                "U WLAN mrezi ne moze dodi do kolizije."
+            ]
+        },
+        {
+            "question": "sta je tacno za WLAN i koliziju?",
+            "right_answers": [
+                "Kolizija se ne moze detektovati tokom slanja okvira."
+            ],
+            "false_answers": [
+                "Ne postoji kolizija kod WLAN mreza.",
+                "Kolizija se detektuje tokom slanja okvira.",
+                "Kolizija se resava na isti nacin kao kod Ethernet mreza."
+            ]
+        },
+        {
+            "question": "sta je tacno za uredjaje u WLAN mrezama?",
+            "right_answers": [
+                "Ako je deljeni medijum trenutno zauzet, uredjaji znaju kada de da se oslobodi na osnovu informacija iz okvira koji se trenutno prenosi."
+            ],
+            "false_answers": [
+                "Ako je deljeni medijum trenutno zauzet, uredjaji ne mogu da znaju kada de on da se oslobodi.",
+                "Ako je deljeni medijum trenutno zauzet, uredjaji znaju kada de da se oslobodi, jer svaki uredjaj dobija fiksni vremenski interval za prenos podataka.",
+                "Ako je deljeni medijum trenutno zauzet, uredjaji znaju kada de da se oslobodi, jer Access Point obavestava sve uredjaje o tome."
+            ]
+        },
+        {
+            "question": "sta vazi za okvire koji se sa Trunk Linka prosledjuje na Access Link?",
+            "right_answers": [
+                "Velicina okvira se smanjuje."
+            ],
+            "false_answers": [
+                "U okvir se dodaju nova polja.",
+                "U okviru se menjaju pojedina polja.",
+                "Okvir se ne menja.",
+                "Enkapsuliraju se u nove okvire (tunneling)",
+                "Nista od ponudjenog."
+            ]
+        }
+    ],
+    "k2": [
+        {
+            "question": "ARP paketi se enkapsuliraju u IP pakete:",
+            "right_answers": [
+                "netacno"
+            ],
+            "false_answers": [
+                "tacno"
+            ]
+        },
+        {
+            "question": "Vode\u0107i biti klase B IP adresa su 10:",
+            "right_answers": [
+                "ta\u010dno"
+            ],
+            "false_answers": [
+                "neta\u010dno"
+            ]
+        },
+        {
+            "question": "IP paket je sigurno da ce se uvek preneti do odredista?",
+            "right_answers": [
+                "netacno"
+            ],
+            "false_answers": [
+                "tacno"
+            ]
+        },
+        {
+            "question": "Kako fragment zna kom IP-ju pripada?",
+            "right_answers": [
+                "Nista od ponudjenog"
+            ],
+            "false_answers": [
+                "Preko postavljneog flaga Offset",
+                "Preko postavljenog flaga More Fragments",
+                "Preko postavljenih flago-va Offset i More Fragment"
+            ]
+        },
+        {
+            "question": "Ukoliko se ne zna destinaciona adresa salje se MAC broadcast?",
+            "right_answers": [
+                "netacno"
+            ],
+            "false_answers": [
+                "tacno"
+            ]
+        },
+        {
+            "question": "Koji od ovih mehanizama garantuje nepojavljivanje sledece rute u bliskom vremenskom intervalu?",
+            "right_answers": [
+                "Holddown Timer"
+            ],
+            "false_answers": [
+                "Poison Reverse",
+                "Split Horizon",
+                "Trigered Update"
+            ]
+        },
+        {
+            "question": "Da li se IP paket koji je fragmentiran, mo\u017ee kasnije ponovo fragmentirati?",
+            "right_answers": [
+                "Mo\u017ee, nezavisno od prvobitne fragmentacije."
+            ],
+            "false_answers": [
+                "Samo ako je setovan more-fragment flat.",
+                "Samo ako je resetovan more-fragment flat.",
+                "Samo ako se prenosi po odvojenom putu."
+            ]
+        },
+        {
+            "question": "Ko sve mo\u017ee da prima ICMP pakete?",
+            "right_answers": [
+                "Svi uredaji sa IP-em"
+            ],
+            "false_answers": [
+                "Samo racunari",
+                "Samo racunari i ruteri",
+                "Samo racunari, ruteri i svicevi"
+            ]
+        },
+        {
+            "question": "Kada dobije 2 rute sa razlicitim AD-am, \u0161ta radi ruter?",
+            "right_answers": [
+                "Koristi samo onu sa manjim AD-am, a drugu odbacuje"
+            ],
+            "false_answers": [
+                "Koristi samo onu sa vecim AD-am, a drugu odbacuje",
+                "Koristi obe"
+            ]
+        },
+        {
+            "question": "Da li je AD manje bitan kriterijum za odredivanje rute, od metrike?",
+            "right_answers": [
+                "netacno"
+            ],
+            "false_answers": [
+                "tacno"
+            ]
+        },
+        {
+            "question": "Kako ruting tabela utice na saobracaj?",
+            "right_answers": [
+                "Odreduje rutiranje odlaznog saobracaja."
+            ],
+            "false_answers": [
+                "Odreduje rutiranje dolaznog saobracaja.",
+                "Odreduje rutiranje i odlaznog i dolaznog saobracaja"
+            ]
+        },
+        {
+            "question": "\u0160ta se radi kada ruter u ruting tabeli ima vi\u0161e mre\u017enih adresa sa razlicitim maskama, kojima pripada odredi\u0161na adresa iz IP paketa?",
+            "right_answers": [
+                "Bira se mre\u017ea sa najdu\u017eom maskom."
+            ],
+            "false_answers": [
+                "Bira se mre\u017ea sa najkracom maskom.",
+                "Paket se odbacuje.",
+                "Ova situacija ne mo\u017ee da se desi.",
+                "Koriste se putanje ka svim mre\u017eama (load balancing)"
+            ]
+        },
+        {
+            "question": "Izvori\u0161na adresa je opcioni parametar u IP zaglavlju.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Kada dolazi do fragmentacije?",
+            "right_answers": [
+                "kada je paket veci od MTU i kada je DF postavljen na 0"
+            ],
+            "false_answers": [
+                "kada je brzina mreze izuzetno mala",
+                "kada se ne zna kuda proslediti paket"
+            ]
+        },
+        {
+            "question": "Ko prima timeExceeded poruku?",
+            "right_answers": [
+                "izvorisni host"
+            ],
+            "false_answers": [
+                "odresisni uredjaj",
+                "prethodni ruter na putanji",
+                "svi uredjaji na mrezi"
+            ]
+        },
+        {
+            "question": "Ko saljeTimeExceeded poruku?",
+            "right_answers": [
+                "ruteri"
+            ],
+            "false_answers": [
+                "svicevi",
+                "hostovi",
+                "svi"
+            ]
+        },
+        {
+            "question": "Koliki je broj minimalnih veza u OSPF mrezi za 10 uredjaja?",
+            "right_answers": [
+                "tacan odgovor je 17, jer se gleda multi-access za minimalni broj"
+            ],
+            "false_answers": [
+                "u slucaju da nije multiaccess onda je 45"
+            ]
+        },
+        {
+            "question": "Sta se cita iz ARP kesa?",
+            "right_answers": [
+                "MAC adresa odredisnog uredjaja"
+            ],
+            "false_answers": [
+                "MAC aresa izvornog uredjaja"
+            ]
+        },
+        {
+            "question": "Clasful salje svojim routing updateom masku i mrezu:",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Na kom nivou se enkapsuliraju ospf poruke",
+            "right_answers": [
+                "l3"
+            ],
+            "false_answers": [
+                "l2"
+            ]
+        },
+        {
+            "question": "C\u030cemu sluz\u030ce ruting protokoli?",
+            "right_answers": [
+                "Da popune ruting tabelu."
+            ],
+            "false_answers": [
+                "Da rutiraju pakete.",
+                "Da uspostavljaju redundantne linkove.",
+                "Za nalaz\u030cenje default rutera.",
+                "Za otklanjanje redundantnih linkova."
+            ]
+        },
+        {
+            "question": "Da li RIP u verziji 1 koristi metriku?",
+            "right_answers": [
+                "Da."
+            ],
+            "false_answers": [
+                "Da, samo kada se koristi load-balancing.",
+                "Ne, jer je to classless ruting protokol."
+            ]
+        },
+        {
+            "question": "Da li RIP u verziji 2 podrz\u030cava load-balancing?",
+            "right_answers": [
+                "Da, samo kada je ista metrika za vis\u030ce ruta."
+            ],
+            "false_answers": [
+                "Da, samo ako se koriste static\u030cke rute.",
+                "Da, samo ako se koristi redistribucija ruta.",
+                "Ne.",
+                "Da, za svaku mrez\u030cu koja ima vis\u030ce ruta."
+            ]
+        },
+        {
+            "question": "Fragmentirani IP paket se rekonstruis\u030ce (spaja)\\:",
+            "right_answers": [
+                "Na IP sloju odredis\u030cnog ure\u0111aja."
+            ],
+            "false_answers": [
+                "Na aplikativnom sloju odredis\u030cnog ure\u0111aja.",
+                "Na L2 sloju odredis\u030cnog ure\u0111aja.",
+                "Na IP sloju prvog slededeg rutera.",
+                "Na IP sloju prvog rutera na putu koji moz\u030ce da propusti originalnu velic\u030cinu paketa.",
+                "Na L2 sloju prvog rutera na putu koji moz\u030ce da propusti originalnu velic\u030cinu paketa."
+            ]
+        },
+        {
+            "question": "Fragmentirani IP paket se:",
+            "right_answers": [
+                "Moz\u030ce ponovo fragmentirati."
+            ],
+            "false_answers": [
+                "Moz\u030ce ponovo fragmentirati, samo ako je setovan more-fragment flag.",
+                "Moz\u030ce ponovo fragmentirati, samo ako je resetovan more-fragment flag.",
+                "Ne moz\u030ce ponovo fragmentirati."
+            ]
+        },
+        {
+            "question": "Kada de da se javi \"flooding\" kod OSPF protokola rutiranja?",
+            "right_answers": [
+                "Kada se LAN mrez\u030ca povez\u030ce na ruter."
+            ],
+            "false_answers": [
+                "Kada ruter za odre\u0111eni paket nema rutu u ruting tabeli.",
+                "Kada ruter ne moz\u030ce da uspostavi susedstvo sa drugim ruterom.",
+                "Kada ruter vidi svoj ID u hello poruci dobijenoj od drugog rutera."
+            ]
+        },
+        {
+            "question": "Kada dolazi do fragmentacije IP paketa?",
+            "right_answers": [
+                "Kada je IP paket veci od MTU vrednosti."
+            ],
+            "false_answers": [
+                "Prilikom load-balancinga.",
+                "Kada paket treba da pro\u0111e kroz interfejs rutera malog kapaciteta (bitske brzine).",
+                "Kod slanja broadkast paketa."
+            ]
+        },
+        {
+            "question": "Kada se uspostavlja load-balancing kod OSPF ruting protokola?",
+            "right_answers": [
+                "Kada rute ka nekoj mrez\u030ci imaju istu metriku."
+            ],
+            "false_answers": [
+                "Kada do neke mrez\u030ce postoji isti broj rutera po razlic\u030citim putevima.",
+                "Kada je jedan link preoptereden, a postoji fizic\u030cka veza i preko drugog puta.",
+                "Kada rute ka nekoj mrez\u030ci imaju istu administrativnu distancu.",
+                "OSPF ne podrz\u030cava load balancing."
+            ]
+        },
+        {
+            "question": "Kako ruting protokoli tretiraju vis\u030ce puteva do neke mrez\u030ce?",
+            "right_answers": [
+                "Koriste samo najoptimalnije puteve po odre\u0111enoj metrici, a ostale odbacuju."
+            ],
+            "false_answers": [
+                "Koriste samo najoptimalnije puteve po odre\u0111enoj metrici, a sve upisuju u ruting tabelu.",
+                "Koriste samo najoptimalnije puteve po odre\u0111enoj metrici, a ostale oznac\u030cavaju kao unreachable u ruting tabeli.",
+                "Sprovode load balancing po svim putanjama srazmerno vrednosti metrike."
+            ]
+        },
+        {
+            "question": "Kako se naziva mehanizam oglas\u030cavanja rute neposredno po detektovanju njene promene?",
+            "right_answers": [
+                "Triggered update"
+            ],
+            "false_answers": [
+                "Route Poisoning",
+                "Split horizon",
+                "Holddown Timer",
+                "Time to Live"
+            ]
+        },
+        {
+            "question": "Kako se naziva mehanizam zas\u030ctite od ruting petlji kojim se oglas\u030cava ruta sa maksimalnom metrikom?",
+            "right_answers": [
+                "Route Poisoning"
+            ],
+            "false_answers": [
+                "Split horizon",
+                "Triggered update",
+                "Holddown Timer",
+                "Time to Live"
+            ]
+        },
+        {
+            "question": "Kako se naziva mehanizam zas\u030ctite od ruting petlji kojim se zabranjuje oglas\u030cavanje rute na interfejs sa koga je ta ruta nauc\u030cena?",
+            "right_answers": [
+                "Split horizon"
+            ],
+            "false_answers": [
+                "Route Poisoning",
+                "Triggered update",
+                "Holddown Timer",
+                "Time to Live"
+            ]
+        },
+        {
+            "question": "Kako se prepoznaje IP paket koji je nastao fragmentacijom?",
+            "right_answers": [
+                "Ako je barem jedno od polja 'more fragment flag' i 'fragment offset' razlic\u030cito od nule."
+            ],
+            "false_answers": [
+                "Ako barem jedno od polja 'more fragment flag' i 'fragment offset' ima vrednost nula.",
+                "Ako je polje 'more fragment flag' razlic\u030cito od nule.",
+                "Ako polje 'more fragment flag' ima vrednost nula.",
+                "Ako polje 'fragment offset' ima vrednost nula.",
+                "Ako je polje 'fragment offset' razlic\u030cito od nule.",
+                "Ako su i 'more fragment flag' i 'fragment offset' polja razlic\u030cita od nule."
+            ]
+        },
+        {
+            "question": "Kako se realizuje komanda ping?",
+            "right_answers": [
+                "Prenos\u030cenjem ICMP poruke u Layer 3 paketu."
+            ],
+            "false_answers": [
+                "Prenos\u030cenjem ICMP poruke na multikast adresu.",
+                "Prenos\u030cenjem ICMP poruke u Layer 2 okviru.",
+                "Prenos\u030cenjem ICMP poruke u na brodkast adresu.",
+                "Prenos\u030cenjem ICMP poruke kroz route update poruke."
+            ]
+        },
+        {
+            "question": "Ko odgovara na ARP request poruku?",
+            "right_answers": [
+                "Samo ure\u0111aj c\u030cija se IP adresa navodi u ARP paketu."
+            ],
+            "false_answers": [
+                "Svi ure\u0111aji u broadcast domenu.",
+                "Samo ure\u0111aji c\u030cija se MAC adresa navodi u ARP paketu.",
+                "Samo default-gateway."
+            ]
+        },
+        {
+            "question": "Ko s\u030calje ICMP redirect poruku?",
+            "right_answers": [
+                "Ruter kada prepozna da next-hop pri rutiranju paketa pripada istoj mrez\u030ci kao i interfejs na koji je taj paket pristigao."
+            ],
+            "false_answers": [
+                "Ruter kada radi load-balancing.",
+                "Bilo koji ure\u0111aj na LAN mrez\u030ci kada prepozna da paketi nisu namenjeni za njega.",
+                "Ruter kada za odre\u0111eni paket treba da koristi default rutu."
+            ]
+        },
+        {
+            "question": "Ko sprovodi ARP protokol?",
+            "right_answers": [
+                "Svi IP ure\u0111aji u LAN mrez\u030ci."
+            ],
+            "false_answers": [
+                "Samo default gateway u LAN mrez\u030ci.",
+                "Samo hostovi u LAN mrez\u030ci.",
+                "Samo wireless ure\u0111aji u LAN mrez\u030ci."
+            ]
+        },
+        {
+            "question": "Koja ICMP poruka ne oznac\u030cava gres\u030cku u komunikaciji izme\u0111u izvoris\u030cta i odredis\u030cta?",
+            "right_answers": [
+                "Redirect"
+            ],
+            "false_answers": [
+                "Destination Unreachable",
+                "Can\u2019t fragment",
+                "More fragment",
+                "Host is found",
+                "Application is found",
+                "Load balancing",
+                "Route is symetric",
+                "Default route is used",
+                "Default gateway is used"
+            ]
+        },
+        {
+            "question": "Koja ICMP poruka se s\u030calje kada ruter prepozna da next-hop pripada istoj mrez\u030ci kao i interfejs na koji je paket dosao?",
+            "right_answers": [
+                "Redirect."
+            ],
+            "false_answers": [
+                "Host unreachable.",
+                "Network unreachable.",
+                "Protocol unreachable.",
+                "Port unreachable.",
+                "Time Exceeded.",
+                "Echo Reply."
+            ]
+        },
+        {
+            "question": "Koja ICMP poruka se s\u030calje kada ure\u0111aj ne dobije odgovor na ARP zahtev?",
+            "right_answers": [
+                "Host unreachable."
+            ],
+            "false_answers": [
+                "Network unreachable.",
+                "Protocol unreachable.",
+                "Port unreachable.",
+                "Time Exceeded.",
+                "Echo Reply.",
+                "Redirect."
+            ]
+        },
+        {
+            "question": "Koja je osnovna jedinica kojom se izraz\u030cava protok saobradaja u rac\u030cunarskih mrez\u030cama?",
+            "right_answers": [
+                "bps - bit per second"
+            ],
+            "false_answers": [
+                "Bps - byte pre second",
+                "pps - packet per second",
+                "Ips - information per second",
+                "nis\u030cta od ponu\u0111enog",
+                "Ne znam"
+            ]
+        },
+        {
+            "question": "Koja polja IP zaglavlja kod fragmentiranog paketa imaju iste vrednosti kao i kod originalnog IP paketa?",
+            "right_answers": [
+                "Don't fragment flag.",
+                "IP adresa izvoris\u030cta.",
+                "Identifikacija paketa."
+            ],
+            "false_answers": [
+                "More fragment flag.",
+                "Fragment offset.",
+                "MAC adresa izvoris\u030cta.",
+                "MAC adresa odredis\u030cta."
+            ]
+        },
+        {
+            "question": "Koje ICMP poruke dobija ure\u0111aj koji je startovao traceroute komandu?",
+            "right_answers": [
+                "Time Exceeded"
+            ],
+            "false_answers": [
+                "Destination unreachable",
+                "Can\u2019t fragment (ne moz\u030ce da se fragmentira)",
+                "Echo Request/Echo Reply",
+                "Hop Exceeded"
+            ]
+        },
+        {
+            "question": "Koje osnovne podatke sadrz\u030ci svaki red u ruting tabeli?",
+            "right_answers": [
+                "Mrez\u030cna IP adresa sa maskom.",
+                "IP adresa susednog rutera na zajednic\u030ckom linku."
+            ],
+            "false_answers": [
+                "Mrez\u030cna IP adresa bez maske.",
+                "Default ruta.",
+                "Vreme upisa u ruting tabelu.",
+                "Default gateway za pripadajudu mrez\u030cnu adresu.",
+                "MAC adresa susednog rutera na zajednic\u030ckom linku."
+            ]
+        },
+        {
+            "question": "Koje su karakteristike IP protokola?",
+            "right_answers": [
+                "Prosle\u0111ivanje IP paketa do odredis\u030cta nije garantovano.",
+                "Redosled pristiglih IP paketa ne mora da bude isti kao i redosled po kome su poslati.",
+                "Format IP paketa ne zavisi od protokola drugog nivoa."
+            ],
+            "false_answers": [
+                "IP paketi se prenose do odredis\u030cta u istom redosledu.",
+                "Svaki primeljeni paket se potvr\u0111uje novim IP paketom.",
+                "Svaki primeljeni paket se potvr\u0111uje ICMP paketom."
+            ]
+        },
+        {
+            "question": "Koje vrste LSA iz centralne oblasti mogu da udju u obic\u030cnu perifernu OSPF oblasti?",
+            "right_answers": [
+                "Summary link",
+                "External link"
+            ],
+            "false_answers": [
+                "Router link",
+                "Network link",
+                "Internal link",
+                "Point-to-Point link",
+                "Nis\u030cta od ponu\u0111enog."
+            ]
+        },
+        {
+            "question": "Koje vrste LSA iz centralne oblasti mogu da U\u0110U u OSPF oblast tipa \"stub area\"?",
+            "right_answers": [
+                "Summary link"
+            ],
+            "false_answers": [
+                "External link",
+                "Router link",
+                "Network link",
+                "Internal link",
+                "Point-to-Point link",
+                "Nis\u030cta od ponu\u0111enog."
+            ]
+        },
+        {
+            "question": "Koje vrste LSA iz centralne oblasti mogu da U\u0110U u OSPF oblasti tipa \"totally stubby area\"",
+            "right_answers": [
+                "Nis\u030cta od ponu\u0111enog."
+            ],
+            "false_answers": [
+                "Summary link",
+                "External link",
+                "Router link",
+                "Network link",
+                "Internal link",
+                "Point-to-Point link"
+            ]
+        },
+        {
+            "question": "Koji ure\u0111aji mogu da primaju ICMP poruke?",
+            "right_answers": [
+                "Svi IP ure\u0111aji na mrez\u030ci."
+            ],
+            "false_answers": [
+                "Samo ruteri.",
+                "Samo ruteri i rac\u030cunari.",
+                "Samo ruteri, rac\u030cunari i svic\u030cevi."
+            ]
+        },
+        {
+            "question": "Koji ure\u0111aji mogu da s\u030calju ICMP poruke?",
+            "right_answers": [
+                "Svi IP ure\u0111aji na mrez\u030ci."
+            ],
+            "false_answers": [
+                "Samo ruteri.",
+                "Samo ruteri i rac\u030cunari.",
+                "Samo ruteri, rac\u030cunari i svic\u030cevi."
+            ]
+        },
+        {
+            "question": "Koliko ima ostvarenih direktnih OSPF suseda (veza) u multi-access LAN mrez\u030ci sa 10 OSPF rutera?",
+            "right_answers": [
+                "17"
+            ],
+            "false_answers": [
+                "18",
+                "8",
+                "45",
+                "9",
+                "0"
+            ]
+        },
+        {
+            "question": "Kome se s\u030calje ICMP redirect poruka?",
+            "right_answers": [
+                "Ure\u0111aju koji je poslao IP paket."
+            ],
+            "false_answers": [
+                "Ruteru na istoj LAN mrez\u030ci koji predstavlja bolji izlaz za primljeni IP paket.",
+                "Rac\u030cunaru kome je namenjen primljeni IP paket.",
+                "Ruteru koji ima bolju rutu za primljeni IP paket."
+            ]
+        },
+        {
+            "question": "Na koju adresu se s\u030calje ARP reply paket?",
+            "right_answers": [
+                "Na MAC adresu ure\u0111aja koji je poslao ARP request paket."
+            ],
+            "false_answers": [
+                "Na IP adresu ure\u0111aja koji je poslao ARP request paket.",
+                "Na broadkast MAC adresu.",
+                "Na broadkast IP adresu.",
+                "Na MAC adresu default gateway-a.",
+                "Na IP adresu default gateway-a."
+            ]
+        },
+        {
+            "question": "Na s\u030cta se odnosi pojam \"Link-State\" u OSPF terminologiji?",
+            "right_answers": [
+                "Na podatke o intefejsima rutera."
+            ],
+            "false_answers": [
+                "Na stanje linka (Up ili Down).",
+                "Na veze (linkove) na kojima radi OSPF .",
+                "Na metriku linka izme\u0111u dva rutera.",
+                "Na kvalitet veze (linka) izme\u0111u dva rutera."
+            ]
+        },
+        {
+            "question": "S\u030cta je od ponu\u0111enog tac\u030cno za classless ruting protokole?",
+            "right_answers": [
+                "U svojim porukama prenose IP adresu mrez\u030ce i masku."
+            ],
+            "false_answers": [
+                "Ne prenose mrez\u030ce koje pripadaju A, B i C klasama.",
+                "Ne podrz\u030cavaju default rute.",
+                "Ne podrz\u030cavaju mrez\u030cne adrese.",
+                "Ne koriste metriku.",
+                "Ne podrz\u030cavaju load balancing."
+            ]
+        },
+        {
+            "question": "S\u030cta je od slededeg tac\u030cno za distance-vector ruting protokole?",
+            "right_answers": [
+                "Dozvoljavaju razlic\u030cite putanje u odlaznom i dolaznom smeru izme\u0111u ure\u0111aja A i B.",
+                "Dozvoljavaju razlic\u030cite putanje u jednom smeru izme\u0111u ure\u0111aja A i B."
+            ],
+            "false_answers": [
+                "Sprec\u030cavaju razlic\u030cite putanje u odlaznom i dolaznom smeru izme\u0111u ure\u0111aja A i B (loop).",
+                "Sprec\u030cavaju razlic\u030cite putanje u jednom smeru izme\u0111u ure\u0111aja A i B."
+            ]
+        },
+        {
+            "question": "S\u030cta je posledica 'load balancing' osobine ruting protokola?",
+            "right_answers": [
+                "Da ruting tabela moz\u030ce da ima vis\u030ce next-hop podataka za jednu mrez\u030cnu adresu."
+            ],
+            "false_answers": [
+                "Da se paketi rutiraju po razlic\u030citim putevima u odlaznom u odnosu na dolazni smer.",
+                "Da se brzine interfejsa prilago\u0111avaju prema intenzitetu saobradaja.",
+                "Da ruting tabela moz\u030ce da ima vis\u030ce mrez\u030cnih adresa za jedan next-hop.",
+                "Da ruting tabela ima vis\u030ce next-hop podataka za sve mrez\u030cne adrese."
+            ]
+        },
+        {
+            "question": "S\u030cta je tac\u030cno od slededeg vezano za protokole rutiranja?",
+            "right_answers": [
+                "Protokoli rutiranja sluz\u030ce da na ruterima kreiraju ruting tabele."
+            ],
+            "false_answers": [
+                "Protokoli rutiranja sluz\u030ce za rutiranje poruka u ruterima."
+            ]
+        },
+        {
+            "question": "S\u030cta je tac\u030cno za 'Default gateway'?",
+            "right_answers": [
+                "Ima regularnu IP adresu."
+            ],
+            "false_answers": [
+                "Ima adresu sa svim bitskim jedinicama u host delu.",
+                "Ima adresu sa svim bitskim nulama u host delu.",
+                "Ima adresu",
+                "Nema IP adresu."
+            ]
+        },
+        {
+            "question": "S\u030cta je tac\u030cno za fragmentaciju IP paketa?",
+            "right_answers": [
+                "Fragmentirani paketi se nezavisno prenose do istog odredis\u030cta."
+            ],
+            "false_answers": [
+                "Fragmentirani paketi se prenose po istom putu do istog odredis\u030cta.",
+                "Predstavlja deljenje jednog IP paketa kod load-balancing-a.",
+                "Fragmentirani paketi se nezavisno prenose do razlic\u030citih odredis\u030cta.",
+                "Fragmentirani paketi nisu IP paketi."
+            ]
+        },
+        {
+            "question": "S\u030cta je tac\u030cno za ICMP poruke?",
+            "right_answers": [
+                "Prenose se enkapsuliranjem u IP poruke."
+            ],
+            "false_answers": [
+                "Prenose se enkapsuliranjem u okvire na 2. nivou.",
+                "Prenose se kao aplikativni podaci enkapsuliranjem u paketa 4. nivoa.",
+                "Prenose se nezavisno od IP protokola.",
+                "Prenose se enkapsuliranjem u pakete ruting protokola."
+            ]
+        },
+        {
+            "question": "S\u030cta je tac\u030cno za Next-hop podatak u ruting tabeli?",
+            "right_answers": [
+                "Predstavlja IP adresu interfejsa narednog rutera na putu prema datoj mrez\u030ci."
+            ],
+            "false_answers": [
+                "Predstavlja IP adresu izlaznog interfejsa na posmatranom ruteru na putu prema datoj mrez\u030ci.",
+                "Predstavlja redni broj posmatranog rutera na putu prema datoj mrez\u030ci.",
+                "Predstavlja redni broj narednog rutera na putu prema datoj mrez\u030ci.",
+                "Postoji samo kod ruting protokola koji za metriku imaju 'hop-count'."
+            ]
+        },
+        {
+            "question": "S\u030cta je tac\u030cno za proces rutiranja?",
+            "right_answers": [
+                "Ne utic\u030ce na saobradaj koji dolazi u ruter.",
+                "Gleda se odredis\u030cna IP adresa u zaglavlju paketa."
+            ],
+            "false_answers": [
+                "Ne utic\u030ce na saobradaj koji odlazi iz rutera.",
+                "Gleda se izvoris\u030cna IP adresa u zaglavlju paketa.",
+                "Saobradaj se uvek prenosi po istom putu u oba smera.",
+                "Paketi se uvek prenose do odredis\u030cta u istom poretku."
+            ]
+        },
+        {
+            "question": "S\u030cta je tac\u030cno za rutere u istoj perifernoj OSPF oblasti?",
+            "right_answers": [
+                "Imaju iste link-state baze podataka."
+            ],
+            "false_answers": [
+                "Imaju iste ruting tabele.",
+                "Imaju iste metrike prema svakoj mrez\u030ci u oblasti.",
+                "Moraju da imaju default rutu."
+            ]
+        },
+        {
+            "question": "S\u030cta je tac\u030cno za ruting tabelu?",
+            "right_answers": [
+                "Utic\u030ce na pakete koji se prosle\u0111uju na izlazne interfejse."
+            ],
+            "false_answers": [
+                "Utic\u030ce na pakete koji se primaju na ulazne interfejse.",
+                "Utic\u030ce i na pakete koji se primaju na ulazne interfejse i na pakete koji se prosle\u0111uju na izlazne interfejse.",
+                "Ne utic\u030cu na prosle\u0111ivanje paketa, ved na rad ruting protokola."
+            ]
+        },
+        {
+            "question": "S\u030cta je uslov da OSPF ruter u\u0111e u \"2-way\" stanje?",
+            "right_answers": [
+                "Da dobije Hello paket sa svojom identifikacijom (RID) u listi suseda koje oglasi drugi ruter."
+            ],
+            "false_answers": [
+                "Da sinhronizuju svoje link-state baze podataka.",
+                "Da dobije Hello paket sa identifikacijom susednog rutera (RID) u listi suseda koje oglasi drugi ruter.",
+                "Da drugom ruteru pos\u030calje Hello paket sa svojom identifikacijom (RID) u listi suseda.",
+                "Da se sa drugim ruterom usaglasi koji je ruter 'master', a koji je 'slave'."
+            ]
+        },
+        {
+            "question": "S\u030cta od ponu\u0111enog ruter radi sa next-hop adresom iz ruting tabele?",
+            "right_answers": [
+                "Za nju traz\u030ci podatak u ARP tabeli."
+            ],
+            "false_answers": [
+                "Sve pakete prosle\u0111uje na tu adresu, nezavisno od mrez\u030cne adrese.",
+                "Postavlja je na mesto odredis\u030cne IP adrese u IP paketu.",
+                "Postavlja je na mesto odredis\u030cne MAC adrese u Ethernet okviru.",
+                "Postavlja je u ruting update koji oglas\u030cava susednim ruterima."
+            ]
+        },
+        {
+            "question": "S\u030cta od ponu\u0111enog vaz\u030ci za brodkast domen?",
+            "right_answers": [
+                "Brodkast domen se zavrs\u030cava na ruterima.",
+                "Brodkast domen se ne zavrs\u030cava na svic\u030cevima."
+            ],
+            "false_answers": [
+                "Brodkast domen se zavrs\u030cava na svic\u030cevima.",
+                "Brodkast domen se ne zavrs\u030cava na ruterima."
+            ]
+        },
+        {
+            "question": "S\u030cta oznac\u030cava \"Full\" stanje kod OSPF ruting protokola?",
+            "right_answers": [
+                "Da su dva rutera razmenili sve relevantne podatke."
+            ],
+            "false_answers": [
+                "Da su ruteri videli svoje identifikacije u hello poruci.",
+                "Da su ruteri popunili svoju memoriju.",
+                "Da je pojedini link preoptereden.",
+                "Da je procesor rutera preoptereden."
+            ]
+        },
+        {
+            "question": "S\u030cta oznac\u030cava ICMP poruka 'Protocol unreachable'?",
+            "right_answers": [
+                "Odredis\u030cni ure\u0111aj nema podrs\u030cku za protokol c\u030ciji je identifikator upisan u zaglavlje IP paketa."
+            ],
+            "false_answers": [
+                "Ruter na putu do odredis\u030cta nema podrs\u030cku za protokol c\u030ciji je identifikator upisan u zaglavlje IP paketa. Na ruteru nije konfigurisan odgovarajudi ruting protokol.",
+                "IP protokol na odredis\u030cnom ure\u0111aju nije dostupan."
+            ]
+        },
+        {
+            "question": "S\u030cta oznac\u030cava ICMP poruka Time Exceeded'?",
+            "right_answers": [
+                "IP paket nije isporuc\u030cen na odredis\u030cte."
+            ],
+            "false_answers": [
+                "Istekao je Hold down interval.",
+                "Vreme je za novi ruting update.",
+                "Istekla je validnost rute u ruting tabeli."
+            ]
+        },
+        {
+            "question": "S\u030cta oznac\u030cava vrednost 120 u polju 'fragment offset'?",
+            "right_answers": [
+                "Data polje sadrz\u030ci podatke koji poc\u030cinju od 960. bajta podataka originalnog IP paketa."
+            ],
+            "false_answers": [
+                "Data polje sadrz\u030ci podatke koji poc\u030cinju od 120. bajta podataka originalnog IP paketa.",
+                "IP paket predstavlja 120. paket u niz.",
+                "Data polje sadrz\u030ci 960 bajtova podataka originalnog IP paketa.",
+                "Data polje sadrz\u030ci 120 bajtova podataka originalnog IP paketa."
+            ]
+        },
+        {
+            "question": "S\u030cta predstavlja rezultat komande traceroute u sluc\u030caju kada nisu iste putanje odlaznog i dolaznog saobradaja?",
+            "right_answers": [
+                "Spisak rutera na putu od posmatranog ure\u0111aja do odredis\u030cta."
+            ],
+            "false_answers": [
+                "Spisak rutera na putu od odredis\u030cta do posmatranog ure\u0111aja.",
+                "Spisak rutera na putu od posmatranog ure\u0111aja do odredis\u030cta i nazad po drugoj putanji ('round trip path').",
+                "Gres\u030cka, jer se ne dobija konzistentan rezultat."
+            ]
+        },
+        {
+            "question": "S\u030cta rade distance-vector ruting protokoli u stacionarnom stanju kada nema promena u mrez\u030ci?",
+            "right_answers": [
+                "Periodic\u030cno prenose sve routing update poruke."
+            ],
+            "false_answers": [
+                "Ne rade nis\u030cta, jer nema promena u mrez\u030ci.",
+                "Oglas\u030cavaju samo triggered update poruke.",
+                "Nakon time-out perioda uklanjaju rute iz ruting tabele.",
+                "Periodic\u030cno prenose samo najnovije routing update poruke koje ukazuju na promene u mrez\u030ci."
+            ]
+        },
+        {
+            "question": "S\u030cta radi ruter kada do neke mrez\u030ce odredi dve rute koje imaju istu administrativnu distancu, a razlic\u030citu vrednosti metrike?",
+            "right_answers": [
+                "U ruting tabelu se samo upisuje ruta sa boljom metrikom, dok se druga ruta odbacuje."
+            ],
+            "false_answers": [
+                "U ruting tabelu se upisuje ruta sa boljom metrikom, a obe se koriste za oglas\u030cavanje drugim ruterima.",
+                "U ruting tabelu se upisuju obe rute, i obe se koriste za oglas\u030cavanje drugim ruterima.",
+                "U ruting tabelu se upisuju obe rute, ali se drugim ruterima oglas\u030cava samo bolja ruta.",
+                "U ruting tabelu ne se upisuju ni jedna ruta."
+            ]
+        },
+        {
+            "question": "S\u030cta radi ruter kada do neke mrez\u030ce odredi dve rute koje imaju razlic\u030cite administrativne distance?",
+            "right_answers": [
+                "U ruting tabelu se upisuje samo ruta sa manjom administrativnom distancom, a druga ruta se odbacuje."
+            ],
+            "false_answers": [
+                "U ruting tabelu se upisuje samo ruta sa vedom administrativnom distancom, a druga ruta se odbacuje.",
+                "U ruting tabelu se upisuju obe rute, i obe se koriste za oglas\u030cavanje drugim ruterima.",
+                "U ruting tabelu se upisuju obe rute, ali se drugim ruterima oglas\u030cava samo ruta sa manjom administrativnom distancom.",
+                "S\u030calje se ICMP poruka 'route mismatch'"
+            ]
+        },
+        {
+            "question": "S\u030cta radi ruter kada do odre\u0111ene mrez\u030ce detektuje dve putanje (rute) nauc\u030cene preko dva razlic\u030cita ruting protokola?",
+            "right_answers": [
+                "U ruting tabelu upisuje samo rutu nauc\u030cenu od ruting protokola sa manjom administrativnom distancom."
+            ],
+            "false_answers": [
+                "U ruting tabelu upisuje samo rutu nauc\u030cenu od ruting protokola sa vedom administrativnom distancom.",
+                "U ruting tabelu upisuje samo rutu sa boljom metrikom.",
+                "U ruting tabelu upisuje obe rute, ali koristi samo bolju rutu.",
+                "U ruting tabelu upisuje obe rute i obe ih koristi."
+            ]
+        },
+        {
+            "question": "S\u030cta radi ruter kada ima rutu ka nekoj mrez\u030ci nauc\u030cenu i preko RIP i preko OSPF protokola?",
+            "right_answers": [
+                "U ruting tabelu upisuje samo OSPF rutu."
+            ],
+            "false_answers": [
+                "U ruting tabelu upisuje samo RIP rutu",
+                "U ruting tabelu upisu obe rute.",
+                "U ruting tabelu upisuje rutu sa boljom metrikom.",
+                "U RIP domenu koristi RIP rutu, a u OSPF domenu koristi OSPF rutu."
+            ]
+        },
+        {
+            "question": "S\u030cta radi ruter sa podatkom koji dobije iz ARP kes\u030ca?",
+            "right_answers": [
+                "Postavlja na mesto odredis\u030cne MAC adrese u Ethernet okviru."
+            ],
+            "false_answers": [
+                "Postavlja na mesto izvoris\u030cne MAC adrese u Ethernet okviru.",
+                "Postavlja na mesto odredis\u030cne IP adrese u IP zaglavlju.",
+                "Koristi za next-hop prilikom rutiranja paketa.",
+                "Postavlja na mesto izvoris\u030cne IP adrese u IP zaglavlju."
+            ]
+        },
+        {
+            "question": "Agregacija IP mre\u017ea ne utice na velicinu ruting tabela",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Koje vrste LSA mogu da se nadu u OSPF oblasti tipa \"stub area\"?",
+            "right_answers": [
+                "Network link",
+                "Summary link",
+                "Router link"
+            ],
+            "false_answers": [
+                "Anycast link",
+                "External link",
+                "Global link"
+            ]
+        },
+        {
+            "question": "Interni protokoli rutiranja se baziraju na statickim (internim) rutama.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "\u0160ta se po pravilu de\u0161ava za izvori\u0161nom i odredi\u0161nom IP adresom u zaglavlju IP paketa prilikom njegovog rutiranja kroz mre\u017eu?",
+            "right_answers": [
+                "Ne menja se ni odredi\u0161na ni izvori\u0161na IP adresa."
+            ],
+            "false_answers": [
+                "Ne menja se samo odredi\u0161na IP adresa, dok se izvori\u0161na IP adresa menja i u svakom koraku uzima vrednost poslednjeg rutera koji ju je poslao.",
+                "Ne menja se samo izvori\u0161na IP adresa, dok se odredi\u0161na IP adresa menja i u svakom koraku uzima vrednost sledeceg rutera kome se \u0161alje (next-hop)."
+            ]
+        },
+        {
+            "question": "\u0160ta radi ruter kada ima rutu ka nekoj mre\u017ei naucenu i preko RIP i preko OSPF protokola?",
+            "right_answers": [
+                "Zadr\u017eava rutu naucenu preko OSPF-a, jer ima manju administrativnu distancu."
+            ],
+            "false_answers": [
+                "Zadr\u017eava obe rute i omogucava load balancing.",
+                "Zadr\u017eava rutu naucenu preko RIP-a, jer ima manju metriku.",
+                "Zadr\u017eava rutu naucenu preko OSPF-a, jer ima manju metriku.",
+                "Zadr\u017eava rutu naucenu preko RIP-a, jer ima vecu administrativnu distancu."
+            ]
+        },
+        {
+            "question": "Kako se prenose ICMP poruke?",
+            "right_answers": [
+                "Direktno su enkapsulirane u IP poruke."
+            ],
+            "false_answers": [
+                "Direktno su enkapsulirane u okvire na 2. nivou.",
+                "Brodkast porukama na IP nivou.",
+                "Multikast porukama na IP nivou."
+            ]
+        },
+        {
+            "question": "IP protokol obave\u0161tava po\u0161iljaoca za svaki isporuceni IP paket.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "ARP protokol se enkapsulira u IP protokol.",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Koja se ICMP poruka \u0161alje kada ruter ne zna na koji izlazni interfejs da prosledi IP poruku?",
+            "right_answers": [
+                "Network unreachable (mre\u017ea nedostupna)"
+            ],
+            "false_answers": [
+                "Host unreachable (uredaj je nedostupan)",
+                "Can\u2019t fragment (ne mo\u017ee da se fragmentira)",
+                "Protocol unreachable (protokol je nedostupan)",
+                "Port unreachable (port je nedostupan)"
+            ]
+        },
+        {
+            "question": "Koje vrste LSA mogu da se nadu u obicnoj perifernoj OSPF oblasti?",
+            "right_answers": [
+                "Router link",
+                "Summary link",
+                "Network link"
+            ],
+            "false_answers": [
+                "Global link",
+                "External link",
+                "Anycast link"
+            ]
+        },
+        {
+            "question": "Da li link-state ruting protocoli koriste metriku?",
+            "right_answers": [
+                "Da."
+            ],
+            "false_answers": [
+                "Ne, jer je ve\u0107 poznaju kompletnu topologiju mre\u017ee.",
+                "Da, samo kada se koristi load-balancing."
+            ]
+        },
+        {
+            "question": "IP paketi se nezavisno rutiraju kroz mre\u017eu u oba smera.",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Kako se naziva pojava koja se javlja pri ruting petljama, kada se hop-count metrika (broj koraka) pove\u0107ava pri svakom ruting update-u?",
+            "right_answers": [
+                "Count-to-Infinity"
+            ],
+            "false_answers": [
+                "Time to Live",
+                "Triggered update",
+                "Route Poisoning",
+                "Split horizon",
+                "Holddown Timer"
+            ]
+        },
+        {
+            "question": "Koja polja originalnog IP paketa se ponavljaju u pojedina\u010dnim fragmentima nakon fragmentacija?",
+            "right_answers": [
+                "Odredi\u0161na IP adresa.",
+                "Izvori\u0161na IP adresa.",
+                "Identifikacija."
+            ],
+            "false_answers": [
+                "Fragment offset.",
+                "Flegovi.",
+                "Enkapsulirani podaci 4. sloja."
+            ]
+        },
+        {
+            "question": "Da li moze biti jedan Lan povezan na vise rutera?",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "IP protokol ne zavisi od fizickog medijuma?",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Koji mehanizam garantuje da u narednom vremenu nece doci do puno promena podataka u ruting tabeli?",
+            "right_answers": [
+                "Holddown Timer"
+            ],
+            "false_answers": [
+                "Time to Live",
+                "Triggered Update",
+                "Route Poisoning"
+            ]
+        },
+        {
+            "question": "Koje vrste LSA moze da primi obicna oblast?",
+            "right_answers": [
+                "Obicna oblast prima sve vrste LSA (Router link, Network link, Summary Link, External Linik, bili su ponudjeni jos neki odgovori, ali nisu bili tacni)"
+            ],
+            "false_answers": []
+        },
+        {
+            "question": "Sta je tacno",
+            "right_answers": [
+                "IP paketi ne moraju stici po istom redosledu kao sto su poslati",
+                "Ne postoji garancija da ce IP paket biti uspesno isporucen",
+                "IP paketi se nezavisno prosledjuju"
+            ],
+            "false_answers": [
+                "IP paketi stizu po istom redosledu kao sto su poslati",
+                "Svaki ruter salje potvrdu izvoristu kada primi njegov IP paket"
+            ]
+        },
+        {
+            "question": "Load Balancing je dozvoljen:",
+            "right_answers": [
+                "kada postoje dve rute iste metrike do neke podmreze"
+            ],
+            "false_answers": [
+                "kada postoje dve rute razlicite metrike do neke podmreze"
+            ]
+        },
+        {
+            "question": "Sta se desava kada u OSPF protokolu postoje dve rute razlicite administrativne distance do iste podmreze?",
+            "right_answers": [
+                "Pamti se ona sa manjom administartivnom distancom, druga se odbacuje"
+            ],
+            "false_answers": [
+                "Pamte se obe u ruting tabeli, ali se za prenos koristi ona sa manjom metrikom",
+                "Pamti se ona sa manjom metrikom, druga se odbacuje",
+                "Pamti se ona savecom administartivom distancom, druga se odbacuje"
+            ]
+        },
+        {
+            "question": "Sta se nalazi u obicnoj ruting tabeli",
+            "right_answers": [],
+            "false_answers": [
+                "Adrese susednih rutera",
+                "Adrese rutera na zajednockom linku",
+                "Default ruta",
+                "Mrezna adresa sa maskom",
+                "Mrezna adresa bez maske"
+            ]
+        },
+        {
+            "question": "Da li Rip1 podrzava Load-Balancing?",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Staicke rute su interne rute kod OPSF?",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Da li RIP1 podrzava metriku?",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Sta je tacno za rutere u jednoj oblasti",
+            "right_answers": [
+                "LS baze podataka su istovetne"
+            ],
+            "false_answers": []
+        },
+        {
+            "question": "Kada se dogadja flooding?",
+            "right_answers": [
+                "kada se ruter prikljuci na mrezu"
+            ],
+            "false_answers": [
+                "kada se prosledi jedan paket kroz mrezu"
+            ]
+        },
+        {
+            "question": "Sta je uslov da moze da pocne 2-way?",
+            "right_answers": [
+                "Da posiljac primi poruku u kojoj u listi suseda drugog rutera vidi svoj ID"
+            ],
+            "false_answers": [
+                "Da primalac primi poruku sa ID-em drugog rutera"
+            ]
+        },
+        {
+            "question": "Administartivna distanca ima veci prioritet od metrike?",
+            "right_answers": [
+                "True"
+            ],
+            "false_answers": [
+                "False"
+            ]
+        },
+        {
+            "question": "Da li je moguce fragmentovati vec fragmentovan IP paket?",
+            "right_answers": [
+                "Moguce je"
+            ],
+            "false_answers": [
+                "Nije moguce",
+                "Moguce samo ako je setovan MF bit",
+                "Moguce samo ako nije setovan MF bit"
+            ]
+        },
+        {
+            "question": "Gde se vrsi reasembling?",
+            "right_answers": [
+                "na odresinom ruteru"
+            ],
+            "false_answers": [
+                "na svakom ruteru koji primi paket",
+                "na ruteru na kom ne znamo kuda poslati paket dalje"
+            ]
+        },
+        {
+            "question": "Ko prima timeExceededporuku?",
+            "right_answers": [
+                "izvorisni host"
+            ],
+            "false_answers": [
+                "odresisni uredjaj",
+                "prethodni ruter na putanji",
+                "svi uredjaji na mrezi"
+            ]
+        },
+        {
+            "question": "Ko salje TimeExceeded poruku?",
+            "right_answers": [
+                "ruteri"
+            ],
+            "false_answers": [
+                "svicevi",
+                "hostovi",
+                "svi"
+            ]
+        },
+        {
+            "question": "Sta je rezultat kada se u traceroutu ne poklapaju odlazni i dolazni put paketa?",
+            "right_answers": [
+                "Ruta kojom paket putuje od izvorisne do odredisne adrese (od uredjaja sa kog smo poceli traceroute komandu)"
+            ],
+            "false_answers": [
+                "ICMP poruka \u201emissmach route\u201c",
+                "Ruta kojom paket putuje od odredisne do izvorisne adrese",
+                "obe rute"
+            ]
+        },
+        {
+            "question": "Kada se salje poruka \u201eProtocol Unreachable\u201c?",
+            "right_answers": [
+                "na odredisnom hostu nije podrzan protokol L4 nivoa, koji je specificiran u paketu"
+            ],
+            "false_answers": [
+                "ne postoji protokol za prosledjivanje paketa"
+            ]
+        },
+        {
+            "question": "Sta se desava sa kada se salje redirect poruka?",
+            "right_answers": [
+                "paket se prosledjuje se do odredista"
+            ],
+            "false_answers": [
+                "paket se odbacuje"
+            ]
+        },
+        {
+            "question": "Kome se salje redirect poruka?",
+            "right_answers": [
+                "izvorisnom uredjaju"
+            ],
+            "false_answers": [
+                "svim uredjajima",
+                "odredisnom uredjaju"
+            ]
+        },
+        {
+            "question": "U sta se enkapsuliraju ARP paketi",
+            "right_answers": [
+                "L2 pakete"
+            ],
+            "false_answers": [
+                "IP pakete",
+                "ne enkapsuliraju se"
+            ]
+        },
+        {
+            "question": "Vreme isporuke IP paketa je garantovano?",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "ARP se enkapsulira u IP pakete?",
+            "right_answers": [
+                "False"
+            ],
+            "false_answers": [
+                "True"
+            ]
+        },
+        {
+            "question": "Kako fragment zna kom IP-ju pripada?",
+            "right_answers": [
+                "Preko polja IP ID"
+            ],
+            "false_answers": [
+                "Preko polja More fragment",
+                "Preko polja Offset",
+                "Preko polja More fragment i Offset"
+            ]
+        },
+        {
+            "question": "\u0160ta se de\u0161ava kada ruter ne zna na koji izlazni interfejs da prosledi IP poruku?",
+            "right_answers": [
+                "\u0160alje se 'Network unreachable' ICMP poruka."
+            ],
+            "false_answers": [
+                "\u0160alje se 'Host unreachable' ICMP poruka.",
+                "IP poruka se \u0161alje na sve izlazne interfejse.",
+                "IP poruka se \u0161alje na proizvoljni izlazni interfejs.",
+                "IP poruka se vrada po\u0161iljaocu.",
+                "IP poruka se \u0161alje susednom ruteru koji ima najbolju metriku."
+            ]
+        },
+        {
+            "question": "\u0160ta se de\u0161ava u mre\u017ei multi-access tipa kada se priklju\u010di OSPF ruter koji ima najvedu identifikaciju (RID)?",
+            "right_answers": [
+                "Novi ruter uspostavlja Full stanje kao kona\u010dno stanje sa designated ruterom.",
+                "Novi ruter uspostavlja Full stanje kao kona\u010dno stanje sa backup designated ruterom."
+            ],
+            "false_answers": [
+                "Novi ruter uspostavlja Full stanje kao kona\u010dno stanje sa svim ruterima.",
+                "Novi ruter uspostavlja 2-way stanje kao kona\u010dno stanje sa designated ruterom.",
+                "Novi ruter uspostavlja 2-way stanje kao kona\u010dno stanje sa backup designated ruterom.",
+                "Novi ruter uspostavlja 2-way stanje kao kona\u010dno stanje sa svim ruterima."
+            ]
+        },
+        {
+            "question": "\u0160ta se de\u0161ava u OSPF mre\u017ei multi-access tipa kada se priklju\u010di ruter koji ima vedi RID od BDR rutera, a manji RID od DR rutera?",
+            "right_answers": [
+                "Novi ruter postaje DROther ruter."
+            ],
+            "false_answers": [
+                "Ni\u0161ta od ponu\u0111enog.",
+                "Novi ruter postaje BDR ruter.",
+                "Novi ruter postaje DR ruter."
+            ]
+        },
+        {
+            "question": "\u0160ta se de\u0161ava u slu\u010daju pada linka u mre\u017ei sa OSPF ruting protokolom?",
+            "right_answers": [
+                "Potrebne informacije se prenose u celoj oblasti."
+            ],
+            "false_answers": [
+                "Potrebne informacije se prenose samo do susednih rutera.",
+                "\u0160alje se triggered update poruka.",
+                "Generi\u0161e se unreachable ruta."
+            ]
+        },
+        {
+            "question": "\u0160ta se mo\u017ee zaklju\u010diti kada ure\u0111aj primi ICMP poruku 'Echo request'?",
+            "right_answers": [
+                "Postoji uspe\u0161na jednosmerna IP komunikacija u smeru od ure\u0111aja koji je poslao poruku do ure\u0111aja koji je primio poruku."
+            ],
+            "false_answers": [
+                "Postoji uspe\u0161na jednosmerna IP komunikacija u smeru od ure\u0111aja koji je primio poruku do ure\u0111aja koji je poslao poruku.",
+                "Postoji gre\u0161ka u komunikaciji na IP nivou, pa se zahteva novi IP paket.",
+                "Postoji uspe\u0161na dvosmerna IP komunikacija izme\u0111u ure\u0111aja koji je poslao poruku i ure\u0111aja koji je primio poruku.",
+                "Do\u0161lo je do kru\u017eenja paketa u petlji na nekom delu puta do odredi\u0161ta."
+            ]
+        },
+        {
+            "question": "\u0160ta se radi sa IP paketom kada odredi\u0161na adresa mo\u017ee da se upari sa vi\u0161e ruta u ruting tabeli?",
+            "right_answers": [
+                "Bira se ruta sa mre\u017eom koja ima najvi\u0161e bitskih jedinica u masci."
+            ],
+            "false_answers": [
+                "Bira se ruta sa mre\u017eom koja ima najmanje bitskih jedinica u masci.",
+                "Bira se ruta sa najboljom metrikom.",
+                "Bira se ruta sa najboljom administrativnom distancom.",
+                "Paket se odbacuje.",
+                "Ova situacija ne mo\u017ee da se desi.",
+                "Koriste se sve rute."
+            ]
+        },
+        {
+            "question": "\u0160ta se sprovodi u \"Exchange\" stanju OSPF procesa?",
+            "right_answers": [
+                "Ruteri obave\u0161tavaju jedan drugoga koje podatke imaju (razmenjuju link state database deskriptore)."
+            ],
+            "false_answers": [
+                "Ruteri razmenjuju sadr\u017eaje link-state baze podataka.",
+                "Ruteri razmenjuju sve nedostajude podatke u link-state bazama podataka.",
+                "Ni\u0161ta od ponu\u0111enog."
+            ]
+        },
+        {
+            "question": "\u0160ta va\u017ei za 'distance-vector' (DV) i 'Link-state' (LS) ruting protokole kada do odre\u0111ene mre\u017ee postoji vi\u0161e putanja sa razli\u010ditim vrednostima metrike?",
+            "right_answers": [
+                "I DV i LS u ruting tabelu upisuju samo najbolju rutu."
+            ],
+            "false_answers": [
+                "I DV i LS u ruting tabelu upisuju sve rute, a koriste samo najbolju.",
+                "I DV i LS u ruting tabelu upisuju najboju rutu, a drugim ruterima ogla\u0161avanju sve rute.",
+                "DV u ruting tabelu upisuje samo najbolju rutu, a LS sve rute.",
+                "LS u ruting tabelu upisuje samo najbolju rutu, a DV sve rute.",
+                "I DV i LS u ruting tabelu upisuju sve rute i koriste ih za load-balancing."
+            ]
+        },
+        {
+            "question": "\u0160ta va\u017ei za classless ruting protokole?",
+            "right_answers": [
+                "Maska se prenosi kao podatak u routing-update porukama.",
+                "Mo\u017ee se koristiti razli\u010dita du\u017eina maski za razli\u010dite podmre\u017ee."
+            ],
+            "false_answers": [
+                "Ne podr\u017eava se load-balancing",
+                "Maska se ne prenosi kao podatak u routing-update porukama.",
+                "Ne podr\u017eavaju se IP adrese koje pripadaju klasama A, B i C.",
+                "Koriste se samo IP mre\u017ee koje pripadaju 'more-specific' klasama."
+            ]
+        },
+        {
+            "question": "\u0160ta va\u017ei za izvori\u0161nu i odredi\u0161nu IP adresu u zaglavlju IP paketa prilikom njegovog rutiranja iz jednog VLAN-a u drugi VLAN na istom fizi\u010dkom (trank) interfejsu rutera?",
+            "right_answers": [
+                "Izvori\u0161na i odredi\u0161na IP adresa ostaju iste."
+            ],
+            "false_answers": [
+                "Menja se samo odredi\u0161na IP adresa.",
+                "Menja se samo izvori\u0161na IP adresa.",
+                "Izvori\u0161na i odredi\u0161na IP adresa menjaju mesta.",
+                "Ni\u0161ta od ponu\u0111enog.",
+                "Navedeni slu\u010daj nije mogud.",
+                "Izvori\u0161na i odredi\u0161na IP adresa pripadaju istoj IP mre\u017ei."
+            ]
+        },
+        {
+            "question": "\u0160ta va\u017ei za stati\u010dke rute?",
+            "right_answers": [
+                "Stati\u010dke rute imaju vedi prioritet od dinami\u010dkih ruta."
+            ],
+            "false_answers": [
+                "Stati\u010dke rute nemaju next-hop podatke.",
+                "Stati\u010dke rute predstavljaju default rute.",
+                "Stati\u010dke rute se koriste samo na default gateway-u.",
+                "Stati\u010dke rute imaju manji prioritet od dinami\u010dkih ruta."
+            ]
+        },
+        {
+            "question": "\u0160te radi ure\u0111aj kada treba da po\u0161alje IP paket drugom ure\u0111aju na istoj LAN mre\u017ei, a nema njegovu MAC adresu?",
+            "right_answers": [
+                "\u0160alje ARP upit (ARP request)."
+            ],
+            "false_answers": [
+                "IP paket se odbacuje.",
+                "IP paket se enkapsulira u ARP paket.",
+                "IP paket se \u0161alje default gateway ure\u0111aju koji de da prosledi IP paket do odredi\u0161ta."
+            ]
+        },
+        {
+            "question": "U koje poruke se enkapsuliraju OSPF poruke koje se prenose izme\u0111u rutera?",
+            "right_answers": [
+                "U poruke tredeg nivoa (IP)."
+            ],
+            "false_answers": [
+                "U poruke drugog nivoa (Ethernet, PPP...)",
+                "U TCP poruke \u010detvrtog nivoa.",
+                "U UDP poruke \u010detvrtog nivoa.",
+                "Prenose se na aplikativnom nivou."
+            ]
+        },
+        {
+            "question": "U \u0161ta se enakapsuliraju ARP paketi?",
+            "right_answers": [
+                "U Ethernet okvire."
+            ],
+            "false_answers": [
+                "U IP pakete.",
+                "U routing update pakete.",
+                "Ne enkapsuliraju se, jer ARP protokol radi na 2. nivou.",
+                "U PPP okvire."
+            ]
+        },
+        {
+            "question": "Uloga ARP protokola je",
+            "right_answers": [
+                "Da na osnovu IP adrese prona\u0111e MAC adresu odredi\u0161nog ure\u0111aja."
+            ],
+            "false_answers": [
+                "Da na osnovu MAC adrese prona\u0111e IP adresu odredi\u0161nog ure\u0111aja.",
+                "Da prona\u0111e MAC adresu default gateway-a.",
+                "Da na ure\u0111aju postavi IP adresu na osnovu njegove MAC adrese.",
+                "Da na ure\u0111aju postavi MAC adresu na osnovu njegove IP adrese."
+            ]
+        },
+        {
+            "question": "Usled \u010dega se javlja ka\u0161njenje u ra\u010dunarskim mre\u017eama?",
+            "right_answers": [
+                "Ograni\u010dene brzine prenosa signala.",
+                "Vremena obrade u ure\u0111ajima."
+            ],
+            "false_answers": [
+                "Sporog unosa podataka od strane korisnika.",
+                "Ka\u0161njenje se ne javlja.",
+                "Ka\u0161njenje se javlja, ali se ne mo\u017ee detektovati niti primetiti."
+            ]
+        },
+        {
+            "question": "What of the following is true for 'Default gateway'?",
+            "right_answers": [
+                "It has a regular IP address."
+            ],
+            "false_answers": [
+                "It has an IP address with all bits set in the host part.",
+                "It has an IP address with all zeros in the host part.",
+                "It has an IP address of 0.0.0.0.",
+                "It has no IP address."
+            ]
+        }
+    ]
+}
