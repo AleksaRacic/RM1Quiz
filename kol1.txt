@@ -1,0 +1,1160 @@
+Cemu sluze adrese u zaglavljima poruka?
+#Za ostvarivanje komunikacije sa istim slojem na udaljenom uredjaju.
+Za ostvarivanje komunikacije sa susednim visem slojem na istom uredjaju.
+Za ostvarivanje komunikacije sa susednim nizim slojem na istom uredjaju.
+Za ostvarivanje komunikacije sa susednim visim slojem na udaljenom uredjaju.
+Za ostvarivanje komunikacije sa susednim nizim slojem na udaljenom uredjaju.
+Da se poruke prenesu na odgovarajudu mreznu karticu, ako uredjaj ima vise mreznih kartica.
+
+Cemu sluzi backoff algoritam?
+#Da smanji verovatnodu ponovnog nastanka kolizije.
+Da detektuje koliziju.
+Da izbegne koliziju.
+Da generise JAM signal prilikom nastanka kolizije.
+Da obavesti visi sloj da je nastala kolizija.
+
+Cemu sluzi FCS polje u Ethernet okviru?
+#Za proveru greske.
+Za ispravljanje greske.
+Za oznacavanje protokola viseg nivou.
+Za komunikaciju sa susednim nivoima. 
+Da oznaci da li slede pratedi okviri u komunikaciji.
+Za oznacavanje da li je doslo do kolizije.
+
+Da li Ethernet okvir moze da se prenosi izmedju segmenata realizovanih koaksijalnim kablom i UTP kablom?
+#Da, ako su domeni povezani odgovarajudim uredjajem.
+Da, ali se zaglavlje okvira mora promeniti.
+Ne, jer rade na razlicitim brzinama.
+Ne, jer se radi o razlicitim fizickim prenosnim medijima.
+Mogu samo na half-duplex point-to-point vezama.
+
+Da li kod koaksijalnog 10BASE5 Etherneta u full-duplex modu moze dodi do kolizije?
+Da, zato sto se radi o prenosu po koaksijalnom kablu.
+Ne, zato sto se radi o full-dupleks modu.
+#Ne postoji 10BASE5 Etherneta u full-duplex modu.
+Kolizija u ovom slucaju de da zavisi od najvede ukupne duzine u mrezi.
+
+Da li na full-duplex point-to-point vezama moze dodi do kolizije?
+Da, zato sto ove veze predstavljaju jedan kolizioni domen.
+Samo ako se ne koristi Colision Avoidance mehanizam.
+#Ne, zato sto su paketi razdvojeni po razlicitim paricama.
+Full-duplex nije mogud na point-to-point.
+
+Kada se sprovodi enkapsulacije podataka?
+#Kada se podaci prenose sa viseg na nizi sloj referentnog modela.
+Kada se podaci prenose sa nizeg na visi sloj referentnog modela.
+Kada se poruke razmenjuju izmedju stih slojeva referentnog modela na razlicitim racunarima.
+Kada se poruke prenose sa jednog kolizionog domena na drugi.
+Kada se poruke prenose preko ripitera (haba).
+Kada se poruke prenose preko bridza (svica).
+
+Kako se naziva deo sloja veze podataka (Data Link Layer) koji sluzi za komunikaciju sa visim slojem?
+Media Access Control (MAC).
+#Logical Link Control (LLC).
+Link Control Protocol (LCP).
+Network Control Protoco (NCP).
+Data Link Sublayer (DLS).
+Carrier Sense Multiple Access with Collision Detection (CSMA/CD).
+Carrier Sense Multiple Access with Collision Avoidance (CSMA/CA).
+
+Kako se naziva port na svicu koji na nivou segmenta oglasava BPDU pakete sa najmanjom vrednosti Path Cost?
+Root port.
+#Designated port.
+Blocked port.
+Listening port.
+Learning port.
+Fast port.
+
+Kako se naziva port na svicu koji prima najmanju vrednost Path Cost atributa u BPDU porukama?
+#Root port.
+Designated port.
+Blocked port.
+Listening port.
+Fast port.
+
+Kako se zove najbrza tehnika prosledjivanja okvira sa ulaznog na izlazni port svica?,
+#Cut-Through.
+Store and Forward.
+Fragment-Free.
+Express forwarding.
+Full-Duplex.
+Half-Duplex.
+
+Kako se zove najsporija tehnika prosledjivanja okvira sa ulaznog na izlazni port svica?
+#Store and Forward.
+Cut-Through.
+Fragment-Free.
+Express forwarding.
+Full-Duplex.
+Half-Duplex.
+
+Koja je osnovna uloga Spanning Tree protokola?
+#Onemogucavanje nastanka petlji.
+Sprecavanje gubitka paketa.
+Sprecavanje kolizije.
+Omogudavanje VLAN-ova.
+Povezivanje vise kolizionih domena.
+Povezivanje vise sviceva.
+Povezivanje vise habova.
+
+Koje se od navedenih veza realizuju neukrstenim Ethernet kablovima?
+#hab-racunar
+#svic-stampac
+#svic-ruter
+svic-hab
+svic-svic
+racunar-racunar
+
+Koje se od navedenih veza realizuju ukrstenim Ethernet kablovima?
+#svic-hab
+#svic-svic
+#racunar-racunar
+hab-racunar
+svic-stampac
+svic-ruter
+
+Koji karakteristican proces sprovodi svic kada primi okvir ciju odredisnu adresu nema u svojoj tabeli?
+#Flooding
+Learning
+Forwarding
+Filtering
+Aging
+Blocking
+Nista od ponudjenog.
+
+Koji karakteristican proces sprovodi svic kada primi okvira cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju istu oznaku porta?
+#Filtering
+Learning
+Forwarding
+Flooding
+Aging
+Blocking
+Nista od ponudjenog.
+
+Koji karakteristican proces sprovodi svic kada primi okvira cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju razlicitu oznaku porta?
+#Forwarding
+Flooding
+Learning
+Filtering
+Aging
+Blocking
+Nista od ponudjenog.
+
+Koji karakteristican proces sprovodi svic kada primi okvira ciju izvorisnu adresu nema u svojoj tabeli?
+#Learning
+Forwarding
+Flooding
+Filtering
+Aging
+Blocking
+Nista od ponudjenog.
+
+Koji se uslov mora obezbediti da bi se u mrezi uvek mogla detektovati kolizija?
+#Da slot time odgovara dvostrukom vremenu prenosa okvira izmedju dve najudaljenije tacke u mrezi.
+Da bit time odgovara dvostrukom vremenu prenosa okvira izmedju dve najudaljenije tacke u mrezi.
+Da slot time odgovara vremenu prenosa okvira izmedju dve najudaljenije tacke u mrezi.
+Da bit time odgovara vremenu prenosa okvira izmedju dve najudaljenije tacke u mrezi.
+#Da slot time odgovara velicini Jam signala.
+Da bit time odgovara velicini Jam signala.
+Nista od ponudjenog.
+
+Koji uslovi moraju biti ispunjeni da bi se obezbedio roming izmedju vise Access Point (AP) uredjaja?
+#SSID mora da bude isti na svim AP.
+#AP cije se delije preklapaju moraju da imaju razlicite frekvencije.
+Svi AP moraju da imaju iste frekvencijske kanale.
+Svi AP uredjaji moraju da podrzavaju VLAN-ove.
+Svi AP uredjaji moraju da imaju razlicite frekvencije.
+Svaki mobilni uredjaj mora da ima svoju nezavisnu fekvenciju.
+
+Kojom tehnikom se moze povecati brzina prenosa na vezi izmedju dva svica koji imaju sve portove iste brzine?
+#EtherChannel.
+Fast-Forward.
+VLAN.
+Rapid Spanning Tree.
+PortFast.
+Multilink.
+
+Mogudnost prilagodjavanja brzine prenosa (10/100/1000 Mbps) po point-to-point vezi na svicevima zove se
+#Auto-Negotiation
+Asymmetry Link Control
+Back-off.
+To nije omogudeno, jer bi se time narusili uslovi detekcije kolizije.
+Half-Duplex.
+Full-Duplex.
+
+sta bi se desilo kada bi se habovi u mrezi povezu u petlju?
+#Svi okviri bi neograniceno dugo kruzili u petlji.
+Samo broadcast okviri bi neograniceno dugo kruzili u petlji.
+Mreza bi ispravno funkcionisala, jer bi STP protokol ukinuo petlju.
+Svi okviri bi kruzili u petlji tacni odredjeni broj ciklusa (Time To Live) nakon cega bi se odbacili.
+
+sta je od slededeg tacno pri prenosu podataka sa nizeg na visi sloj OSI ili TCP/IP referentnog modela na jednom uredjaju?
+#Odbacuje se zaglavlje nizeg sloja.
+Dodaje se zaglavlje nizeg sloja.
+Odbacuje se zaglavlje viseg sloja.
+Dodaje se zaglavlje viseg sloja.
+Sva zaglavlja se zadrzavaju radi provere da li je doslo do greske.
+
+sta je od slededeg tacno za VLAN-ove?
+#Uredjaji iz istog VLAN-a mogu da komuniciraju na L2 nivou, cak iako su povezani preko vise sviceva.
+Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju na L2 nivou, ako su povezani preko vise sviceva.
+Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju na L2 nivou samo ako su povezani preko istog svica.
+#Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju samo preko rutera.
+Za komunikaciju izmedju dva uredjaja na istom VLAN-u, mora se koristiti ruter.
+Jedan VLAN se moze postaviti samo na jednom svicu.
+
+sta je odlika habova?
+#Pristigle okvire prosledjuju na sve ostale portove.
+#Ne gledaju sadrzaj okvira.
+Gledaju samo zaglavlje okvira.
+Prepoznaju okvire koji su primljeni sa bar jednim pogresnim bitom.
+Detektuju koliziju.
+
+sta je tacno od slededeg?
+#Jam signal emituje svaki uredjaj koji detektuje koliziju tokom slanja okvira.
+Jam se prenosi samo do uredjaja ciji su paketi ucestvovali u koliziji.
+Jam signal emituje samo uredjaj koji je prvi detektovao koliziju.
+Jam signal emituju samo habovi kada prepozna koliziju.
+Jam signal je rezultujudi signal koji predstavlja interferenciju dva ili vise okvira kada dodje do kolizije.
+Jam signal se salje nakon sprovodjenja back-off algoritma.
+
+Zbog cega se ogranicava maksimalno rastojanje izmedju dva krajnja uredjaja (ukupan broj segmenata u nizu), u jednom Ethernet kolizionom domenu?
+#Zbog detekcije kolizije.
+Zbog izbegavanja kolizije.
+Zbog slabljenja signala.
+Zbog smanjenja opteredenja mreze usled kolizije.
+Zbog podrske brodkast saobradaja.
+Nista od ponudjenog.
+
+Zasto se uvodi minimalna velicina Ethernet okvira?
+#Da se obezbedi dovoljno vremena da se uvek detektuje kolizija.
+Da bi se uvek izbegla kolizija.
+Da bi imali dovoljno podataka za generisanje FCS polja i sprovodjenje kontrole greske.
+Da bi podrzali brodcast prenos okvira.
+Zbog smanjenja mogudnosti nastanka kolizije.
+Zbog velicine zaglavlja paketa na visim nivoima.
+
+Zasto se kaze da svicevi rade u "transparentnom" modu?
+#Zato sto ostali uredjaji ne znaju za postojanje sviceva.
+Zato sto svicevi ne znaju za postojanje ostalih uredjaja.
+Zato sto se medjusobno mogu povezati svicevi razlicitih proizvodjaca.
+Zato sto rade na 2. nivou.
+Zato sto podrzavaju Spaning Tree protokol koji je transparentan u odnosu na druge uredjaje.
+
+U kojim de slucajevima Ethernet mrezna kartica da prihvati okvir i prosledi ga visem sloju?
+#Kada pristigne okvir u cijem zaglavlju odredisna adresa (destination address) odgovara MAC adresi mrezne kartice.
+#Kada pristigne okvir u cijem zaglavlju odredisna adresa (destination address) ima sve jedinice.
+Kada pristigne okvir u cijem zaglavlju odredisna adresa (destination address) ima sve nule.
+Kada se prepozna Ethernet identifikator u polju protocol type u zaglavlju okvira.
+Kada je mrezna kartica povezana direktno na hab.
+Kada je mrezna kartica povezana direktno na svic.
+
+sta u slededim slucajevima predstavlja jedan kolizioni domen?
+#Jedan ili vise koaksijalnih Ethernet segmenata medjusobno povezanih ripiterima.
+#Jedan ili vise medjusobno povezanih Ethernet habova, sa svim povezanim uredjajima.
+#Half-duplex veza izmedju racunara i svica.
+Jedan ili vise koaksijalnih Ethernet segmenata medjusobno povezanih bridzevima.
+Jedan ili vise medjusobno povezanih Ethernet sviceva, sa svim povezanim uredjajima.
+Nista od ponudjenog.
+
+sta se sprovodi pri prenosu podataka sa viseg na nizi sloj?
+#Enkapsulacija podataka viseg sloja u poruku nizeg sloja
+#Multipleksiranje vedeg broja protokola viseg sloja u poruke nizeg sloja
+Provera greske u poruci dobijenoj od viseg sloja.
+Demultipleksiranje pristiglih poruka na vise protokola nizeg nivoa.
+Gleda se polje Protocol type na osnovu koga se odlucuje kom protokolu nizeg sloja da se predaju podaci.
+Nista od ponudjenog.
+
+sta se radi kada se na osnovu FCS polja prepozna greska u Ethernet okviru?
+#Nista od ponudjenog.
+Ostedeni paket se odbacuje, a na osnovu izvorisne adrese iz okvira prepoznaje se ko je poslao okvir i od njega se zahteva slanje novog paketa.
+Ako je greska samo na jednom bitu, paket se rekonstruise na osnovu FCS polja iz okvira.
+Paket se prosledjuje visim slojevima koji de pokusati prepoznaju i iskoriste sto vise informacija.
+Izvorisnom uredjaju se salje poruka o gresci, sto je znak da okvir treba da se ponovo posalje.
+Izvorisnom uredjaju se ne salje potvrda prijema, sto je znak da okvir treba da se ponovo posalje.
+Generise se Jam signal.
+
+sta se desava u slucaju da se greska u Ethernet paketu javi u polju za detekciju greske?
+#Greska se prepoznaje, a paket se ceo odbacuje.
+Greska se ne moze prepoznati, a paket se prosledjuje visim slojevima koji de podatke odbaciti.
+Greska se ne moze prepoznati, a paket se prosledjuje visim slojevima koji de podatke prihvatiti jer u njima nema greske.
+Greska se prepoznaje, ali se paket ipak prosledjuje visim slojevima, jer podaci visih slojeva nisu ostedeni.
+Greska se ne moze sa sigurnosdu detektovati, ali se paket ipak preventivno odbacuje.
+
+sta se desava pri prenosu podataka sa nizeg na visi sloj?
+#Nizi sloj zna kom protokolu viseg sloja da prosledi podatke na osnovu informacija iz zaglavlja poruke.
+Nizi sloj zna kom protokolu viseg sloja da prosledi podatke na osnovu konfiguracije sistema.
+Nizi sloj menja pojedina polja u zaglavlju viseg sloja, pre nego sto podatke prosledi visem sloju.
+Nizi sloj menja pojedina polja u svom zaglavlju, pre nego sto podatke prosledi visem sloju.
+Nizi sloj ne mora da zna kom protokolu viseg sloja da prosledi podatke, jer je to zadatak viseg sloja.
+Nista od ponudjenog.
+
+sta se desava kada se na portu svica ukljuci opcija PortFast?
+#Port ne ucestvuje u STP konvergenciji.
+Uspostavlja se najveda moguda brzina koju podrzavaju obe strane.
+Sprovodi se tehnika prosledjivanja paketa sa najmanjim kasnjenjem.
+Na portu se uspostavlja Full-Duplex rezim rada.
+Na portu se uspostavlja Trunk veza.
+
+sta se desava ako dva okvira istovremeno pristignu na razlicite ulazne portove svica i treba da se proslede na razlicite izlazne portove?
+#Okviri se nezavisno prosledjuju.
+Okviri se nezavisno prosledjuju, samo ako se koristi Store-And-Forward tehnika..
+Okviri se nezavisno prosledjuju, ali ne sme da se koristi Cut-Through tehnika.
+Jedan okvir mora da saceka da se drugi okvir prenese u celini.
+Oba okvira se odbacuje i dolazi do retransmisije.
+
+sta radi svic kada primi okvir za koji nema podatak o odredisnoj adresi u svojoj tabeli?
+#Prosledjuje isti okvir na ostale portove.
+Odbacuje okvir i izvorisnom uredjaju vrada poruku o gresci.
+salje novi okvir sa broadkast adresom i ceka odgovor od uredjaja cija se adresa zahteva.
+Odbacuje poruku bez obavestavanja izvorisnog uredjaja o nastaloj gresci.
+Pokrede proces kovergencije u Spaning Tree protokolu.
+
+sta rade svicevi prilikom prosledjivanja Ethernet okvira?
+#Ne menjaju Ethernet okvir.
+U izvorisnu adresu postavljaju MAC adresu porta svica na koji je okvir stigao.
+U izvorisnu adresu postavljaju MAC adresu porta svica na koji se okvir prosledjuje.
+U odredisnu adresu postavljaju MAC adresu porta slededeg svica ili krajnji uredjaj na koji se okvir salje.
+Menjaju polje za kontrolu greske.
+Smanjuju polje TTL za jedan.
+
+sta po pravilu rade slojevi ISO OSI ili TCP/IP referentnog modela kada primaju poruke od viseg sloja?
+#Ne gledaju ni zaglavlje ni podatke dobijene poruke od viseg sloja.
+#Na dobijenu poruku dodaju svoje zaglavlje.
+Gledaju zaglavlje dobijene poruke od viseg sloja kako bi znali da postave polje koje oznacava tip protokola viseg nivoa.
+Na poruku dodaju svoje zaglavlje u zavisnosti od podataka iz zaglavlja viseg nivoa.
+Gledaju zaglavlje viseg sloja i na osnovu toga odlucuju kojem nizem sloju predaju poruku.
+Gledaju zaglavlje na nizem nivou.
+
+sta od ponudjenog rade slojevi ISO OSI i TCP/IP referentnog modela kada prime poruku od nizeg sloja?
+#Gledaju zaglavlja poruke na svom nivou.
+#Odbacuju zaglavlje poruke na svom nivou i prosledjuju poruke visem nivou
+Gledaju zaglavlje na nizem nivou.
+Gledaju zaglavlje na visem nivou i tom nivou prosledjuju poruku.
+Odbacuju zaglavlje na nizem nivou, a prosledjuju poruku visem nivou.
+Odbacuju zaglavlje na visem nivou.
+Nista od ponudjenog.
+
+sta je zajednicko i za habove i za sviceve?
+#Nista od ponudjenog.
+Dele mrezu na razlicite kolizione domene.
+Rade najvise na 1. nivou.
+Rade na 2. nivou.
+Podrzavaju Spaning Tree protokola.
+
+sta je tacno za STP root portove (RP)?
+#Paketi koji iz svica izlaze na RP priblizavaju se root svicu.
+Paketi koji iz svica izlaze na RP udaljavaju se od root svica.
+RP su portovi na root svicu.
+#Root svic nema RP portove.
+Jedan svic moze da ima vise RP portova u jednom STP stablu.
+RP portovi primaju samo BPDU pakete.
+RP portovi salju samo BPDU pakete.
+#Linkovi sa RP uvek pripadaju STP stablu.
+
+sta je tacno za STP designated portove (DP)?
+#Paketi koji iz svica izlaze na DP portove se udaljavaju od root svica.
+Paketi koji iz svica izlaze na DP se priblizavaju root svicu.
+#Svi portovi root svica su DP.
+Predstavljaju portove koji salju samo BPDU pakete.
+Predstavljaju portove koji primaju samo BPDU pakete.
+Linkovi sa DP uvek pripadaju STP stablu.
+Svic moze da ima samo jedan DB port.
+
+sta je tacno za STP bokirane portove (BP)?
+#BP portovi blokiraju sav dolazni saobradaj, osim BPDU poruka.
+Kroz BP portove normalno se prihvata sav dolazni saobradaj, ali se nista ne salju.
+#BP portovi blokiraju sav odlazni saobradaj.
+BP portovi blokiraju celokupni dolazni i odlazni saobradaj.
+BP portovi blokiraju sav dolazni saobradaj.
+salju se samo BPDU poruke.
+
+sta je tacno za NCP (Network Control Protocol) podsloj PPP protokola.
+#Za svaki protokol viseg nivoa postoji posebna NCP instanca
+Sluzi za logicku realizaciju PPP protokola
+Sluzi za ostvarivanje opcionih funkcija PPP protokola
+Sluzi za uspostavljanje PPP veze
+Nista od ponudjenog.
+
+sta je tacno za medjusobno povezivanje segmenata u Ethernet mrezi?
+#Broj povezanih segmenata je neogranicen ako se povezuje preko sviceva.
+#Broj povezanih segmenata je ogranicen ako se povezuje preko habova.
+Broj povezanih segmenata je ogranicen ako se povezuje preko sviceva.
+Broj povezanih segmenata je neogranicen ako se povezuje preko habova.
+Tom prilikom nije mogud broadcast saobradaj.
+Habovima se ne mogu povezivati segmnti razlicitih fizickih medijuma.
+
+sta je tacno za brodkast MAC adresu?
+#Okvire sa odredisnom brodkast adresom svicevi prosledjuju na sve izlazne portove
+#Svi biti brodkast adrese su jedinice
+Okvire sa odredisnom brodkast adresom svicevi prosledjuju na sve izlazne portove i tom prilikom je menjaju u pojedinacne unikast adrese
+Okvire sa izvorisnom brodkast adresom svicevi prosledjuju na sve izlazne portove
+Brodkast adresa je fizicki upisana u mrezne kartice uredjaja (burned-in)
+Okviri sa brodkast adresama se ne mogu koristi u mrezi sa habovima zbog kolizije
+Brodkast adresa se ne koristi u Ethernet okviru
+Osnovna namena brodkast adrese je oglasavanje greske
+
+sta je tacno od slededih tvrdnji vezano za koliziju
+#Kolizija ne sme da se javi kada je okvir napustio Ethernet karticu.
+Kolizija moze da se detektuje i kada je okvir napustio Ethernet karticu.
+#Tokom slanja okvira, Ethernet kartica prati da li su na mrezi trenutno prisutni i drugi okviri na mrezi ili Jam signal.
+Ethernet kartica prati da li su trenutno prisutni samo Jam signali na mrezi.
+Ethernet kartica sprovodi back-off algoritam pre slanja svakog okvira.
+Kolizija moze da nastane samo prilikom izlaska zaglavlja okvira na mrezu.
+
+sta je tacno od slededih iskaza vezana za slojeve referentnog modela kakav je OSI ili TCP/IP?
+#Slojevi komuniciraju sa susednim nizim i susednim visim slojem na istom uredjaju.
+#Slojevi komuniciraju sa istim slojem na udaljenom uredjaju.
+Slojevi komuniciraju sa susednim nizim i susednim visim slojem na udaljenom uredjaju.
+Svi slojevi se koriste za sve vrste komunikacija izmedju uredjaja.
+Nista od ponudjenog.
+
+sta po pravilu rade slojevi ISO OSI ili TCP/IP referentnog modela kada primaju poruke od nizeg sloja?
+Gledaju zaglavlje na nizen nivou.
+#Gledaju zaglavlje poruke samo na svom nivou.
+Gledaju zaglavlja na svom nivou i podatke viseg nivoa.
+Gledaju zaglavlje na visem nivou.
+Ne gledaju zaglavlja na svom nivou, jer su podaci vec pristigli i za tim nema potrebe.
+
+Habovi omogucavaju full-duplex prenos okvira, ako imaju podrzanu auto-negotiation funkciju.
+Tacno 
+#Netacno
+
+sta je od sledeceg tacno pri prenosu podataka sa viseg na nizi sloj OSI ili TCP/IP referentnog modela na jednom uredjaju?
+#Ukupna kolicina podataka se povecava.
+Ukupna kolicina se ne menja.
+Ukupna kolicina podataka se smanjuje.
+
+sta je tacno od sledecih iskaza vezana za slojeve referentnog modela kakav je OSI ili TCP/IP?
+Slojevi medjusobno ne komuniciraju. 
+#Slojevi komuniciraju sa susednim nizim i susednim visim slojem na istom uredjaju. 
+#Slojevi komuniciraju sa istim slojem na udaljenom uredjaju. 
+Slojevi komuniciraju samo sa istim slojevima na istom racunaru, ali na kojima se sprovode razliciti protokoli. 
+Slojevi komuniciraju iskljucivo direktnim pristupom mreznoj kartici. 
+
+U kojim slucajevima se prenose informacija o pripadnosti VLAN-u u Ethernet okviru?
+#Kada se okvir prenosi po trank linku. 
+Prenosi se u posebnim kontrolnim okvirima. 
+Prenosi se i na access linku i na trank linku. 
+Kada se okvir prenosi po access linku. 
+Ne prenosi se u okviru vec se konfigurise na svicu. 
+
+Koji karakteristican proces sprovodi svic kada primi okvira cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju istu oznaku porta?
+Learning 
+Flooding 
+Blocking 
+#Filtering 
+Nista od ponudjenog. 
+Forwarding 
+Aging 
+
+Kako se zove tehnika prosledjivanja okvira sa ulaznog na izlazni port svica, koja omogucava proveru greske?
+#Store and Forward. 
+Cut-Through. 
+Full-Duplex. 
+Half-Duplex. 
+Fragment-Free. 
+
+Koji karakteristican proces sprovodi svic kada primi okvira cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju razlicitu oznaku porta?
+Flooding 
+Filtering 
+#Forwarding 
+Nista od ponudjenog. 
+Learning 
+Blocking 
+Aging
+
+Koja tehnika se moze koristiti za poboljsanje veze servera i vecieg broja korisnika preko svica koji ima portove iste brzine?
+#EtherChannel. 
+PortFast. 
+VLAN. 
+Rapid Spanning Tree. 
+Fast-Forward.
+
+Kako se naziva port na svicu koji prima najmanju vrednost Path Cost atributa u BPDU porukama?
+Blocked port. 
+#Root port. 
+Designated port. 
+Listening port.  
+
+Koji je osnovni nedostatak Spanning Tree protokola?
+Nema podrske za VLAN-ove. 
+Mogucnost pojave petlji. 
+#Spora konvergencija. 
+Ne znam. 
+Mogucnost pojave kolizije.
+
+Da bi se racunar povezao na fast-Ethernet svic, mora se konfigurisati MAC adresa porta svica na koji je uredaj povezan.
+True 
+#False 
+
+Habovi dele mrezu na razlicite kolizione domene.
+True 
+#False 
+
+Koji karakteristican proces sprovodi svic kada primi okvir cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju razlicitu oznaku porta?
+Aging 
+Flooding 
+Filtering 
+Nista od ponudenog. 
+Blocking 
+Learning 
+#Forwarding
+
+Koji karakteristican proces sprovodi svic kada primi okvir ciju odredisnu adresu nema u svojoj tabeli?
+Blocking 
+Aging 
+#Flooding 
+Filtering 
+Learning 
+Forwarding 
+Nista od ponudenog.  
+
+sta je tacno od sledecih tvrdnji vezanih za CSMA/CD algoritam?
+Algoritam radi samo za dva direktno povezana uredaja. 
+Algoritam sprecava da dode do kolizije. 
+Algoritam prepoznaje koliziju i uspeva da rekonstruise okvire koji ucestvuju u koliziji. 
+#Uredaji ciji su okviri prouzrokovali koliziju, cekaju slucajno izabrani vremenski interval i reemituju okvire.
+Uredaji ce neograniceno pokusavati da salju isti okvir ukoliko dolazi do ucestale kolizije. 
+#Algoritam dozvoljava koliziju, ali definise kako se ona prepoznaje i razresava.
+
+Na jednom habu se moze definisanti vise VLAN-a koji ce nezavisno da rade.
+True 
+#False
+
+Koji karakteristican proces sprovodi svic kada primi okvira ciju izvorisnu adresu nema u svojoj tabeli?
+Nista od ponudenog. 
+Aging 
+Flooding 
+Forwarding 
+Filtering 
+Blocking 
+#Learning
+
+Okvir koji je emitovan na Ethernet koaksijalni segment (10BASE2, 10BASE5), pomocu odgovarajucih uredaja moze neizmenjen da se prosledi na opticki fast-Ethernet segment (100BASE-FX).
+#True 
+False
+
+Habovi podrzavaju (sprovode) Spanning Tree protokol.
+True 
+#False 
+
+Cemu sluzi poslednje polje u Ethernet okviru?
+Za detekciju i ispravljanje greske. 
+Za sinhronizaciju izmedu svih uredaja u jednom kolizionom domenu. 
+Za oznacavanje protokola viseg nivou. 
+#Za detekciju greske. 
+
+Cemu sluze adrese u zaglavljima poruka?
+Da se poruke prenesu susednom visem sloju na istom uredaju. 
+Da se poruke prenesu na odgovarajucu mreznu karticu, ako uredaj ima vise mreznih kartica. 
+#Da se poruke prenesu uparenom sloju na udaljenom uredaju. 
+Da se poruke prenesu susednom nizem sloju na istom uredaju. 
+
+Kako se zove funkcionalnost koja omogucuje povezivanje dva Ethernet uredaja na najvecoj zajednickoj brzini?
+Half-Duplex. 
+Asymmetry Link Control 
+To nije omoguceno, jer bi se time narusili uslovi detekcije kolizije. 
+#Auto-Negotiation 
+Back-off.
+
+Koji karakteristican proces sprovodi svic kada primi okvir ciju izvorisnu adresu nema u svojoj tabeli?
+Aging 
+Filtering 
+Flooding 
+Nista od ponudenog. 
+Forwarding 
+#Learning 
+Blocking   
+
+sta se mora obezbediti prilikom slanja Ethernet okvira da bi se omogucila detekcija kolizije?
+Da okvir izlazi na mrezu za vreme koje je odgovara vremenu prenosa okvira izmedu dve najudaljenije tacke u mrezi. 
+Da okvir izlazi na mrezu za vreme koje je odgovara velicini Jam signala. 
+Da veza radi u Full-Duplex rezimu 
+#Da okvir izlazi na mrezu za vreme koje je odgovara dvostrukom vremenu prenosa okvira izmedu dve najudaljenije tacke u mrezi. 
+Da se okvir podeli na manje delove, kako bi imali vremena za detekciju Jam signala. 
+
+sta omogucava Trank Link?
+Veza koja je uspostavljena preko Auto-Negotioation opcije. 
+#Prenos okvira za vise VLAN-ova preko jedne fizicke veze. 
+Vise paralelnih fizickih veza koje se tretiraju kao jedna logicka veza. 
+Veza koja je realizovana ukrstenim kablovima. 
+Povezivanje servera na svic na vecoj brzini od brzine ostalih portova (asimtericno). 
+
+sta vazi za VLAN-ove?
+Moguca je komunikacija izmedu uredaja na razlicitim VLAN-ovima, a koji su povezani preko istog svica. 
+Za komunikaciju izmedu dva uredaja na istom VLAN-u, mora se koristiti ruter. 
+Jedan VLAN se moze postaviti samo na jednom svicu. 
+#Za komunikaciju izmedu dva uredaja na razlicitim VLAN-ovima, mora se koristiti ruter. 
+#Moguca je komunikacija izmedu dva uredaja na istom VLAN-u, a koji su povezani preko dva svica. 
+U VLAN-ovima nema kolizije. 
+
+Koji uredaj je potrebno obezbediti na strani korisnika kada se koristi digitalna serijska veza?
+#CSU/DSU uredaj 
+Voice-band modem 
+DSL modem 
+Ne znam. 
+Digitalni modem 
+Kablovski modem 
+
+Sta je tacno za STP bokirane portove (BP)?
+#BP portovi blokiraju sav dolazni saobracaj, osim BPDU poruka. 
+salju se samo BPDU poruke. 
+BP portovi blokiraju celokupni dolazni i odlazni saobracaj. 
+#BP portovi blokiraju sav odlazni saobracaj. 
+BP portovi blokiraju sav dolazni saobracaj. 
+BP portova prihvataju sav dolazni saobracaj, ali nista ne salju.
+ 
+Na jednom habu se moze definisanti vise VLAN-a koji ce nezavisno da rade.
+True
+#False  
+
+Sta je tacno za STP root portove (RP)?
+RP su portovi samo na root svicu.
+Paketi koji iz svica izlaze na RP udaljavaju se od root svica.
+RP portovi primaju samo BPDU pakete.
+#RP prenose saobracaj u oba smera.
+Nista od ponudenog.
+#Paketi koji iz svica izlaze na RP priblizavaju se root svicu.
+
+Kada svic nema podatak o odredisnoj adresi u svojoj tabeli, poslace se novi okvir sa broadkast adresom i cekace se odgovor od uredaja cija se adresa zahteva.
+True
+#False  
+
+Sta omogucava PortFast tehnika kod sviceva?
+Da se poveze uredaj na vecoj brzini (asimetricno).
+#Da se preskoci Listening i Learning STP stanje na portu i ubrza konvergencija.
+Da se omoguci brzo prosledivanje okvira cim se ocita odredisna adresa.
+Da se veza uspostavi na u Full-Duplex rezimu rada. 
+
+Sta vazi za VLAN-ove?
+#Moguca je komunikacija izmedu dva uredaja naistom VLAN-u, a koji su povezani preko dva svica.
+Za komunikaciju izmedu dva uredaja na istom VLAN-u, mora se koristiti ruter.
+U VLAN-ovima nema kolizije.
+Jedan VLAN se moze postaviti samo na jednom svicu.
+#Za komunikaciju izmedu dva uredaja na razlicitim VLAN-ovima, mora se koristiti ruter.
+Moguca je komunikacija izmedu uredaja na razlicitim VLAN-ovima, a koji su povezani preko istog svica. 
+
+Sta vazi za Ethernet okvire koji se sa Access Linka prosleduje na Trank Link?
+#Povecava im se velicina, jer se okviru dodaju nova polja.
+Smanjuje im se velicina. c. Iste su velicine, ali su izmenjeni.
+Enkapsuliraju se u nove okvire (tunneling)
+Nista od ponudenog.
+Iste su velicine i nisu izmenjeni.
+
+Kako se naziva port nasvicu koji na nivou segmenta oglasava BPDU pakete sa najmanjom vrednosti Path Cost?
+Root port
+Blocked port
+Listening port
+#Designated port
+Learning port
+
+Kada se detektuje greska u FCS polju okvira desava se sledece?
+Ne moze da se dogodi greska u ovom polju jer seokvir ne bi prosledio.
+#Detektuje se greska ali ne i u kom delu okvira je nastupila tacno pa se okvir odbacuje.
+Okvir se prosledjuje dalje (dve verzije, ne secam se tacno kako su glasili ali u obe se okvir slao dalje).
+
+Kada svic primi okvir onradi sledece?
+U polje source okvira upisuje adresu destinacije.
+U polje source okvira upisuje svoju adresu.
+Menja polje FCS.
+#Ne menja ih.
+Nista od ponudjenog.
+
+Adresa sluzi za adresiranje?
+#Istog sloja na udaljenom racunaru
+Viseg/nizeg sloja na istom/udaljenom racunaru
+
+Sta radi sloj kada primi okvir od nizeg nivoa?
+#Gleda svoje zaglavlje
+Gleda zaglavlje viseg/nizeg nivoa
+Ne gleda zaglavlje, jer je vec primio okvir pa za tim nema potrebe.
+
+Hab podrzava postojanje vise vlan-ova
+true
+#false
+
+Kako frgment zna kom IP-u pripada:
+preko polja offset
+preko polja more fragments
+preko polja offset i more fragments
+#ista od navedenog jer imas polje Identificaton koji je za fragment isti kao i ID originalnog paketa.
+
+Kome su namenjeni podaci u zaglavlju poruke na nekom ISO OSI sloju?
+Sloju viseg nivoa na udaljenom uredjaju.
+#Sloju istog nivoa na udaljenom uredjaju.
+Sloju nizeg nivoa na udaljenom uredjaju.
+Sloju nizeg nivoa na istom uredjaju.
+Sloju viseg nivoa na istom uredjaju.
+
+1. sloj (najnizi)Choose...
+Prezentacioni sloj (Presentation Layer)
+Aplikacioni sloj (Application Layer)
+Transportni sloj (Transport Layer)
+Mrezni sloj (Network Layer)
+#Fizicki sloj (Physical Layer)
+Sloj veze podataka (Data Link Layer)
+Sloj sesije (Session Layer) 
+
+2. sloj (odozdo) Chose...
+Prezentacioni sloj (Presentation Layer)
+Aplikacioni sloj (Application Layer)
+Transportni sloj (Transport Layer)
+Mrezni sloj (Network Layer)
+Fizicki sloj (Physical Layer)
+#Sloj veze podataka (Data Link Layer)
+Sloj sesije (Session Layer) 
+
+3. sloj (odozdo) Choose...
+Prezentacioni sloj (Presentation Layer)
+Aplikacioni sloj (Application Layer)
+Transportni sloj (Transport Layer)
+#Mrezni sloj (Network Layer)
+Fizicki sloj (Physical Layer)
+Sloj veze podataka (Data Link Layer)
+Sloj sesije (Session Layer) 
+
+4. sloj Choose ...
+Prezentacioni sloj (Presentation Layer)
+Aplikacioni sloj (Application Layer)
+#Transportni sloj (Transport Layer)
+Mrezni sloj (Network Layer)
+Fizicki sloj (Physical Layer)
+Sloj veze podataka (Data Link Layer)
+Sloj sesije (Session Layer) 
+
+5. sloj Choose...
+Prezentacioni sloj (Presentation Layer)
+Aplikacioni sloj (Application Layer)
+Transportni sloj (Transport Layer)
+Mrezni sloj (Network Layer)
+Fizicki sloj (Physical Layer)
+Sloj veze podataka (Data Link Layer)
+#Sloj sesije (Session Layer)
+
+6. sloj Choose...
+#Prezentacioni sloj (Presentation Layer)
+Aplikacioni sloj (Application Layer)
+Transportni sloj (Transport Layer)
+Mrezni sloj (Network Layer)
+Fizicki sloj (Physical Layer)
+Sloj veze podataka (Data Link Layer)
+Sloj sesije (Session Layer) 
+
+7. sloj Choose...
+Prezentacioni sloj (Presentation Layer)
+#Aplikacioni sloj (Application Layer)
+Transportni sloj (Transport Layer)
+Mrezni sloj (Network Layer)
+Fizicki sloj (Physical Layer)
+Sloj veze podataka (Data Link Layer)
+Sloj sesije (Session Layer)
+
+Kada paket dodje sa viseg na nizi sloj, tekuci sloj dodaje svoje zaglavlje i prosledjuje dalje : 
+#True
+False
+
+Kada se ide na dole po ISO slojevima velicina podatka za slanje se:
+#povecava
+smanjuje
+ostaje ista
+
+Kada paket dodje sa nizeg na visi sloj, tekuci sloj odbacuje zaglavlje nizeg sloja:
+#True
+False
+
+Sta se odnosi na prenos sa viseg na nizi nivo referentnog modela:
+#enkapsulacija
+#multipleksiranje
+dekapsulacija
+demultipleksiranje
+nesto bezveze
+
+Kome su namenjeni podaci u zaglavlju poruke na nekom ISO OSI sloju?
+Sloju viseg nivoa na istom uredjaju.
+#Sloju istog nivoa na udaljenom uredjaju.
+Sloju nizeg nivoa na istom uredjaju.
+Sloju nizeg nivoa na udaljenom uredjaju.
+Sloju viseg nivoa na udaljenom uredjaju.
+
+Sta je tacno od sledecih tvrdnji vezanih za CSMA/CD algoritam?
+Algoritam radi samo za dva direktno povezana uredaja.
+Algoritam sprecava da dode do kolizije.
+Algoritam prepoznaje koliziju i uspeva da rekonstruise okvire koji ucestvuju u koliziji.
+#Uredaji ciji su okviri prouzrokovali koliziju, cekaju slucajno izabrani vremenski interval i reemituju okvire.
+Uredaji ce neograniceno pokusavati da salju isti okvir ukoliko dolazi do ucestale kolizije.
+Ne znam.
+#Algoritam dozvoljava koliziju, ali definise kako se ona prepoznaje i razresava.
+
+Sta se mora obezbediti prilikom slanja Ethernet okvira da bi se omogucila detekcija kolizije?
+Da okvir izlazi na mrezu za vreme koje je odgovara vremenu prenosa okvira izmedu dve najudaljenije tacke u mrezi. 
+Da okvir izlazi na mrezu za vreme koje je odgovara velicini Jam signala.
+Da veza radi u Full-Duplex rezimu.
+#Da okvir izlazi na mrezu za vreme koje je odgovara dvostrukom vremenu prenosa okvira izmedu dve najudaljenije tacke u mrezi.
+Da se okvir podeli na manje delove, kako bi imali vremena za detekciju Jam signala.
+
+Da bi se detektovala kolizija:
+bit time je dvostruko vreme prenosa okvira izmedu dve najudaljenije tacke u mrezi.
+#slot time je dvostruko vreme prenos aokvira izmedu dve najudaljenije tacke u mrezi.
+isto kao vreme prenosaokvira izmedu dve najudaljenije tacke u mrezi.
+
+Jam signal emituju:
+#Sve stanice ciji su okviri doveli do kolizije.
+Sve stanice koje salju okvire.
+Stanica koja prima okvir.
+Stanica koja prva detektuje koliziju.
+
+Sta je backoff algoritam?
+#Algoritam koji se koristi pri reemitovanju okvira koji su bili u koliziji.
+Algoritam kontrole greske na nivou bita, ciji se rezultatstavlja na kraj okvira.
+Algoritam generisanja JAM signala.
+Algoritam obavestavanja viseg sloja da je doslo do kolizije, cime se signalizira da se smanji brzinu emitovanja paketa.
+Algoritam kojim se detektuje kolizija.
+
+Cemu sluze adrese u zaglavljima poruka?
+Da se poruke prenesu susednom visem sloju na istom uredaju.
+Da se poruke prenesu na odgovarajucu mreznu karticu, ako uredaj ima vise mreznih kartica.
+#Da se poruke prenesu uparenom sloju na udaljenom uredjaju.
+Da se poruke prenesu susednom nizem sloju na istom uredaju.
+
+Cemu sluzi poslednje polje u Ethernet okviru?
+Za detekciju i ispravljanje greske.
+Za sinhronizaciju izmedu svih uredaja u jednom kolizionom domenu.
+Za oznacavanje protokola viseg nivou.
+#Za detekciju greske.
+
+Sta se desava kada dodje do greske u prenosu okvira?
+Gleda se ko je posiljalac.
+Ne salje se potvrda o prijemu okvira.<-a ovo?
+#Okvir se odbacuje.(ne znam da li je bilo ponudjeno)
+jos nesto
+
+Kada se detektuje greska u FCS polju okvira desava se sledece?
+Ne moze da se dogodi greska u ovom polju jer se okvir ne bi prosledio.
+#Detektuje se greska ali ne i u kom delu okvira je nastupila tacno pa se okvir odbacuje.
+Okvir se prosledjuje dalje (dve verzije, ne secam se tacno kako su glasili ali u obe se okvir slao dalje).
+
+Kako se zove funkcionalnost koja omogucuje povezivanje dva Ethernet uredaja na najvecoj zajednickoj brzini?
+Half-Duplex.
+Asymmetry Link Control
+To nije omoguceno, jer bi se time narusili uslovi detekcije kolizije.
+#Auto-Negotiation
+Back-off.
+
+Kako se naziva deo sloja veze podataka (Data Link Layer) koji sluzi za komunikaciju sa nizim slojem?
+#Media Access Control (MAC).
+Carrier Sense Multiple Access with Collision Detection (CSMA/CD).
+Link Control Protocol (LCP).
+Data Encapsulation Control (DEC).
+Logical Link Control (LLC).
+Network Control Protocol (NCP).
+
+Koju od sledecih vrsta adresa Ethernet uredaj moze da se koristi za komunikaciju sa vise od jednog uredaja istovremeno?
+Adresa na mreznoj kartici (burned-in).
+Unikast.
+#Brodkast.
+#Multikast.
+Ne znam.
+Softverska adresa.
+
+Na half-duplex vezi moze doci do kolizije.
+#True
+False
+
+Da li na half-duplex point-to-point vezi moze da dodje do kolizije?
+#Ne postoji point-to-point sa half-duplex.
+Da, zato sto je isti kolizioni domen.
+Ne, zato sto ima Collision Avoidance.
+jos nesto netacno
+
+Okvir koji je emitovan na Ethernet koaksijalni segment (10BASE2, 10BASE5), pomocu odgovarajucih uredaja moze neizmenjen da se prosledi na opticki fast-Ethernet segment (100BASE-FX).
+#True
+False
+
+Kada svic primi okvir on radi sledece?
+U polje source okvira upisuje adresu destinacije.
+U polje source okvira upisuje svoju adresu.
+Menja polje FCS.
+#Ne menja ih.
+Nista od ponudjenog.
+
+Svi portovi haba moraju da budu iste brzine.
+#True
+False
+
+Svaki port svica, tj.segment koji on cini, je poseban kolizioni domen.
+#True
+False
+
+Sta radi svic kada primi brodkast okvir?
+Filtering
+Flooding
+#Forwarding
+Odbacuje okvir
+#Learning
+
+Koji karakteristican proces sprovodi svic kada primi okvir cija se izvorisna i odredisna adresa nalaze u tabeli svica, gde imaju razlicitu oznaku porta?
+Aging
+Flooding
+Filtering
+Nista od ponudenog
+Blocking
+Learning
+#Forwarding 
+
+Koji karakteristican proces sprovodi svic kada primi okvir ciju odredisnu adresu nema u svojoj tabeli?
+Blocking
+Aging
+#Flooding
+Filtering
+Learning
+Forwarding
+Nista od ponudenog.
+
+Koji karakteristican proces sprovodi svic kada primi okvira ciju izvorisnu adresu nema u svojoj tabeli?
+Nista od ponudenog.
+Aging
+Flooding
+Forwarding
+Filtering
+Blocking
+#Learning
+
+Koji karakteristican proces sprovodi svic kada primi okvira ciju izvorisnu adresu ima u bridz tabeli, a ista je oznaka portasa kog je okvir pristigao kao ioznaka porta na koji se salje?
+Nista od ponudenog.
+Aging
+Flooding
+Forwarding
+#Filtering
+Blocking
+Learning
+
+Kada svic nema podatak o odredisnoj adresi u svojoj tabeli, poslace se novi okvir sa broadkast adresom i cekace se odgovor od uredaja cija se adresa zahteva.
+True
+#False 
+
+Najbrzi nacin prosledjivanja preko svica je:
+Store and Forward
+#Cut-Through
+Fragment-Free
+#FastForward(drugi naziv za cut-through)
+Jos tri ponudjene gluposti
+
+Prenos preko svica koji ima portove istih brzina moze da se ubrza sa:
+Fast-Forward.
+Rapid Spanning Tree.
+#EtherChannel.
+PortFast.
+VLAN.
+
+Sta je tacno za STP root portove (RP)?
+RP su portovi samo na root svicu.
+Paketi koji iz svica izlaze na RP udaljavaju se od root svica.
+RP portovi primaju samo BPDU pakete.
+#RP prenose saobracaj u oba smera.
+Nista od ponudenog.
+#Paketi koji iz svica izlaze na RP priblizavaju se root svicu.  
+
+Sta je tacno za STP bokirane portove (BP)?
+BP portovi blokiraju sav dolazni saobracaj, osim BPDU poruka.
+Salju se samo BPDU poruke.
+BP portovi blokiraju celokupni dolazni i odlazni saobracaj.
+#BP portovi blokiraju sav odlazni saobracaj.
+BP portovi blokiraju sav dolazni saobracaj.
+#BP portova prihvataju sav dolazni saobracaj, ali nista ne salju. (primaju dolazni i odbacuju sem BPDU koje osluskuju)
+
+Port na svicu koji je na nivou segmenta blizi root bridzu je:
+#Designated port
+RP
+BP
+Sta god
+
+Kako se naziva port na svicu koji na nivou segmenta oglasava BPDU pakete sa najmanjom vrednosti Path Cost?
+Root port.
+Blocked port.
+Listening port.
+#Designated port.
+Learning port.
+
+Sta omogucava PortFast tehnika kod sviceva?
+Da se poveze uredaj na vecoj brzini (asimetricno).
+#Da se preskoci Listening i Learning STP stanje na portu i ubrza konvergencija.
+Da se omoguci brzo prosledivanje okvira cim se ocita odredisna adresa.
+Da se veza uspostavi na u Full-Duplex rezimu rada. 
+
+Koja je osnovna uloga Spanning Tree protokola?
+Podrske za VLAN-ove.
+#Sprecavanje pojave petlji.
+Sprecavanje kolizije.
+Ne znam.
+neka glupost
+
+Koji uredaj je potrebno obezbediti na strani korisnika kada se koristi digitalna serijska veza?
+#CSU/DSU uredaj
+Voice-band modem
+DSL modem
+Ne znam.
+Digitalni modem
+Kablovski modem
+
+Sta mora da vazi da bi postojao roming?
+Susedne celije koriste iste frekvencijske kanale.
+#Susedne celije koriste razlicite frekvencijske kanale.
+
+PPP protokol sprovodi detekciju greske na nivou svakog okvira.
+#True 
+False
+
+Multilink opcija podrazumeva povezivanje dva uredjaja sa dve nezavisne PPP veze, po jedna u svakom smeru.
+Tacno
+#Netacno
+
+Koji uredjaji ili protokoli podrzavaju full-duplex rezim prenosa podataka?
+#Svicevi
+Habovi
+Habovi, ali samo po optickim vlaknima.
+WLAN
+#PPP
+
+PPP sesija se prekida ako se ugasi IPCP sesija na NCP protokolu.
+True
+#False
+
+HDLC ne podrzava autentifikaciju podataka kao opcionu funkciju.
+Tacno
+#Netacno
+
+HDLC enkapsulira IP?
+#true
+false
+
+HDLC podrzava kompresiju podataka.
+True
+#False.
+
+HDLC protokol sprovodi detekciju greske na nivou svakog okvira.
+#Tacno
+Netacno
+
+Sta se desava kada se na udaljenoj strani pri prijemu HDLC okvira u podacima pojavi sekvenca koja odgovara polju FLAG?
+Nista od ponudjenog.
+Nakon sekvence se umece bit “0”.
+#Ne moze da se pojavi sekvenca koja odgovara polju FLAG.
+Okvir se deli na dva nova okvira (segmentacija).
+Nakon sekvence se umece bit “1”.
+Okvir se spaja sa narednim okvirom. 
+
+sta je tacno od slededeg vezano za HDLC?
+#HDLC je protokol prenosa podataka na drugom nivou.
+HDLC je protokol prenosa podataka na tredem nivou.
+HDLC se enakapsulira u IP pakete.
+HDLC se enakapsulira u Ethernet pakete.
+
+sta je Trunk Link?
+#Veza izmedju sviceva po kojoj se prenose okviri iz razlicitih VLAN-ova.
+Veza izmedju sviceva po kojoj se prenose okviri iz istog VLAN-na.
+Veza izmedju sviceva po kojoj se prenose okviri na brzini vedoj od ostalih veza.
+Veza koja je uspostavljena preko Auto-Negotiation opcije.
+Veza izmedju sviceva koja pripada jednom VLAN-u.
+Vise paralelnih fizickih veza izmedju sviceva koje se tretiraju kao jedna logicka veza.
+
+sta je od slededeg tacno za VLAN-ove?
+#Uredjaji iz istog VLAN-a mogu da komuniciraju na L2 nivou, cak iako su povezani preko vise sviceva.
+Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju na L2 nivou, ako su povezani preko vise sviceva.
+Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju na L2 nivou samo ako su povezani preko istog svica.
+#Uredjaji iz razlicitih VLAN-ova mogu da komuniciraju samo preko rutera.
+Za komunikaciju izmedju dva uredjaja na istom VLAN-u, mora se koristiti ruter.
+Jedan VLAN se moze postaviti samo na jednom svicu.
+
+Na jednom habu se moze definisanti vise VLAN-a koji ce nezavisno da rade.
+True 
+#False
+
+sta omogucava Trank Link?
+Povezivanje servera na svic na vecoj brzini od brzine ostalih portova (asimtericno). 
+Veza koja je realizovana ukrstenim kablovima. 
+Vise paralelnih fizickih veza koje se tretiraju kao jedna logicka veza. 
+#Prenos okvira za vise VLAN-ova preko jedne fizicke veze. 
+Veza koja je uspostavljena preko Auto-Negotioation opcije.
+
+Na koji nacin se vise klijenata moze povezati na jedan server?
+#VLAN
+EtherChannel
+PortFast
+Neka glupost
+
+Sta je tacno za WLAN mreze.
+U WLAN mrezi moze da dode do kolizije, ali se primljeni paketi mogu uspesno rekonstruisati koriscenjem CSMA/CA algoritma.
+U WLAN mrezi ne moze da dode do kolizije, jer se koristi algoritam izbegavanja kolizije (Colission Avoidance).
+U WLAN mrezi moze da dode do kolizije, samo ako se ne koristi full-duplex rezim rada.
+U WLAN mrezi ne moze da dode do kolizije, jer se koriste rezlicite frekvencije za savki uredaj.
+#U WLAN mrezi moze da dode do kolizije.
+
+Kako se detektuje kolizija u WLAN mrezi?
+#Izostankom poruke koja potvrdjuje prijem okvira.
+Emituje se posebna poruka po drugom (kontrolnom) kanalu.
+Access Point uredaj salje JAM signal.
+U WLAN mrezi nemoze da se detektuje kolizija, jer se koristi metoda izbegavanja kolizije (CSMA/CA)
+U WLAN mrezi ne moze da dodje do kolizije.
+
+Sta je tacno za WLAN mreze?
+#Uredjaji povezani na Access Point u jednoj WLAN mrezi koriste istu frekvenciju.
+Uredjaji u jednoj WLAN mrezi koriste jednu frekvenciju za slanje, a drugu za prijem podataka.
+Uredjaji u jednoj WLAN mrezi koriste razlicite frekvencije da bi mogli medjusobno da komuniciraju.
+
+Koja je uloga Access Point uredaja u WLAN mrezi?
+Access Point uredaj sluzi samo za prenos potvrda prijema u WLAN mrezi.
+Access Point uredaj sluzi samo za kontrolne funkcije u mrezi, kao sto je uclanjivanje i raskidanje veze.
+#Access Point uredaj prenosi sve okvire u WLAN mrezi.
+Access Point uredaj prenosi samo okvire koje izlaze iz WLAN mreze.
+
+Jedna WLAN mreza moze da se podeli na vise udaljenih Access Point uredaja.
+#True
+False
+
+Jedan Access Point moze da opsluzuje vise nezavisnih WLAN mreza.
+#True
+False
+
+Kako se obavlja komunikacija izmedju uredjaja A i B u WLAN mrezi u infrastrukturnom modu rada?
+#Svi paketi izmedju A i B se prenose poreko Access Point uredjaja.
+Uredjaji A i B se najpre registruju na mrezu preko Access Point uredjaja, a zatim direktno razmenjuju pakete.
+Svi paketi izmedju A i B se prenose preko Access Point uredjaja osim JAM paketa koji se prenosi direktno do svih uredjaja ako nastane kolizija.
+Samo broadkast paketi izmedju A i B se prenose poreko Access Point uredjaja.
+
+sta predstavlja SSID u WLAN mrezi?
+#Tekstualni naziv WLAN mreze.
+Tekstualni kljuc za pristup WLAN mrezi.
+Binarni kljuc za pristup WLAN mrezi.
+Password koji se dodeljuje svakom uredjaju u WLAN mrezi.
+Tekstualni naziv Access Point uredjaja.
+Identifikacija protokola koji se koristi u mrezi i sluzi zbog provere kompatibilnosti.
+
+sta je tacno od slededeg vezano za bezicne LAN mreze (WLAN)?
+#Format WLAN okvira je razlicit od formata Ethernet okvira.
+Format WLAN okvira je isti kao format Ethernet okvira.
+Format WLAN okvira je isti kao format Ethernet okvira, ali se menja samo izvorisna MAC adresa kada okvire prelazi sa jedne mreze na drugu.
+#U WLAN mrezi moze dodi do kolizije.
+U WLAN mrezi ne moze dodi do kolizije.
+
+sta je tacno za WLAN i koliziju?
+#Kolizija se ne moze detektovati tokom slanja okvira.
+Ne postoji kolizija kod WLAN mreza.
+Kolizija se detektuje tokom slanja okvira.
+Kolizija se resava na isti nacin kao kod Ethernet mreza.
+
+sta je tacno za uredjaje u WLAN mrezama?
+#Ako je deljeni medijum trenutno zauzet, uredjaji znaju kada de da se oslobodi na osnovu informacija iz okvira koji se trenutno prenosi.
+Ako je deljeni medijum trenutno zauzet, uredjaji ne mogu da znaju kada de on da se oslobodi.
+Ako je deljeni medijum trenutno zauzet, uredjaji znaju kada de da se oslobodi, jer svaki uredjaj dobija fiksni vremenski interval za prenos podataka.
+Ako je deljeni medijum trenutno zauzet, uredjaji znaju kada de da se oslobodi, jer Access Point obavestava sve uredjaje o tome.
+
+sta vazi za okvire koji se sa Trunk Linka prosledjuje na Access Link?
+#Velicina okvira se smanjuje.
+U okvir se dodaju nova polja.
+U okviru se menjaju pojedina polja.
+Okvir se ne menja.
+Enkapsuliraju se u nove okvire (tunneling)
+Nista od ponudjenog.
+
+**

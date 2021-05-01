@@ -1,0 +1,851 @@
+ARP paketi se enkapsuliraju u IP pakete:
+tacno
+#netacno
+
+Vodeći biti klase B IP adresa su 10:
+#tačno
+netačno
+
+IP paket je sigurno da ce se uvek preneti do odredista?
+tacno
+#netacno
+
+Kako fragment zna kom IP-ju pripada?
+Preko postavljneog flaga Offset
+Preko postavljenog flaga More Fragments
+Preko postavljenih flago-va Offset i More Fragment
+#Nista od ponudjenog
+
+Ukoliko se ne zna destinaciona adresa salje se MAC broadcast?
+tacno
+#netacno
+
+Koji od ovih mehanizama garantuje nepojavljivanje sledece rute u bliskom vremenskom intervalu?
+Poison Reverse
+Split Horizon
+#Holddown Timer
+Trigered Update
+
+Da li se IP paket koji je fragmentiran, može kasnije ponovo fragmentirati?
+#Može, nezavisno od prvobitne fragmentacije.
+Samo ako je setovan more-fragment flat.
+Samo ako je resetovan more-fragment flat.
+Samo ako se prenosi po odvojenom putu.
+
+Ko sve može da prima ICMP pakete?
+#Svi uredaji sa IP-em
+Samo racunari
+Samo racunari i ruteri
+Samo racunari, ruteri i svicevi
+
+Kada dobije 2 rute sa razlicitim AD-am, šta radi ruter?
+#Koristi samo onu sa manjim AD-am, a drugu odbacuje
+Koristi samo onu sa vecim AD-am, a drugu odbacuje
+Koristi obe
+
+Da li je AD manje bitan kriterijum za odredivanje rute, od metrike?
+tacno
+#netacno
+
+Kako ruting tabela utice na saobracaj?
+Odreduje rutiranje dolaznog saobracaja.
+#Odreduje rutiranje odlaznog saobracaja.
+Odreduje rutiranje i odlaznog i dolaznog saobracaja
+
+Šta se radi kada ruter u ruting tabeli ima više mrežnih adresa sa razlicitim maskama, kojima pripada odredišna adresa iz IP paketa?
+#Bira se mreža sa najdužom maskom.
+Bira se mreža sa najkracom maskom.
+Paket se odbacuje.
+Ova situacija ne može da se desi.
+Koriste se putanje ka svim mrežama (load balancing)
+
+Izvorišna adresa je opcioni parametar u IP zaglavlju.
+True
+#False
+
+Kada dolazi do fragmentacije?
+#kada je paket veci od MTU i kada je DF postavljen na 0
+kada je brzina mreze izuzetno mala
+kada se ne zna kuda proslediti paket
+
+Ko prima timeExceeded poruku?
+odresisni uredjaj
+prethodni ruter na putanji 
+#izvorisni host
+svi uredjaji na mrezi
+
+Ko saljeTimeExceeded poruku?
+#ruteri
+svicevi
+hostovi
+svi
+
+Koliki je broj minimalnih veza u OSPF mrezi za 10 uredjaja?
+#tacan odgovor je 17, jer se gleda multi-access za minimalni broj
+u slucaju da nije multiaccess onda je 45
+
+Sta se cita iz ARP kesa?
+MAC aresa izvornog uredjaja
+#MAC adresa odredisnog uredjaja
+
+Clasful salje svojim routing updateom masku i mrezu:
+True
+#False
+
+Na kom nivou se enkapsuliraju ospf poruke
+l2
+#l3
+
+Čemu služe ruting protokoli?
+#Da popune ruting tabelu.
+Da rutiraju pakete.
+Da uspostavljaju redundantne linkove.
+Za nalaženje default rutera.
+Za otklanjanje redundantnih linkova.
+
+Da li RIP u verziji 1 koristi metriku?
+#Da.
+Da, samo kada se koristi load-balancing.
+Ne, jer je to classless ruting protokol.
+
+Da li RIP u verziji 2 podržava load-balancing?
+#Da, samo kada je ista metrika za više ruta.
+Da, samo ako se koriste statičke rute.
+Da, samo ako se koristi redistribucija ruta.
+Ne.
+Da, za svaku mrežu koja ima više ruta.
+
+Fragmentirani IP paket se rekonstruiše (spaja)\:
+#Na IP sloju odredišnog uređaja.
+Na aplikativnom sloju odredišnog uređaja.
+Na L2 sloju odredišnog uređaja.
+Na IP sloju prvog slededeg rutera.
+Na IP sloju prvog rutera na putu koji može da propusti originalnu veličinu paketa.
+Na L2 sloju prvog rutera na putu koji može da propusti originalnu veličinu paketa.
+
+Fragmentirani IP paket se:
+#Može ponovo fragmentirati.
+Može ponovo fragmentirati, samo ako je setovan more-fragment flag.
+Može ponovo fragmentirati, samo ako je resetovan more-fragment flag.
+Ne može ponovo fragmentirati.
+
+Kada de da se javi "flooding" kod OSPF protokola rutiranja?
+#Kada se LAN mreža poveže na ruter.
+Kada ruter za određeni paket nema rutu u ruting tabeli.
+Kada ruter ne može da uspostavi susedstvo sa drugim ruterom.
+Kada ruter vidi svoj ID u hello poruci dobijenoj od drugog rutera.
+
+Kada dolazi do fragmentacije IP paketa?
+#Kada je IP paket veci od MTU vrednosti.
+Prilikom load-balancinga.
+Kada paket treba da prođe kroz interfejs rutera malog kapaciteta (bitske brzine).
+Kod slanja broadkast paketa.
+
+Kada se uspostavlja load-balancing kod OSPF ruting protokola?
+#Kada rute ka nekoj mreži imaju istu metriku.
+Kada do neke mreže postoji isti broj rutera po različitim putevima.
+Kada je jedan link preoptereden, a postoji fizička veza i preko drugog puta.
+Kada rute ka nekoj mreži imaju istu administrativnu distancu.
+OSPF ne podržava load balancing.
+
+Kako ruting protokoli tretiraju više puteva do neke mreže?
+#Koriste samo najoptimalnije puteve po određenoj metrici, a ostale odbacuju.
+Koriste samo najoptimalnije puteve po određenoj metrici, a sve upisuju u ruting tabelu.
+Koriste samo najoptimalnije puteve po određenoj metrici, a ostale označavaju kao unreachable u ruting tabeli.
+Sprovode load balancing po svim putanjama srazmerno vrednosti metrike.
+
+Kako se naziva mehanizam oglašavanja rute neposredno po detektovanju njene promene?
+#Triggered update
+Route Poisoning
+Split horizon
+Holddown Timer
+Time to Live
+
+Kako se naziva mehanizam zaštite od ruting petlji kojim se oglašava ruta sa maksimalnom metrikom?
+#Route Poisoning
+Split horizon
+Triggered update
+Holddown Timer
+Time to Live
+
+Kako se naziva mehanizam zaštite od ruting petlji kojim se zabranjuje oglašavanje rute na interfejs sa koga je ta ruta naučena?
+Route Poisoning
+#Split horizon
+Triggered update
+Holddown Timer
+Time to Live
+
+Kako se prepoznaje IP paket koji je nastao fragmentacijom?
+#Ako je barem jedno od polja 'more fragment flag' i 'fragment offset' različito od nule.
+Ako barem jedno od polja 'more fragment flag' i 'fragment offset' ima vrednost nula.
+Ako je polje 'more fragment flag' različito od nule.
+Ako polje 'more fragment flag' ima vrednost nula.
+Ako polje 'fragment offset' ima vrednost nula.
+Ako je polje 'fragment offset' različito od nule.
+Ako su i 'more fragment flag' i 'fragment offset' polja različita od nule.
+
+Kako se realizuje komanda ping?
+#Prenošenjem ICMP poruke u Layer 3 paketu.
+Prenošenjem ICMP poruke na multikast adresu.
+Prenošenjem ICMP poruke u Layer 2 okviru.
+Prenošenjem ICMP poruke u na brodkast adresu.
+Prenošenjem ICMP poruke kroz route update poruke.
+
+Ko odgovara na ARP request poruku?
+Svi uređaji u broadcast domenu.
+#Samo uređaj čija se IP adresa navodi u ARP paketu.
+Samo uređaji čija se MAC adresa navodi u ARP paketu.
+Samo default-gateway.
+
+Ko šalje ICMP redirect poruku?
+#Ruter kada prepozna da next-hop pri rutiranju paketa pripada istoj mreži kao i interfejs na koji je taj paket pristigao.
+Ruter kada radi load-balancing.
+Bilo koji uređaj na LAN mreži kada prepozna da paketi nisu namenjeni za njega.
+Ruter kada za određeni paket treba da koristi default rutu.
+
+Ko sprovodi ARP protokol?
+#Svi IP uređaji u LAN mreži.
+Samo default gateway u LAN mreži.
+Samo hostovi u LAN mreži.
+Samo wireless uređaji u LAN mreži.
+
+Koja ICMP poruka ne označava grešku u komunikaciji između izvorišta i odredišta?
+#Redirect
+Destination Unreachable
+Can’t fragment
+More fragment
+Host is found
+Application is found
+Load balancing
+Route is symetric
+Default route is used
+Default gateway is used
+
+Koja ICMP poruka se šalje kada ruter prepozna da next-hop pripada istoj mreži kao i interfejs na koji je paket dosao?
+Host unreachable.
+Network unreachable.
+Protocol unreachable.
+Port unreachable.
+Time Exceeded.
+Echo Reply.
+#Redirect.
+
+Koja ICMP poruka se šalje kada uređaj ne dobije odgovor na ARP zahtev?
+#Host unreachable.
+Network unreachable.
+Protocol unreachable.
+Port unreachable.
+Time Exceeded.
+Echo Reply.
+Redirect.
+
+Koja je osnovna jedinica kojom se izražava protok saobradaja u računarskih mrežama?
+#bps - bit per second
+Bps - byte pre second
+pps - packet per second
+Ips - information per second
+ništa od ponuđenog
+Ne znam
+
+Koja polja IP zaglavlja kod fragmentiranog paketa imaju iste vrednosti kao i kod originalnog IP paketa?
+#Don't fragment flag.
+#IP adresa izvorišta.
+#Identifikacija paketa.
+More fragment flag.
+Fragment offset.
+MAC adresa izvorišta.
+MAC adresa odredišta.
+
+Koje ICMP poruke dobija uređaj koji je startovao traceroute komandu?
+#Time Exceeded
+Destination unreachable
+Can’t fragment (ne može da se fragmentira)
+Echo Request/Echo Reply
+Hop Exceeded
+
+Koje osnovne podatke sadrži svaki red u ruting tabeli?
+#Mrežna IP adresa sa maskom.
+#IP adresa susednog rutera na zajedničkom linku.
+Mrežna IP adresa bez maske.
+Default ruta.
+Vreme upisa u ruting tabelu.
+Default gateway za pripadajudu mrežnu adresu.
+MAC adresa susednog rutera na zajedničkom linku.
+
+Koje su karakteristike IP protokola?
+#Prosleđivanje IP paketa do odredišta nije garantovano.
+#Redosled pristiglih IP paketa ne mora da bude isti kao i redosled po kome su poslati.
+#Format IP paketa ne zavisi od protokola drugog nivoa.
+IP paketi se prenose do odredišta u istom redosledu.
+Svaki primeljeni paket se potvrđuje novim IP paketom.
+Svaki primeljeni paket se potvrđuje ICMP paketom.
+
+Koje vrste LSA iz centralne oblasti mogu da udju u običnu perifernu OSPF oblasti?
+#Summary link
+#External link
+Router link
+Network link
+Internal link
+Point-to-Point link
+Ništa od ponuđenog.
+
+Koje vrste LSA iz centralne oblasti mogu da UĐU u OSPF oblast tipa "stub area"?
+#Summary link
+External link
+Router link
+Network link
+Internal link
+Point-to-Point link
+Ništa od ponuđenog.
+
+Koje vrste LSA iz centralne oblasti mogu da UĐU u OSPF oblasti tipa "totally stubby area"
+Summary link
+External link
+Router link
+Network link
+Internal link
+Point-to-Point link
+#Ništa od ponuđenog.
+
+Koji uređaji mogu da primaju ICMP poruke?
+#Svi IP uređaji na mreži.
+Samo ruteri.
+Samo ruteri i računari.
+Samo ruteri, računari i svičevi.
+
+Koji uređaji mogu da šalju ICMP poruke?
+#Svi IP uređaji na mreži.
+Samo ruteri.
+Samo ruteri i računari.
+Samo ruteri, računari i svičevi.
+
+Koliko ima ostvarenih direktnih OSPF suseda (veza) u multi-access LAN mreži sa 10 OSPF rutera?
+#17
+18
+8
+45
+9
+0
+
+Kome se šalje ICMP redirect poruka?
+#Uređaju koji je poslao IP paket.
+Ruteru na istoj LAN mreži koji predstavlja bolji izlaz za primljeni IP paket.
+Računaru kome je namenjen primljeni IP paket.
+Ruteru koji ima bolju rutu za primljeni IP paket.
+
+Na koju adresu se šalje ARP reply paket?
+#Na MAC adresu uređaja koji je poslao ARP request paket.
+Na IP adresu uređaja koji je poslao ARP request paket.
+Na broadkast MAC adresu.
+Na broadkast IP adresu.
+Na MAC adresu default gateway-a.
+Na IP adresu default gateway-a.
+
+Na šta se odnosi pojam "Link-State" u OSPF terminologiji?
+#Na podatke o intefejsima rutera.
+Na stanje linka (Up ili Down).
+Na veze (linkove) na kojima radi OSPF .
+Na metriku linka između dva rutera.
+Na kvalitet veze (linka) između dva rutera.
+
+Šta je od ponuđenog tačno za classless ruting protokole?
+#U svojim porukama prenose IP adresu mreže i masku.
+Ne prenose mreže koje pripadaju A, B i C klasama.
+Ne podržavaju default rute.
+Ne podržavaju mrežne adrese.
+Ne koriste metriku.
+Ne podržavaju load balancing.
+
+Šta je od slededeg tačno za distance-vector ruting protokole?
+#Dozvoljavaju različite putanje u odlaznom i dolaznom smeru između uređaja A i B.
+#Dozvoljavaju različite putanje u jednom smeru između uređaja A i B.
+Sprečavaju različite putanje u odlaznom i dolaznom smeru između uređaja A i B (loop).
+Sprečavaju različite putanje u jednom smeru između uređaja A i B.
+
+Šta je posledica 'load balancing' osobine ruting protokola?
+#Da ruting tabela može da ima više next-hop podataka za jednu mrežnu adresu.
+Da se paketi rutiraju po različitim putevima u odlaznom u odnosu na dolazni smer.
+Da se brzine interfejsa prilagođavaju prema intenzitetu saobradaja.
+Da ruting tabela može da ima više mrežnih adresa za jedan next-hop.
+Da ruting tabela ima više next-hop podataka za sve mrežne adrese.
+
+Šta je tačno od slededeg vezano za protokole rutiranja?
+Protokoli rutiranja služe za rutiranje poruka u ruterima.
+#Protokoli rutiranja služe da na ruterima kreiraju ruting tabele.
+
+Šta je tačno za 'Default gateway'?
+#Ima regularnu IP adresu.
+Ima adresu sa svim bitskim jedinicama u host delu.
+Ima adresu sa svim bitskim nulama u host delu.
+Ima adresu
+Nema IP adresu.
+
+Šta je tačno za fragmentaciju IP paketa?
+#Fragmentirani paketi se nezavisno prenose do istog odredišta.
+Fragmentirani paketi se prenose po istom putu do istog odredišta.
+Predstavlja deljenje jednog IP paketa kod load-balancing-a.
+Fragmentirani paketi se nezavisno prenose do različitih odredišta.
+Fragmentirani paketi nisu IP paketi.
+
+Šta je tačno za ICMP poruke?
+#Prenose se enkapsuliranjem u IP poruke.
+Prenose se enkapsuliranjem u okvire na 2. nivou.
+Prenose se kao aplikativni podaci enkapsuliranjem u paketa 4. nivoa.
+Prenose se nezavisno od IP protokola.
+Prenose se enkapsuliranjem u pakete ruting protokola.
+
+Šta je tačno za Next-hop podatak u ruting tabeli?
+#Predstavlja IP adresu interfejsa narednog rutera na putu prema datoj mreži.
+Predstavlja IP adresu izlaznog interfejsa na posmatranom ruteru na putu prema datoj mreži.
+Predstavlja redni broj posmatranog rutera na putu prema datoj mreži.
+Predstavlja redni broj narednog rutera na putu prema datoj mreži.
+Postoji samo kod ruting protokola koji za metriku imaju 'hop-count'.
+
+Šta je tačno za proces rutiranja?
+#Ne utiče na saobradaj koji dolazi u ruter.
+#Gleda se odredišna IP adresa u zaglavlju paketa.
+Ne utiče na saobradaj koji odlazi iz rutera.
+Gleda se izvorišna IP adresa u zaglavlju paketa.
+Saobradaj se uvek prenosi po istom putu u oba smera.
+Paketi se uvek prenose do odredišta u istom poretku.
+
+Šta je tačno za rutere u istoj perifernoj OSPF oblasti?
+#Imaju iste link-state baze podataka.
+Imaju iste ruting tabele.
+Imaju iste metrike prema svakoj mreži u oblasti.
+Moraju da imaju default rutu.
+
+Šta je tačno za ruting tabelu?
+#Utiče na pakete koji se prosleđuju na izlazne interfejse.
+Utiče na pakete koji se primaju na ulazne interfejse.
+Utiče i na pakete koji se primaju na ulazne interfejse i na pakete koji se prosleđuju na izlazne interfejse.
+Ne utiču na prosleđivanje paketa, ved na rad ruting protokola.
+
+Šta je uslov da OSPF ruter uđe u "2-way" stanje?
+#Da dobije Hello paket sa svojom identifikacijom (RID) u listi suseda koje oglasi drugi ruter.
+Da sinhronizuju svoje link-state baze podataka.
+Da dobije Hello paket sa identifikacijom susednog rutera (RID) u listi suseda koje oglasi drugi ruter.
+Da drugom ruteru pošalje Hello paket sa svojom identifikacijom (RID) u listi suseda.
+Da se sa drugim ruterom usaglasi koji je ruter 'master', a koji je 'slave'.
+
+Šta od ponuđenog ruter radi sa next-hop adresom iz ruting tabele?
+#Za nju traži podatak u ARP tabeli.
+Sve pakete prosleđuje na tu adresu, nezavisno od mrežne adrese.
+Postavlja je na mesto odredišne IP adrese u IP paketu.
+Postavlja je na mesto odredišne MAC adrese u Ethernet okviru.
+Postavlja je u ruting update koji oglašava susednim ruterima.
+
+Šta od ponuđenog važi za brodkast domen?
+#Brodkast domen se završava na ruterima.
+#Brodkast domen se ne završava na svičevima.
+Brodkast domen se završava na svičevima.
+Brodkast domen se ne završava na ruterima.
+
+Šta označava "Full" stanje kod OSPF ruting protokola?
+#Da su dva rutera razmenili sve relevantne podatke.
+Da su ruteri videli svoje identifikacije u hello poruci.
+Da su ruteri popunili svoju memoriju.
+Da je pojedini link preoptereden.
+Da je procesor rutera preoptereden.
+
+Šta označava ICMP poruka 'Protocol unreachable'?
+#Odredišni uređaj nema podršku za protokol čiji je identifikator upisan u zaglavlje IP paketa.
+Ruter na putu do odredišta nema podršku za protokol čiji je identifikator upisan u zaglavlje IP paketa. Na ruteru nije konfigurisan odgovarajudi ruting protokol.
+IP protokol na odredišnom uređaju nije dostupan.
+
+Šta označava ICMP poruka Time Exceeded'?
+#IP paket nije isporučen na odredište.
+Istekao je Hold down interval.
+Vreme je za novi ruting update.
+Istekla je validnost rute u ruting tabeli.
+
+Šta označava vrednost 120 u polju 'fragment offset'?
+#Data polje sadrži podatke koji počinju od 960. bajta podataka originalnog IP paketa.
+Data polje sadrži podatke koji počinju od 120. bajta podataka originalnog IP paketa.
+IP paket predstavlja 120. paket u niz.
+Data polje sadrži 960 bajtova podataka originalnog IP paketa.
+Data polje sadrži 120 bajtova podataka originalnog IP paketa.
+
+Šta predstavlja rezultat komande traceroute u slučaju kada nisu iste putanje odlaznog i dolaznog saobradaja?
+#Spisak rutera na putu od posmatranog uređaja do odredišta.
+Spisak rutera na putu od odredišta do posmatranog uređaja.
+Spisak rutera na putu od posmatranog uređaja do odredišta i nazad po drugoj putanji ('round trip path').
+Greška, jer se ne dobija konzistentan rezultat.
+
+Šta rade distance-vector ruting protokoli u stacionarnom stanju kada nema promena u mreži?
+#Periodično prenose sve routing update poruke.
+Ne rade ništa, jer nema promena u mreži.
+Oglašavaju samo triggered update poruke.
+Nakon time-out perioda uklanjaju rute iz ruting tabele.
+Periodično prenose samo najnovije routing update poruke koje ukazuju na promene u mreži.
+
+Šta radi ruter kada do neke mreže odredi dve rute koje imaju istu administrativnu distancu, a različitu vrednosti metrike?
+#U ruting tabelu se samo upisuje ruta sa boljom metrikom, dok se druga ruta odbacuje.
+U ruting tabelu se upisuje ruta sa boljom metrikom, a obe se koriste za oglašavanje drugim ruterima.
+U ruting tabelu se upisuju obe rute, i obe se koriste za oglašavanje drugim ruterima.
+U ruting tabelu se upisuju obe rute, ali se drugim ruterima oglašava samo bolja ruta.
+U ruting tabelu ne se upisuju ni jedna ruta.
+
+Šta radi ruter kada do neke mreže odredi dve rute koje imaju različite administrativne distance?
+#U ruting tabelu se upisuje samo ruta sa manjom administrativnom distancom, a druga ruta se odbacuje.
+U ruting tabelu se upisuje samo ruta sa vedom administrativnom distancom, a druga ruta se odbacuje. 
+U ruting tabelu se upisuju obe rute, i obe se koriste za oglašavanje drugim ruterima.
+U ruting tabelu se upisuju obe rute, ali se drugim ruterima oglašava samo ruta sa manjom administrativnom distancom.
+Šalje se ICMP poruka 'route mismatch'
+
+Šta radi ruter kada do određene mreže detektuje dve putanje (rute) naučene preko dva različita ruting protokola?
+#U ruting tabelu upisuje samo rutu naučenu od ruting protokola sa manjom administrativnom distancom.
+U ruting tabelu upisuje samo rutu naučenu od ruting protokola sa vedom administrativnom distancom.
+U ruting tabelu upisuje samo rutu sa boljom metrikom.
+U ruting tabelu upisuje obe rute, ali koristi samo bolju rutu.
+U ruting tabelu upisuje obe rute i obe ih koristi.
+
+Šta radi ruter kada ima rutu ka nekoj mreži naučenu i preko RIP i preko OSPF protokola?
+#U ruting tabelu upisuje samo OSPF rutu.
+U ruting tabelu upisuje samo RIP rutu
+U ruting tabelu upisu obe rute.
+U ruting tabelu upisuje rutu sa boljom metrikom.
+U RIP domenu koristi RIP rutu, a u OSPF domenu koristi OSPF rutu.
+
+Šta radi ruter sa podatkom koji dobije iz ARP keša?
+#Postavlja na mesto odredišne MAC adrese u Ethernet okviru.
+Postavlja na mesto izvorišne MAC adrese u Ethernet okviru.
+Postavlja na mesto odredišne IP adrese u IP zaglavlju.
+Koristi za next-hop prilikom rutiranja paketa.
+Postavlja na mesto izvorišne IP adrese u IP zaglavlju.
+
+Agregacija IP mreža ne utice na velicinu ruting tabela
+True
+#False
+
+Koje vrste LSA mogu da se nadu u OSPF oblasti tipa "stub area"?
+Anycast link
+#Network link
+External link
+#Summary link
+Global link
+#Router link
+
+Interni protokoli rutiranja se baziraju na statickim (internim) rutama.
+True
+#False
+
+Šta se po pravilu dešava za izvorišnom i odredišnom IP adresom u zaglavlju IP paketa prilikom njegovog rutiranja kroz mrežu?
+#Ne menja se ni odredišna ni izvorišna IP adresa.
+Ne menja se samo odredišna IP adresa, dok se izvorišna IP adresa menja i u svakom koraku uzima vrednost poslednjeg rutera koji ju je poslao.
+Ne menja se samo izvorišna IP adresa, dok se odredišna IP adresa menja i u svakom koraku uzima vrednost sledeceg rutera kome se šalje (next-hop).
+
+Šta radi ruter kada ima rutu ka nekoj mreži naucenu i preko RIP i preko OSPF protokola?
+Zadržava obe rute i omogucava load balancing.
+Zadržava rutu naucenu preko RIP-a, jer ima manju metriku.
+#Zadržava rutu naucenu preko OSPF-a, jer ima manju administrativnu distancu.
+Zadržava rutu naucenu preko OSPF-a, jer ima manju metriku.
+Zadržava rutu naucenu preko RIP-a, jer ima vecu administrativnu distancu.
+
+Kako se prenose ICMP poruke?
+#Direktno su enkapsulirane u IP poruke.
+Direktno su enkapsulirane u okvire na 2. nivou.
+Brodkast porukama na IP nivou.
+Multikast porukama na IP nivou.
+
+IP protokol obaveštava pošiljaoca za svaki isporuceni IP paket.
+True
+#False
+
+ARP protokol se enkapsulira u IP protokol.
+True
+#False
+
+Koja se ICMP poruka šalje kada ruter ne zna na koji izlazni interfejs da prosledi IP poruku?
+#Network unreachable (mreža nedostupna)
+Host unreachable (uredaj je nedostupan)
+Can’t fragment (ne može da se fragmentira)
+Protocol unreachable (protokol je nedostupan)
+Port unreachable (port je nedostupan)
+
+Koje vrste LSA mogu da se nadu u obicnoj perifernoj OSPF oblasti?
+#Router link
+#Summary link
+Global link
+External link
+#Network link
+Anycast link
+
+Da li link-state ruting protocoli koriste metriku?
+Ne, jer je već poznaju kompletnu topologiju mreže.
+Da, samo kada se koristi load-balancing.
+#Da.
+
+IP paketi se nezavisno rutiraju kroz mrežu u oba smera.
+#True
+False
+
+Kako se naziva pojava koja se javlja pri ruting petljama, kada se hop-count metrika (broj koraka) povećava pri svakom ruting update-u?
+#Count-to-Infinity
+Time to Live
+Triggered update
+Route Poisoning
+Split horizon
+Holddown Timer
+
+Koja polja originalnog IP paketa se ponavljaju u pojedinačnim fragmentima nakon fragmentacija?
+#Odredišna IP adresa.
+#Izvorišna IP adresa.
+#Identifikacija.
+Fragment offset.
+Flegovi.
+Enkapsulirani podaci 4. sloja.
+
+Da li moze biti jedan Lan povezan na vise rutera?
+#True
+False
+
+IP protokol ne zavisi od fizickog medijuma?
+#True
+False
+
+Koji mehanizam garantuje da u narednom vremenu nece doci do puno promena podataka u ruting tabeli?
+Time to Live
+Triggered Update
+Route Poisoning
+#Holddown Timer
+
+Koje vrste LSA moze da primi obicna oblast?
+#Obicna oblast prima sve vrste LSA (Router link, Network link, Summary Link, External Linik, bili su ponudjeni jos neki odgovori, ali nisu bili tacni)
+
+Sta je tacno
+IP paketi stizu po istom redosledu kao sto su poslati
+#IP paketi ne moraju stici po istom redosledu kao sto su poslati
+Svaki ruter salje potvrdu izvoristu kada primi njegov IP paket
+#Ne postoji garancija da ce IP paket biti uspesno isporucen
+#IP paketi se nezavisno prosledjuju
+
+Load Balancing je dozvoljen:
+#kada postoje dve rute iste metrike do neke podmreze
+kada postoje dve rute razlicite metrike do neke podmreze
+
+Sta se desava kada u OSPF protokolu postoje dve rute razlicite administrativne distance do iste podmreze?
+Pamte se obe u ruting tabeli, ali se za prenos koristi ona sa manjom metrikom
+Pamti se ona sa manjom metrikom, druga se odbacuje
+#Pamti se ona sa manjom administartivnom distancom, druga se odbacuje
+Pamti se ona savecom administartivom distancom, druga se odbacuje
+
+Sta se nalazi u obicnoj ruting tabeli
+Adrese susednih rutera
+Adrese rutera na zajednockom linku
+Default ruta
+Mrezna adresa sa maskom
+Mrezna adresa bez maske
+
+Da li Rip1 podrzava Load-Balancing?
+#True
+False
+
+Staicke rute su interne rute kod OPSF?
+#False
+True
+
+Da li RIP1 podrzava metriku?
+#True
+False
+
+Sta je tacno za rutere u jednoj oblasti
+#LS baze podataka su istovetne
+
+Kada se dogadja flooding?
+#kada se ruter prikljuci na mrezu
+kada se prosledi jedan paket kroz mrezu
+
+Sta je uslov da moze da pocne 2-way?
+#Da posiljac primi poruku u kojoj u listi suseda drugog rutera vidi svoj ID
+Da primalac primi poruku sa ID-em drugog rutera
+
+Administartivna distanca ima veci prioritet od metrike?
+#True
+False
+
+Da li je moguce fragmentovati vec fragmentovan IP paket?
+#Moguce je
+Nije moguce
+Moguce samo ako je setovan MF bit
+Moguce samo ako nije setovan MF bit
+
+Gde se vrsi reasembling?
+na svakom ruteru koji primi paket
+#na odresinom ruteru
+na ruteru na kom ne znamo kuda poslati paket dalje
+
+Ko prima timeExceededporuku?
+odresisni uredjaj
+prethodni ruter na putanji
+#izvorisni host
+svi uredjaji na mrezi
+
+Ko salje TimeExceeded poruku?
+#ruteri
+svicevi
+hostovi
+svi
+
+Sta je rezultat kada se u traceroutu ne poklapaju odlazni i dolazni put paketa?
+ICMP poruka „missmach route“
+Ruta kojom paket putuje od odredisne do izvorisne adrese
+#Ruta kojom paket putuje od izvorisne do odredisne adrese (od uredjaja sa kog smo poceli traceroute komandu)
+obe rute
+
+Kada se salje poruka „Protocol Unreachable“?
+#na odredisnom hostu nije podrzan protokol L4 nivoa, koji je specificiran u paketu
+ne postoji protokol za prosledjivanje paketa
+
+Sta se desava sa kada se salje redirect poruka?
+#paket se prosledjuje se do odredista
+paket se odbacuje
+
+Kome se salje redirect poruka?
+svim uredjajima
+#izvorisnom uredjaju
+odredisnom uredjaju
+
+U sta se enkapsuliraju ARP paketi
+IP pakete
+#L2 pakete
+ne enkapsuliraju se
+
+Vreme isporuke IP paketa je garantovano?
+#False
+True
+
+ARP se enkapsulira u IP pakete?
+#False
+True
+
+Kako fragment zna kom IP-ju pripada?
+#Preko polja IP ID
+Preko polja More fragment
+Preko polja Offset
+Preko polja More fragment i Offset
+
+Šta se dešava kada ruter ne zna na koji izlazni interfejs da prosledi IP poruku?
+#Šalje se 'Network unreachable' ICMP poruka.
+Šalje se 'Host unreachable' ICMP poruka.
+IP poruka se šalje na sve izlazne interfejse.
+IP poruka se šalje na proizvoljni izlazni interfejs.
+IP poruka se vrada pošiljaocu.
+IP poruka se šalje susednom ruteru koji ima najbolju metriku.
+
+Šta se dešava u mreži multi-access tipa kada se priključi OSPF ruter koji ima najvedu identifikaciju (RID)?
+#Novi ruter uspostavlja Full stanje kao konačno stanje sa designated ruterom.
+#Novi ruter uspostavlja Full stanje kao konačno stanje sa backup designated ruterom.
+Novi ruter uspostavlja Full stanje kao konačno stanje sa svim ruterima.
+Novi ruter uspostavlja 2-way stanje kao konačno stanje sa designated ruterom.
+Novi ruter uspostavlja 2-way stanje kao konačno stanje sa backup designated ruterom.
+Novi ruter uspostavlja 2-way stanje kao konačno stanje sa svim ruterima.
+
+Šta se dešava u OSPF mreži multi-access tipa kada se priključi ruter koji ima vedi RID od BDR rutera, a manji RID od DR rutera?
+Ništa od ponuđenog.
+Novi ruter postaje BDR ruter.
+Novi ruter postaje DR ruter.
+#Novi ruter postaje DROther ruter.
+
+Šta se dešava u slučaju pada linka u mreži sa OSPF ruting protokolom?
+#Potrebne informacije se prenose u celoj oblasti.
+Potrebne informacije se prenose samo do susednih rutera.
+Šalje se triggered update poruka.
+Generiše se unreachable ruta.
+
+Šta se može zaključiti kada uređaj primi ICMP poruku 'Echo request'?
+#Postoji uspešna jednosmerna IP komunikacija u smeru od uređaja koji je poslao poruku do uređaja koji je primio poruku.
+Postoji uspešna jednosmerna IP komunikacija u smeru od uređaja koji je primio poruku do uređaja koji je poslao poruku.
+Postoji greška u komunikaciji na IP nivou, pa se zahteva novi IP paket.
+Postoji uspešna dvosmerna IP komunikacija između uređaja koji je poslao poruku i uređaja koji je primio poruku.
+Došlo je do kruženja paketa u petlji na nekom delu puta do odredišta.
+
+Šta se radi sa IP paketom kada odredišna adresa može da se upari sa više ruta u ruting tabeli?
+#Bira se ruta sa mrežom koja ima najviše bitskih jedinica u masci.
+Bira se ruta sa mrežom koja ima najmanje bitskih jedinica u masci.
+Bira se ruta sa najboljom metrikom.
+Bira se ruta sa najboljom administrativnom distancom.
+Paket se odbacuje.
+Ova situacija ne može da se desi.
+Koriste se sve rute.
+
+Šta se sprovodi u "Exchange" stanju OSPF procesa?
+#Ruteri obaveštavaju jedan drugoga koje podatke imaju (razmenjuju link state database deskriptore).
+Ruteri razmenjuju sadržaje link-state baze podataka.
+Ruteri razmenjuju sve nedostajude podatke u link-state bazama podataka.
+Ništa od ponuđenog.
+
+Šta važi za 'distance-vector' (DV) i 'Link-state' (LS) ruting protokole kada do određene mreže postoji više putanja sa različitim vrednostima metrike?
+#I DV i LS u ruting tabelu upisuju samo najbolju rutu.
+I DV i LS u ruting tabelu upisuju sve rute, a koriste samo najbolju.
+I DV i LS u ruting tabelu upisuju najboju rutu, a drugim ruterima oglašavanju sve rute.
+DV u ruting tabelu upisuje samo najbolju rutu, a LS sve rute.
+LS u ruting tabelu upisuje samo najbolju rutu, a DV sve rute.
+I DV i LS u ruting tabelu upisuju sve rute i koriste ih za load-balancing.
+
+Šta važi za classless ruting protokole?
+#Maska se prenosi kao podatak u routing-update porukama.
+#Može se koristiti različita dužina maski za različite podmreže.
+Ne podržava se load-balancing
+Maska se ne prenosi kao podatak u routing-update porukama.
+Ne podržavaju se IP adrese koje pripadaju klasama A, B i C.
+Koriste se samo IP mreže koje pripadaju 'more-specific' klasama.
+
+Šta važi za izvorišnu i odredišnu IP adresu u zaglavlju IP paketa prilikom njegovog rutiranja iz jednog VLAN-a u drugi VLAN na istom fizičkom (trank) interfejsu rutera?
+#Izvorišna i odredišna IP adresa ostaju iste.
+Menja se samo odredišna IP adresa.
+Menja se samo izvorišna IP adresa.
+Izvorišna i odredišna IP adresa menjaju mesta.
+Ništa od ponuđenog.
+Navedeni slučaj nije mogud.
+Izvorišna i odredišna IP adresa pripadaju istoj IP mreži.
+
+Šta važi za statičke rute?
+#Statičke rute imaju vedi prioritet od dinamičkih ruta.
+Statičke rute nemaju next-hop podatke.
+Statičke rute predstavljaju default rute.
+Statičke rute se koriste samo na default gateway-u.
+Statičke rute imaju manji prioritet od dinamičkih ruta.
+
+Šte radi uređaj kada treba da pošalje IP paket drugom uređaju na istoj LAN mreži, a nema njegovu MAC adresu?
+#Šalje ARP upit (ARP request).
+IP paket se odbacuje.
+IP paket se enkapsulira u ARP paket.
+IP paket se šalje default gateway uređaju koji de da prosledi IP paket do odredišta.
+
+U koje poruke se enkapsuliraju OSPF poruke koje se prenose između rutera?
+#U poruke tredeg nivoa (IP).
+U poruke drugog nivoa (Ethernet, PPP...)
+U TCP poruke četvrtog nivoa.
+U UDP poruke četvrtog nivoa.
+Prenose se na aplikativnom nivou.
+
+U šta se enakapsuliraju ARP paketi?
+#U Ethernet okvire.
+U IP pakete.
+U routing update pakete.
+Ne enkapsuliraju se, jer ARP protokol radi na 2. nivou.
+U PPP okvire.
+
+Uloga ARP protokola je
+#Da na osnovu IP adrese pronađe MAC adresu odredišnog uređaja.
+Da na osnovu MAC adrese pronađe IP adresu odredišnog uređaja.
+Da pronađe MAC adresu default gateway-a.
+Da na uređaju postavi IP adresu na osnovu njegove MAC adrese.
+Da na uređaju postavi MAC adresu na osnovu njegove IP adrese.
+
+Usled čega se javlja kašnjenje u računarskim mrežama?
+#Ograničene brzine prenosa signala.
+#Vremena obrade u uređajima.
+Sporog unosa podataka od strane korisnika.
+Kašnjenje se ne javlja.
+Kašnjenje se javlja, ali se ne može detektovati niti primetiti.
+
+What of the following is true for 'Default gateway'?
+#It has a regular IP address.
+It has an IP address with all bits set in the host part.
+It has an IP address with all zeros in the host part.
+It has an IP address of 0.0.0.0.
+It has no IP address.
+
+**

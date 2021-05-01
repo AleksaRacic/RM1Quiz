@@ -1,0 +1,496 @@
+Inverzni DNS" se odnosi na
+#Razrešavanje DNS naziva uređaja na osnovu konkretne IP adrese uređaja.  
+DNS upiti u obrnutom smeru (od servera ka klijentu).  
+Transfer zona u obrnutom smeru.  
+Razrešavanje IP adrese na osnovu celokupnog naziva uređaja (sa oznakom domena).  
+Razrešavanje IP adrese na osnovu naziva samo uređaja (bez oznake domena).  
+Razrešavanje DNS naziva mreže na osnovu IP adrese mreže (sa maskom).
+
+Čemu služe ruting protokoli?
+#Da popune ruting tabelu.  
+Da rutiraju pakete.  
+Da uspostavljanje redundantne linkove.  
+Za nalaženje default rutera.  
+Za otklanjanje redundantnih linkova.
+
+Šta je tačno za "flooding" kod OSPF protokola rutiranja? 
+#Javlja se prilikom povezivanja LAN mreže na ruter preko sviča.  
+Javlja se kada ruter za određeni paket nama rutu u ruting tabeli.  
+Javlja se kada ruter ne može da uspostavi susedstvo sa drugim ruterom.  
+Javlja se kada ruter vidi svoj ID u hello poruci dobijenoj od drugog rutera.
+
+Šta je tačno za NCP (Network Control Protocol) podsloj PPP protokola.
+#Za svaki protokol višeg nivoa postoji posebna NCP instanca  
+Služi za logičku realizaciju PPP protokola  
+Služi za ostvarivanje opcionih funkcija PPP protokola  Služi za uspostavljanje PPP veze  Ništa od ponuđenog.
+
+Šta po pravilu rade slojevi ISO OSI ili TCP/IP referentnog modela kada primaju poruke od višeg sloja?
+#Ne gledaju podatke višeg sloja.  
+#Na poruku dodaju svoje zaglavlje.  
+Dodaju zaglavlje na nižem nivou.  
+Na poruku dodaju svoje zaglavlje u zavisnosti od podataka iz zaglavlja višeg nivoa.  
+Gledaju zaglavlje višeg sloja i na osnovu toga odlučuju kojem nižem sloju predaju poruku.  
+Gledaju zaglavlje na nižem nivou.
+
+Šta predstavlja NAT?
+#Mapiranje IP adresa iz jednog skupa adresa u drugi, i obrnuto.  
+Mapiranje MAC adresa u IP adrese.  
+Dinamičku dodelu IP adrese uređajima koji nemaju stalnu memoriju (diskless).
+
+Kada se šalje ICMP poruka 'Time Exceeded'?
+#Kada ruter vrednost polja TTL (Time to live) postane nula.  
+Kada istekne hold-down tajmer.  
+Kada izostane 4 routing update paketa.  
+Kada istekne time-out period.  
+Kada aplikacija na odredištu ne dobije očekivane podatke.  
+Kada itekne tajmer kod reasembliranja fragmentiranih paketa.
+
+Označiti najkradi ispravni zapis za slededu IPv6 adresu\: 2001\:1230\:0000\:0000\:0000\:0044\:0000\:0555.
+#2001\:1230\:\:44\:0\:555  
+2001\:1230\:\:44\:\:555  
+2001\:1230\:0\:44\:0\:555  
+2001\:1230\:0\:0044\:\:0555
+
+Šta je Trank Link? 
+#Veza između svičeva po kojoj se prenose okviri iz različitih VLAN-ova.  
+Veza između svičeva po kojoj se prenose okviri iz istog VLAN-na.  
+Veza između svičeva po kojoj se prenose okviri na brzini vedoj od ostalih veza.  
+Veza koja je uspostavljena preko Auto-Negotioation opcije.  
+Veza između svičeva po kojoj se ne dozvoljava prenos okvira VLAN-ova.  
+Više paralelnih fizičkih veza između svičeva koje se tretiraju kao jedna logička veza.
+
+Šta je tačno za 'Default gateway'?
+#Ima regularnu IP adresu.  
+Ima adresu sa svim bitskim jedinicama u host delu.  
+Ima adresu sa svim bitskim nulama u host delu.  
+Ima adresu 0.0.0.0.  
+Nema IP adresu.
+
+Šta nam kazuje rezultat komande traceroute?
+#Spisak rutera na putu do odredišta.  
+Spisak rutera na putu od odredišta do našeg uređaja.  
+Spisak ruta na posmatranom uređaju.  
+Ruting tabelu na ruterima.
+
+Uloga ARP protokola je\
+#Da na osnovu IP adrese pronađe MAC adresu.
+Da na osnovu MAC adrese pronađe IP adresu.  
+Da pronađe MAC adresu defaul gateway-a.  
+Da na osnovu MAC adrese na uređaj definiše IP adresu.  
+Da na osnovu IP adrese na uređaj definiše MAC adresu.  
+
+Šta je tačno za ICMP poruke?
+#Prenose se enkapsuliranjem u IP poruke.  
+Prenose se enkapsuliranjem u okvire na nivou.  
+Prenose se kao aplikativni podaci enkapsuliranjem u paketa 4. novoa.  
+Prenose se nezavisno od IP protokola.  
+Prenose se enkapsuliranjem u paketima ruting protokola.
+
+Šta je tačno za STP root portove (RP)?
+#Paketi koji iz sviča izlaze na RP približavaju se root sviču.  
+Paketi koji iz sviča izlaze na RP udaljavaju se od root sviča.  
+RP su portovi samo na root sviču.  
+#Linkovi sa RP portovima uvek pripadaju STP stablu.  
+Ništa od ponuđenog.  
+RP portovi primaju samo BPDU pakete.  
+RP portovi šalju samo BPDU pakete.
+
+Šta označava naziv "12.34.56.in-addr.arpa"?
+#Naziv inverznog domena koji odgovara mreži 56.34.12.0.  
+Naziv inverznog domena koji odgovara mreži 65.43.21.0.  
+Naziv inverznog domena koji odgovara mreži 12.34.56.0.  
+Naziv za default gateway mreže 12.34.56.0.  
+Naziv za default gateway mreže 65.43.21.0.
+
+Čemu služi polje pokazivač na sledede zaglavlje (next header) IPv6 paketa?
+#Označava tip slededeg opcionog zaglavlja koje se nastavlja iz trenutno posmatranog zaglavlja.  
+Pokazuje na slededi IPv6 paket.  
+Sadrži enkapsulirene podatke protokola 4. nivoa.  
+Označava dužinu slededeg opcionog zaglavlja koje se nastavlja iz trenutno posmatranog zaglavlja.  
+Označava dužinu posmatranog zaglavlja, kada se iza njega nalazi sledede zaglavlje.
+
+Da li je mogude mapirati (NAT-ovati) vedi broj privatnih adresa u jednu javnu adresu, i ako jeste kako? 
+#Da, jer se koristi broj porta kao dodatna informacija koja jednoznačno uparuje dodeljene adrese.  
+Da, jer se koristi MAC adresa kao dodatna informacija koja jednoznačno uparuje dodeljene adrese.  
+Ne. 
+
+Kako BOOTP zahtev pristiže do BOOTP servera?
+#Poruka se šalje na broadkast MAC i broadkast IP adresu, a server "sluša" na predefinisanom UDP portu 67.  
+Poruka se šalje na broadkast MAC i unikast IP adresu BOOTP servera, koja je jedinstvena.  
+Poruka se šalje na unikast MAC i unikast IP adresu BOOTP servera, koje su jedinstvene.  
+Poruka se šalje na brodkast MAC i mulikast IP adresu BOOTP servera, na kojoj "slušaju" svi BOOTP serveri.
+
+Kako može da se ostvari međusobna komukacija između IPv4 i IPv6 uređaja?
+#Translacijom IPv4 i IPv6 protokola na odgovarajudem ruteru.  
+Enkapsulacija IPv6 paketa unutar IPv4 paketa.  
+Translacijom adresa (NAT) na odgovarajudem ruteru.  
+Autokonfiguracija IPv6 adresa na osnovu IPv4 adresa.  
+Translacijom portova (PAT) na odgovarajudem ruteru  
+Dual-stack mehanizmom.  
+Nije moguda komunikacija između IPv4 i IPv6 uređaja.
+
+Kako se manifestuje komunikacija ako je TCP prozor male veličine.
+#Komunikacija se odvija u kratkim intervalima slanja podataka i intervalima pauze.  
+Malo je vreme čekanja između slanja podataka i primanja potvrde.  
+Aplikativni podaci se brzo šalju.  
+Prozor se brže pomera po nizu aplikativnih podataka.
+
+Kako se naziva postupak razrešavanja imena kada jedan DNS server na poslati upit ne dobije konačan odgovor, ved informacije o drugim DNS serverima koji mogu da vode do razrešenja upita?
+#Iterativno razrešavanje imena.  
+Rekurzivno razrešavanje imena.  
+Autoritativno razrešavanje imena.  
+Inverzno razrešavanje imena.
+
+Kako se prenose opcioni parametri u IPv6 zaglavlju?
+#Iza osnovnog zaglavlja postavljaju se dodatna zaglavlja, specifična za pojedinačne opcije.  
+Svaki IPv6 paket se enkapsulira u novi nezavisni IPv6 paket sa dodatnim opcijama.  
+IPv6 zaglavlje je fikse veličine i sadrži polja svih opcionih parametara.  
+IPv6 zaglavlje ne podržava opcine parametere (svi su obavezni).
+
+Kako se u IPv6 zaglavlju označava protokol 4. nivoa?
+#Identifikatorom protokola 4. nivoa u polju "next header", koje ukazuje na poslednje opciono zaglavlje.  
+Identifikatorom protokola 4. nivoa u polju "protocol".  
+IPv6 ne prenosi podatke 4. nivoa.  
+Enkapsulacijom IPv4 paketa, koje sadrži podatke 4. nivoa. 
+
+Kako se zove postupak razrešavanja DNS naziva koji po pravilu koristi klijentski računari slanjem upita lokalnom DNS serveru?
+#Rekurzivno razrešavanje imena.  
+Iterativno razrešavanje imena.  
+Autoritativno razrešavanje imena.  
+Inverzno razrešavanje imena.  
+Lokalno razrešavanje imena.  
+Klijentsko razrešavanje imena. 
+
+Ko učestvuje u procesu "transver zone" za određeni DNS domen?
+#Primarni DNS server posmatranog domena.  
+#Sekundarni DNS server posmatranog domena.  
+DNS server naveden na strani klijenta.  
+Primarni DNS server roditeljskog domena u odnosu na posmatrani domen.  
+Sekundarni DNS server roditeljskog domena u odnosu na posmatrani domen.
+
+Kod klijent-server komunikacije na 4. nivou tačno je sledede\:
+#Klijentska aplikacija inicira komunikaciju.  
+Serverska aplikacija inicira komunikaciju.  
+#Klijentska aplikacija mora da zna port serverske aplikacije ako se pristupa po TCP protokolu.  
+#Klijentska aplikacija mora da zna port serverske aplikacije ako se pristupa po UTP protokolu.  
+Klijentske aplikacije nemaju unapred poznate portove i koriste brodkast portove (FFFF.FFFF).  
+Ništa od ponuđenog.
+
+Koja de se vrednost Acknowledgement Number poslati, ako uspešno pristigne segment čija Sequence Number vrednost iznosi 510a sadrži 200 bajtova aplikativnih podataka?
+#530
+510
+510
+Ne može se odrediti na osnovu zadatih podataka.
+
+Koja polja su zajednička i kod TCP i kod UDP zaglavlje?
+#Izvorištni port.  
+#Odredišni port.  
+Izvorišna IP adresa.  
+Odredišna IP adresa  
+Prozor (Window).  
+Polje sa flegovima.  
+Sequence Number  
+Acknowledgement Number
+
+Koje od slededih funkcija transportnog sloja sprovodi TCP protokol?
+#Segmentacija i reasembliranje aplikativnih podataka.  
+#Multipleksiranje i demultipleksiranje aplikativnih podataka.  
+#Uspostavljanje i održavanje konekcije.  
+#Garantovanje isporuke svakog segmenta.  
+#Očuvanje redosleda niza aplikativnih podataka.  
+#Kontrola toka.  
+Obezbeđivanje funkcije load-balancing.  
+Šifrovanje i dešifrovanje podataka.  
+Multikast prenos aplikativnih podataka.  
+Brodkast prenos aplikativnih podataka.  
+Specificiranje putanje prenosa u mreži (routing opcion).
+
+Koje od slededih funkcija transportnog sloja sprovodi UDP protokol?
+#Segmentacija i reasembliranje aplikativnih podataka.  
+#Multipleksiranje i demultipleksiranje aplikativnih podataka.  
+Uspostavljanje i održavanje konekcije.  
+Garantovanje isporuke svakog segmenta.  
+Očuvanje redosleda niza aplikativnih podataka.  
+Kontrola toka.  
+Obezbeđivanje funkcije load-balancing.  
+Šifrovanje i dešifrovanje podataka.  
+Multikast prenos aplikativnih podataka.  
+Brodkast prenos aplikativnih podataka.  
+Specificiranje putanje prenosa u mreži (routing opcion).
+
+Koje su osobine DHCP protokola?
+#Može da postoji više DHCP servera na jednoj LAN mreži.  
+#Uređaji dinamički dobijaju IP adresu DNS uređaja.  
+Uređaji koriste DHCP za razrešavanje simboličkih naziva u IP adrese.  
+Uređaji koriste DHCP za pretvaranje privatnih IP adresa u javne.  
+Uređajima se dinamički dobijaju njihov DNS naziv.
+
+Koji od navedenih protokola služi za dodeljivanje "default gateway" parametra za krajnje uređaje na LAN mreži?
+#IPv6 Neighbor Discovery Protocol  
+#BOOTstrap Protocol  
+#Dynamic Host Configuration Protocol  
+Revers Address Resolution Protocol  
+Address Resolution Protocol  
+Auto-Negotiation Protocol  
+Default Gateway Discovery Protocol (DGDP)
+
+Koji podaci identifikuju UDP soket?
+#Broj koji označava protokol 4. nivoa.  
+#Broj koji označava port protokola 4. nivoa na uređaju gde je posmatrani soket.  
+IP adresa udaljenog uređaja koji komunicira sa posmatranim soketom.  
+Broj koji označava port protokola 4. nivoa na udaljenom uređaju koji komunicira sa posmatranim soketom.  
+Dva broja koji označavaju portove protokola 4. nivoa.
+
+Koji uređaj u LAN mreži šalje poruke sa IPv6 adresama tokom procesa autokonfiguracije putem Neighbor Discovery Protocola?
+#IPv6 ruter  
+DHCPv6 server  
+IPv6 server  
+IPv6 svičev  
+Svi IPv6 uređaji 
+
+Koji uređaji ili protokoli podržavaju Full-Duplex režim prenosa podataka.
+#Svičevi.  
+#PPP.  
+Habovi  
+Habovi, ali samo po optičkim vlaknima.  
+WLAN.
+
+Na šta se odnosi Congestion Avoidance mehanizam?
+#Postepeni rast veličine prozora od vrednosti koja odgovara polovini veličine prozora pre poslednjeg gubitka paketa.  
+Ograničenje prozora na unapred određenu maksimalnu vrednost.  
+Retransmisija segmenata u slučaju zagušenja.  
+Povedanje vrednosti tajmera u slučaju zagušenja.  
+Povedanje broja keep alive poruka u slučaju zagušenja.  
+Povedanje prozora za broj bajtova pristiglih u poslednjim Acknowledgement Number porukama.
+
+Na šta se odnosi Slow Start kontrola zagušenja?
+#Eksponencijalni rast veličine prozora na osnovu primljenih Acknowledgement poruka.  Linearni rast veličine prozora na osnovu primljenih Acknowledgement poruka..
+Postepono smanjenje veličine prozora nakon gubitka poruka usled zagušenja u mreži.  
+Konstantna vrednost veličine prozora koja se uspostavlja pri uspostavljanju sesije.  
+Smanjenje veličine TCP paketa na minimalnu vrednost i njegov postepeni rast.
+
+Od koga IPv6 uređaji u LAN mreži dobijaju poruke tokom procesa autokonfiguracije?
+#Od IPv6 rutera.  
+Od DHCPv6 servera.  
+Od IPv6 servera.  
+Od IPv6 svičeva.
+
+Od navedenih DNS servera, koji su autoritativni za domen "etf.bf.ac.rs"?
+#Primarni DNS server za domen "etf.bg.ac.rs"  
+#Sekundrani DNS server za domen "etf.bg.ac.rs"  
+DNS server koji se dobije preko DHCP protokola  
+DNS server koji može rekurzivno da razreši imena za domen "etf.bg.ac.rs"  
+DNS server koji može iterativno da razreši imena za domen "etf.bg.ac.rs"  
+Primarni DNS server za domene "bg.ac.rs", "ac.rs"  i "rs"   
+Sekundarni DNS server za domene "bg.ac.rs", "ac.rs"  i "rs"
+
+Označiti aplikacije za koje po pravilu TCP protokol.
+#Prenos datoteka (FTP).  
+#Elektronska pošta.  
+#Pristup bazi podataka.  
+Video konferencije uživo.  
+IP telefonija.  
+Razrešavanje DNS upita
+
+Označiti najkradi ispravni zapis za slededu IPv6 adresu\: 2001\:1230\:0000\:0000\:0000\:0044\:0000\:0555.
+#2001\:1230\:\:44\:0\:555  
+2001\:1230\:\:44\:\:555  
+2001\:1230\:0\:44\:0\:555  
+2001\:1230\:0\:0044\:\:0555 
+
+Šta de se desiti sa IPv6 paketom koji se pošalje na neku Link Local adresu?
+#Paket nede izadi van LAN mreže.  
+Paket de stidi do najbižeg uređaja koji ima konfigurisanu specificiranu adresu, bez obzira gde se on nalazi.  
+Paket de stidi do svih uređaja koji imaju konfigurisanu specificiranu adresu.  
+Paket nede izadi iz uređaja, jer se radi o virtualnoj adresi.
+
+Šta IPv6 uređaji dobijaju od drugih uređaja tokom procesa autokonfiguracije?
+#Mrežni deo IPv6 adrese koju de da koriste.  
+Interfejs (host) deo IPv6 adrese koju de da koriste.  
+Celu IPv6 adresu koju de da koriste.  
+MAC adresu defaul gateway.  
+DNS adresu.  
+#Masku pripadajude mreže.  
+#IP adresu defaul gateway uređaja.  
+EUI-64 adresu koju de da koriste.
+
+Šta je od navedenog tačno za Anycast adresu?
+#Paket de stidi samo do jednog uređaja koji imaju konfigurisanu Anycast adresu.  
+Paket de stidi do svih uređaja koji imaju konfigurisanu Anycast adresu.  
+Paket je namenjen za bilo koju uređaj u LAN mreži.  
+#Više uređaja dele istu Anycast adresu.  
+Anycast adresa se dodeljuje od strane pripadajudeg Default Gateway uređaja.
+
+Šta je od navedenog tačno za Primarni DNS server?
+#To je server na kome je definisana zona za određeni domen.  
+Jedini DNS server koji može da razreši adrese određenog domena.  
+DNS server koji se od strane klijenata primarno koristi za razrešavanje imena.  
+#DNS server može da bude primarn za jedan domen, a sekundaran za drugi domen.  
+DNS server je primaran za sve domene za koje je autoritativan.
+
+Šta je od navedenog tačno za sekundarni DNS server?
+#DNS server koji kopira zonu za određeni domen sa primarnog DNS servera.  
+Backup DNS server koji se aktivira u slučaju da primarni servera ne radi.  
+Drugi DNS server za razrešavanje imena koji je konfigurisan na starni klijenta.  
+#DNS server koji samostalno može da vrati sve podatke za određeni domen.  
+DNS server koji iterativno vrada podatke za određeni domen.   
+DNS server koji rekurzivno vrada podatke za određeni domen.
+
+Šta je od slededeg tačno vezano za servere u mreži sa privatnim adresama?
+#Za pristup serveru sa javne mreže, može se koristiti NAT u režimu "1-na-1".  
+Za pristup serveru sa javne mreže, server mora da se izmesti u "demilitarizovanu zonu".  
+Za pristup serveru sa javne mreže, mora da se definiše inverzan DNS domen.
+
+Šta je od slededeg tačno za NAT?
+#Sprovodi se na graničnom ruteru između privatne i javne mreže.  
+Sprovodi se na svakom klijentu (host uređaju).  
+Sprovodi se na svakom serveru koji treba da izađe na javnu mrežu.  
+Sprovodi se na defaul gateway uređaju u svakoj LAN mreži sa privatnim adresama.
+
+Šta je od slededeg tačno za ostvarivanje pouzdanog prenosa podataka na 4. nivou?
+#Izgubljeni ili oštedeni segmenti se detektuju i ponovo šalju.  
+U segmente se ugrađuju dodatne informacije, na osnovu kojih se može rekonstruisati oštedeni delovi.  
+Za svaku komunikaciju se realizuje paralelni prenos kontrolnih informacija (kontrolna sesija).  
+#UDP ne garantuje pouzdan prenos podataka.  
+#Pouzdan prenos podataka se nezavisno sprovodi u oba smera.  
+Protokoli 4. nivoa ne garantuju pouzdan prenos.  
+Pouzdan prenos se na 4. nivou ostvaruje šifrovanjem podataka.
+
+Šta je od slededeg tačno za Sequence Number i Acknowledgement Number kod TCP komunikacije?
+#AN vrednost u jednom smeru zavisi od SN vrednosti iz suprotnog smera.  
+#SN i AN se odnose na pozicije bajtova u nizu aplikativnih podataka.  
+SN i AN se odnose na redne brojeve segmenata (paketa) u kojima se šalju aplikativni podaci.  
+AN vrednost u jednom smeru zavisi od SN vrednosti iz istog smera.  
+SN vrednost u jednom smeru zavisi od SN vrednosti iz suprotnog smera.
+
+Šta je od slededeg tačno za TCP i UDP protokol?
+#Dve klijentske aplikacije na istom računaru moraju da imaju različite TCP portove.  
+#Dve klijentske aplikacije na različitim računarima mogu da imaju iste TCP portove.  
+Dve iste klijentske aplikacije na različitim računarima moraju da imaju iste TCP portove.  
+Dve iste klijentske aplikacije na istom računaru mogu da imaju iste TCP portove.
+
+Šta je od slededeg tačno za TCP prozou?
+#Sadrži aplikativne podatake koji su poslati, a za koje se čeka potvrda prijema.  
+#Sadrži aplikativne podatake koji još nisu poslati, a mogu da se šalju.  
+Sadrži aplikativne podatake koji su poslati, a za koje je stigla potvrda prijema.  
+Sadrži aplikativne podataka koji još uvek ne mogu da se šalju.  
+Sadrži aplikativne podatake koji su primljeni bez grešaka.  
+Sadrži aplikativne podatake za koje je istekao time-out period.
+
+Šta je sadržaj odredišne IP adrese u paketu koji prenosi BOOTP odgovor?
+#255.255.255.255  
+IP adresa koja se dodeljuje uređaju.  
+0.0.0.0  
+Multikast IP adresa.  
+IP adresa default gateway-a.
+
+Šta je sadržaj odredišne MAC adrese u okviru koji prenosi RARP zahtev (RARP request)?
+#FF.FF.FF.FF.FF.FF  
+255.255.255.255  
+0.0.0.0  
+MAC adresa servera.  
+MAC adresa default gateway-a.
+
+Šta je tačno od slededeg kod sprovođenja PAT tehnike?
+#Ruter gleda i menja podatke iz zaglavlja 4. nivoa.  
+Ruter gleda, ali ne menja podatke iz zaglavlja 4. nivoa.  #Ruter gleda i menja podatke iz zaglavlja nivoa.  
+Ruter gleda, ali ne menja podatke iz zaglavlja nivoa.
+
+Šta je tačno od slededeg vezano za IP adrese i nazive?
+#Jedna IP adresa može da ima više DNS naziva  
+#Jedan DNS naziv može da bude pridružen vedem broju IP adresa  
+#Na jednom fizičkom segmentu mogu da budu IP adrese iz različitih DNS domena  
+#Uređaji iz jednog DNS domena mogu da budu na različitim fizičkim mrežama  
+Jedna IP adresa mora da ima samo jedan DNS naziv  
+Jedan DNS naziv može da bude pridružen samo jednoj IP adresi  
+Na jednom fizičkom segmentu mogu da budu IP adrese samo iz jednog DNS domena  
+Uređaji iz jednog DNS domena mogu da budu samo na jednoj fizičkoj mreži
+
+Šta je tačno za IPv6 protokol?
+#IPv6 je najnovija verzija IP protokola.  
+IPv6 je protokol 6. nivao.  
+IPv6 je kompatibilan sa IPv4 protokolom.  
+IPv6 integriše drugi i tredi sloj referentnog modela.
+
+Šta je zajedničko za sve IPv6 adrese koje su dobijene prema pravilu EUI-64?
+#Dva bajta su uvek ista.  
+Imaju nule u najmanje 4 bajta.  
+Ne sadrže bajtove čija je vrednost nula.  
+Predstavljaju adrese zapisane u skradenom obliku (izostavljene suvšne nule). 
+
+Šta označava DNS naziv "0.98.76.in-addr.arpa"?
+#Naziv domena koji služi za mapiranje IP adresa u nazive u mreži 76.98.0.0/24.  
+Naziv domena koji služi za mapiranje IP adresa u nazive u mreži 76.98.0.0/16.  
+Naziv domena koji služi za mapiranje IP adresa u nazive u mreži 67.89.0.0/24.  
+Naziv domena koji služi za mapiranje IP adresa u nazive u mreži 67.89.0.0/16.  
+Naziv nije validan.
+
+Šta označava setovan SYN fleg kod TCP komunikacije?
+#Uspostavlja se inicijalna vrednost Sequence Number parametra u jednom smeru.  
+Uspostavlja se sinhronizacija Sequence Number parametra u oba smera.  
+Uspostavlja se inicijalna vrednost Acknowledgement Number parametra u jednom smeru.  
+Uspostavlja se sinhronizacija tajmera u TCP prozoru na obe strane.  
+Sinhronizuju se podaci koji su prethodno preneti sa greškom ili su izgubljeni.
+
+Šta označava vrednost Acknowledgement Number u nekom segmentu?
+#Relativna pozicija narednog bajta aplikativnih podatak koji se očekuje za prijem, jer su svi prethodni bajtovi primeljeni bez greške.  
+Ukupan broj primljenih bajtova (relativno u odnosu na inicijalnu vrednost).  
+Relativna pozicija segmenta aplikativnih podatak do koje su podaci primeljeni bez greške u nizu.  
+Redni broj bajta koji nedostaje.  
+Relativna pozicija poslednjeg primeljenog bajta aplikativnih podatak.   
+Relativna pozicija poslednjeg primeljenog bajta aplikativnih podatak uvedana za jedan. 
+
+Šta se može uraditi ako se želi da se dve odvojene mreže, koje koriste isti adresni prostor, međusobno povežu preko jednog rutera?
+#Konfigurisati NAT overlap na zajedničkom ruteru.  
+Konfigurisati PAT na zajedničkom ruteru.  
+Promeniti adrese u manjoj mreži i koristit NAT.  
+Ne može se sprovesti povezivanje bez promene adresa u obe mreže.
+
+Šta se može zaključiti ako pristigne segment sa Sequence ...
+#Prenose se aplikativni podaci od 500bajta.  
+Prenose se aplikativni podaci zaključno sa 5000. bajta.  
+Prenosi se 5000. segment podataka.  
+Prenosi se 500segment podataka.  
+Nije izgubljen ni jedan prethodni segment.
+
+Šta se može zaključiti ako uređaj u jednoj komunikaciji dobije dva različita paketa sa istom vrednosti Acknowledgement Number?
+#Jedan paket je izgubljen, ali je naredni paket uspešno primljen na drugoj strani.  
+Na drugoj strani konekcije jedan isti paket je dva puta odbijen ili je izostao.  
+Postoje dva nezavisna puta do udaljene strane (load balancing).  
+Druga strana zahteva ponovno slanje paketa usled isticanja time-out perioda.  
+Na drugoj strani se popunio prozor (window) za baferisanje pristiglih podataka.
+
+Šta se postiže mehanizmom IPv4/IPv6 Dual stack?
+#Uporedni rad i IPv4 i IPv6 protokola na istom uređaju.  
+Enkapsulacija IPv6 paketa unutar IPv4 paketa.  
+Komunikacija između IPv4 i IPv6 uređaja.  
+Autokonfiguracija IPv6 adresa na osnovu IPv4 adresa.
+
+Šta se postiže mehanizmom IPv6 tunelovanja?
+#Enkapsulacija IPv6 paketa unutar IPv4 paketa.  
+Uporedi rad i IPv4 i IPv6 protokola na istom uređaju.  
+Komunikacija između IPv4 i IPv6 uređaja.  
+Autokonfiguracija IPv6 adresa na osnovu IPv4 adresa.
+
+Šta važi za zaglavlja IPv6 paketa u odnosu na zaglavlje IPv4 paketa?
+#Osnovno zaglavlje IPv6 paketa ima manje polja od zaglavlja IPv4 paketa.  
+Osnovno zaglavlje IPv6 paketa ima više polja od zaglavlja IPv4 paketa.  
+IPv6 paketi nemaju zaglavlja, jer se direktno prenose preko L2 okvira.  
+Ne postoji razlike između zaglavlja IPv6 i IPv4 paketa.
+
+Za šta se koristi serijski broj u SOA zapis u definiciji DNS zone?
+#Za odluku da li da se sprovodi transfer zone.  
+Za proveru greške kod transfera zone.  
+Za garantovanje redosleda Resource Record podataka.  
+Za odluku da li da se sprovodi rekurzivni ili interativni upit.  
+Za razlikovanje direktnih i inverzinih domena.  
+Za obezbeđivanje pouzdanog prenosa DNS podatak.
+
+Koliko bita MAC adrese se neizmenjeno prenosi u format koji se dobija pravilom EUI-64?
+#47
+46
+Koliko host IP adresa je raspoloživo u mreži 10.20.30.0/24?
+#254
+255
+
+**
