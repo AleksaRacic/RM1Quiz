@@ -6,23 +6,24 @@ import random
 class Kviz:
 
     def __init__(self):
+        self.corr_q = 0
         self.response = []
         self.correct_responses = []
         self.display_title()
         self.klk_frame()
         self.q_no = 0
+        
     
     def q_frame(self):
         self.__bot_button('Start', self.next_question)
         self.__flash_button()
         
     def next_question(self):
-        
-          
-        # checks if the q_no size is equal to the data size
+        if self.check_ans():
+            self.corr_q += 1
+
         if self.q_no==self.data_size:
-            #self.display_result()
-            # destroys the GUI
+            self.display_result()
             gui.destroy()
         else:
             self.destroy_frame()
@@ -30,6 +31,20 @@ class Kviz:
             self.display_question(self.question_bank[self.q_no]['question'])
             self.radio_buttons(self.get_shuffled())
         self.q_no += 1
+
+    def display_result(self):
+        wrong_count = self.data_size - self.corr_q
+        correct = f"Correct: {self.corr_q}"
+        wrong = f"Wrong: {wrong_count}"
+        score = int(self.corr_q / self.data_size * 100)
+        result = f"Score: {score}%"
+        mb.showinfo("Result", f"{result}\n{correct}\n{wrong}")
+
+    def check_ans(self):
+        for i,j in zip(self.response, self.correct_responses):
+            if i.get() != j:
+                return False
+        return True
 
     def get_shuffled(self):
         self.correct_responses = []
@@ -46,7 +61,7 @@ class Kviz:
             elif r_no:
                 self.correct_responses.append(1)
                 r_no -= 1
-                choices.append(false[r_no])
+                choices.append(right[r_no])
         return choices
 
     def klk_frame(self):
@@ -69,7 +84,7 @@ class Kviz:
     def __bot_button(self, name, action):
         self.bot_button = Button(gui, text=name,command=action,
         width=10,bg="blue",fg="white",font=("ariel",16,"bold"))
-        self.bot_button.place(x=400,y=500)
+        self.bot_button.place(x=400,y=550)
 
     def __flash_button(self):
         self.flash_button = Button(gui, text="Flash", command=self.flash_answers,
